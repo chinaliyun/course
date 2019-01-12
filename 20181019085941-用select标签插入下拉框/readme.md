@@ -19,4 +19,4 @@
 
 [案例源码](./demo/demo01.html)
 
-![](./images/01.png)
+![](./images/01.gif)

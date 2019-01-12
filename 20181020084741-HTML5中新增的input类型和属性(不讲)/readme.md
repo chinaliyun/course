@@ -39,7 +39,7 @@ HTML5 版本中新增了`input`标签的类型和一些属性。
 
 [案例源码](./demo/demo01.html)
 
-![](./images/01.png)
+![](./images/01.gif)
 
 ## week
 
@@ -51,7 +51,7 @@ HTML5 版本中新增了`input`标签的类型和一些属性。
 
 [案例源码](./demo/demo02.html)
 
-![](./images/02.png)
+![](./images/02.gif)
 
 ## date
 
@@ -63,7 +63,7 @@ HTML5 版本中新增了`input`标签的类型和一些属性。
 
 [案例源码](./demo/demo03.html)
 
-![](./images/03.png)
+![](./images/03.gif)
 
 ## datetime
 
@@ -89,7 +89,7 @@ HTML5 版本中新增了`input`标签的类型和一些属性。
 
 [案例源码](./demo/demo05.html)
 
-![](./images/05.png)
+![](./images/05.gif)
 
 ## color
 
@@ -101,7 +101,7 @@ HTML5 版本中新增了`input`标签的类型和一些属性。
 
 [案例源码](./demo/demo06.html)
 
-![](./images/06.png)
+![](./images/06.gif)
 
 ## number
 
