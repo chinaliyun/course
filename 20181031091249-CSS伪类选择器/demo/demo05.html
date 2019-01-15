@@ -1,0 +1,40 @@
+<style>
+    * {
+        color: rgb(216, 216, 216);
+    }
+    /* 1.是类名包含.group1的后代元素 2.使用了div标签 3.是所有同类兄弟中的第一个元素 */
+    .group1 div:first-of-type {
+        color: red;
+    }
+    /* 1.是类名包含.group1的后代元素 2.使用了div标签 3.是所有同类兄弟中的倒数第一个元素 */
+    .group1 div:last-of-type {
+        color: green;
+    }
+    /* 1.是类名包含.group1的后代元素 2.使用了div标签 3.是所有同类兄弟中的第3个元素 */
+    .group1 div:nth-of-type(3) {
+        color: rgb(176, 56, 206);
+    }
+    /* 1.是类名包含.group1的后代元素 2.使用了div标签 3.是所有同类兄弟中的倒数第3个元素 */
+    .group1 div:nth-last-of-type(3) {
+        color: rgb(46, 230, 168);
+    }
+    /* 1.是类名包含.group1的后代元素 2.使用了div标签 3.没有同类的兄弟姐妹元素 */
+    .group2 div:only-of-type {
+        color: rgb(46, 43, 226);
+    }
+</style>
+<div class="group1">
+    <h3>we are family</h3>
+    <div>we are family.</div>
+    <div>we are family.</div>
+    <div>we are family.</div>
+    <div>we are family.</div>
+    <div>we are family.</div>
+    <div>we are family.</div>
+    <div>we are family.</div>
+    <h3>we are family</h3>
+</div>
+<div class="group2">
+    <h3>we are family</h3>
+    <div>we are family.</div>
+</div>

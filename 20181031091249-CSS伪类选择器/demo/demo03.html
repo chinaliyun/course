@@ -1,0 +1,164 @@
+<style>
+    .group1 input:enabled {
+        color: green;
+    }
+    .group1 input:disabled {
+        color: red;
+    }
+    .group2 input:read-only {
+        color: green;
+    }
+    .group2 input:read-write {
+        color: red;
+    }
+    .group3 input:valid {
+        color: green;
+    }
+    .group3 input:invalid {
+        color: red;
+    }
+    .group4 input:checked::before {
+        content: "0";
+        color: red;
+    }
+    .group5 input:focus {
+        color: limegreen;
+    }
+    .group6 input:in-range {
+        color: green;
+    }
+    .group6 input:out-of-range {
+        color: red;
+    }
+    .group7 input:optional {
+        color: green;
+    }
+    .group7 input:required {
+        color: red;
+    }
+</style>
+<form action="">
+    <div class="group1">
+        <div>
+            <label
+                >被禁用的文显示红色，否则显示绿色：<input
+                    type="text"
+                    value="we are family"
+            /></label>
+        </div>
+        <div>
+            <label for=""
+                >被禁用的文显示红色，否则显示绿色：<input
+                    type="text"
+                    value="we are family"
+                    disabled
+            /></label>
+        </div>
+    </div>
+    <div class="group2">
+        <div>
+            <label for=""
+                >只读的显示为红色，否则显示绿色：<input
+                    type="text"
+                    value="we are family"
+            /></label>
+        </div>
+        <div>
+            <label for=""
+                >只读的显示为红色，否则显示绿色：<input
+                    type="text"
+                    value="we are family"
+                    readonly
+            /></label>
+        </div>
+    </div>
+    <div class="group3">
+        <div>
+            <label
+                >字符数量>=6且<=8个时显示为绿色，否则显示为红色：<input
+                    type="text"
+                    maxlength="8"
+                    minlength="6"
+                    value="1234567"
+            /></label>
+        </div>
+        <div>
+            <label
+                >字符数量>=6且<=8个时显示为绿色，否则显示为红色：<input
+                    type="text"
+                    maxlength="8"
+                    minlength="6"
+                    value="1"
+            /></label>
+        </div>
+    </div>
+    <div class="group4">
+        <div>
+            被选中的input元素前面添加一个红色字符“0”：
+            <label><input type="radio" name="sex" value="1" />男</label>
+            <label><input type="radio" name="sex" value="2" checked />女</label>
+        </div>
+        <div>
+            被选中的input元素前面添加一个红色字符“0”：
+            <label> <input type="checkbox" name="sex" value="1" />篮球 </label>
+            <label>
+                <input type="checkbox" name="sex" value="1" checked />篮球
+            </label>
+        </div>
+    </div>
+    <div class="group5">
+        <div>
+            <label
+                >焦点所在的input元素颜色会变成黄色：<input
+                    type="text"
+                    value="we are family;"
+            /></label>
+        </div>
+        <div>
+            <label
+                >焦点所在的input元素颜色会变成黄色：<input
+                    type="text"
+                    value="we are family;"
+            /></label>
+        </div>
+    </div>
+
+    <div class="group6">
+        <div>
+            <label
+                >当前值在6-8之间时显示为绿色，否则显示为红色：<input
+                    type="number"
+                    max="8"
+                    min="6"
+                    value="7"
+            /></label>
+        </div>
+        <div>
+            <label
+                >当前值在6-8之间时显示为绿色，否则显示为红色：<input
+                    type="number"
+                    max="8"
+                    min="6"
+                    value="5"
+            /></label>
+        </div>
+    </div>
+
+    <div class="group7">
+        <div>
+            <label for=""
+                >当前input设置了不能为空时，显示为红色，否则显示为绿色<input
+                    type="text"
+                    value="we are family"
+            /></label>
+        </div>
+        <div>
+            <label for=""
+                >当前input设置了不能为空时，显示为红色，否则显示为绿色<input
+                    type="text"
+                    value="we are family"
+                    required
+            /></label>
+        </div>
+    </div>
+</form>
