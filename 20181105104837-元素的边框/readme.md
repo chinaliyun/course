@@ -5,7 +5,7 @@
 -   `border:宽度 样式 颜色`
 -   `border-width: 边框宽度`
 -   `border-style: 边框样式`:常见的有：实线(`solid`)、双实线(`double`)、点线(`dotted`)、虚线(`dashed`)
--   `border-color: 边框宽度`
+-   `border-color: 边框颜色`
 -   `border-top-width: 上边框宽度`
 -   `border-top-style: 上边框样式`
 -   `border-top-color: 上边框颜色`
