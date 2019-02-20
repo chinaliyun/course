@@ -1,0 +1,29 @@
+<style>
+    div {
+        width: 200px;
+        height: 120px;
+        margin-bottom: 10px;
+        padding: 20px;
+        border: 20px solid rgba(28, 216, 106, 0.432);
+        background-color: rgb(252, 133, 22);
+        background-image: url("./images/01.png");
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-size: 100% 100%;
+    }
+    .p1 {
+        background-clip: border-box;
+    }
+    .p2 {
+        background-clip: padding-box;
+    }
+    .p3 {
+        background-clip: content-box;
+    }
+</style>
+background-clip: border-box;
+<div class="p1"></div>
+background-clip: padding-box;
+<div class="p2"></div>
+background-clip: content-box;
+<div class="p3"></div>

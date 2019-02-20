@@ -1,0 +1,26 @@
+<style>
+div{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 5px;
+    background-color: gold;
+}
+div:nth-child(2){
+    opacity: 0.2;
+}
+div:nth-child(2) img{
+    width: 50px;
+    height: 50px;
+    opacity: 1;  
+    /* 不会覆盖父级的0.2  */
+}
+div:nth-child(3){
+    opacity: 0.6;
+}
+</style>
+<div>默认</div>
+<div>0.2
+    <img src="./images/01.jpg" alt="">
+</div>
+<div>0.6</div>

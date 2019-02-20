@@ -1,0 +1,27 @@
+<style>
+    div {
+        width: 200px;
+        height: 120px;
+        margin-bottom: 10px;
+        padding: 20px;
+        border: 20px solid rgba(28, 216, 106, 0.432);
+        background-color: rgb(252, 133, 22);
+        background-image: url("./images/01.png");
+        background-repeat: no-repeat;
+    }
+    .p1 {
+        background-origin: border-box;
+    }
+    .p2 {
+        background-origin: padding-box;
+    }
+    .p3 {
+        background-origin: content-box;
+    }
+</style>
+background-origin: border-box;
+<div class="p1"></div>
+background-origin: padding-box;
+<div class="p2"></div>
+background-origin: content-box;
+<div class="p3"></div>

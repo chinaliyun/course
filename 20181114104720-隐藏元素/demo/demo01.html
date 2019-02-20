@@ -1,0 +1,29 @@
+<style>
+  .outer{
+    float: left;
+    height: 280px;;
+    border: 1px solid red;
+  }
+  .inner {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    background-color: green;
+  }
+  .outer:nth-child(1) .inner:nth-child(1){
+    display: none;
+  }
+  .outer:nth-child(2) .inner:nth-child(1){
+    visibility: hidden;
+  }
+</style>
+
+<div class="outer">
+  <div class="inner"></div>
+  <div class="inner"></div>
+</div>
+
+<div class="outer">
+  <div class="inner"></div>
+  <div class="inner"></div>
+</div>

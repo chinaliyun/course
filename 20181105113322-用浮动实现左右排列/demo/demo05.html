@@ -1,0 +1,31 @@
+<style>
+    body {
+        margin: 0;
+    }
+    .outer {
+        width: 320px;
+        background-color: rgb(70, 168, 255);
+    }
+    .outer::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    .inner {
+        width: 120px;
+        height: 120px;
+        background-color: rgb(250, 155, 31);
+        float: left;
+    }
+    .p2 {
+        background-color: rgb(8, 231, 157);
+    }
+    .p3 {
+        background-color: rgb(118, 97, 233);
+    }
+</style>
+<div class="outer">
+    <div class="inner p1">p1</div>
+    <div class="inner p2">p2</div>
+    <div class="inner p3">p3</div>
+</div>

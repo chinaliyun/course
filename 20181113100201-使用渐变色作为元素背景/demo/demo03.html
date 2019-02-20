@@ -1,0 +1,39 @@
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        float: left;
+    }
+
+    div:nth-child(1) {
+        background: linear-gradient(90deg, red, yellow, orange);
+    }
+
+    /* 把黄色位置调整到20%的位置 */
+    div:nth-child(2) {
+        background: linear-gradient(90deg, red, yellow 20%, orange);
+    }
+
+    /* 同一个位置用两种颜色明显的分开 */
+    div:nth-child(3) {
+        background: linear-gradient(90deg, red, yellow 20%, pink 20%, orange);
+    }
+
+    /* 两边渐变，中间透明 */
+    div:nth-child(4) {
+        background: linear-gradient(
+            90deg,
+            red,
+            yellow 20%,
+            transparent 20%,
+            transparent 40%,
+            pink 40%,
+            orange
+        );
+    }
+</style>
+<div></div>
+<div></div>
+<div></div>
+<div></div>

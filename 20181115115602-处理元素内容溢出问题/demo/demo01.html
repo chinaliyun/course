@@ -1,0 +1,38 @@
+<style>
+    div {
+        width: 120px;
+        height: 80px;
+        margin: 15px;
+        background-color: rgb(235, 143, 82);
+    }
+    img {
+        opacity: 0.6;
+        height: 100px;
+    }
+    .p1 {
+        overflow: visible;
+    }
+    .p2 {
+        overflow: hidden;
+    }
+    .p3 {
+        overflow: scroll;
+    }
+    .p4 {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .p5 {
+        overflow: auto;
+    }
+</style>
+overflow: visible:
+<div class="p1"><img src="./images/01.png" alt="" /></div>
+overflow: hidden:
+<div class="p2"><img src="./images/01.png" alt="" /></div>
+overflow: scroll;
+<div class="p3"><img src="./images/01.png" alt="" /></div>
+overflow-x: scroll; overflow-y: hidden;
+<div class="p4"><img src="./images/01.png" alt="" /></div>
+overflow: auto:
+<div class="p5"><img src="./images/01.png" alt="" /></div>
