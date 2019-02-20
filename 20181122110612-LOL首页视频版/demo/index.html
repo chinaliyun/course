@@ -1,0 +1,400 @@
+<link rel="stylesheet" href="./css/index.css" />
+
+<style>
+    body {
+        padding-bottom: 100px;
+    }
+    .activity_section {
+        padding-top: 50px;
+        background-color: rgb(243, 243, 243);
+    }
+    .activity_section .activity_container {
+        width: 1358px;
+        margin: 0 auto;
+    }
+    .activity_section .activity_banner{
+        width: 820px;
+    }
+    .activity_section .activity_banner .nav_wrapper .big_title {
+        font-size: 20px;
+        border-left: 6px solid rgb(105, 107, 221);
+        padding-left: 10px;
+        margin-right: 20px;
+    }
+    .activity_section .activity_banner .nav_wrapper .small_title ul {
+        border-bottom: 1px solid rgb(211, 211, 211);
+        height: 25px;
+        width: 700px;
+    }
+    .activity_section .activity_banner .nav_wrapper .small_title li {
+        width: 130px;
+    }
+    .activity_section .activity_banner .nav_wrapper .small_title li div {
+        display: inline-block;
+    }
+    .activity_section .activity_banner .nav_wrapper .small_title li div:after {
+        content: "";
+        display: block;
+        width: 64px;
+        height: 8px;
+        background-position: -260px 0;
+        background-image: url("./images/comm-spr.png");
+        transform: scale(0, 0);
+        transition: all 0.2s linear;
+    }
+    .activity_section .activity_banner .nav_wrapper .small_title li div:hover {
+        color: rgb(13, 160, 180);
+        font-weight: bold;
+    }
+    .activity_section .activity_banner .nav_wrapper .small_title li div:hover:after {
+        transform: scale(1, 1);
+    }
+    .activity_section .activity_banner .nav_wrapper .small_title li.active div {
+        color: rgb(13, 160, 180);
+        font-weight: bold;
+    }
+    .activity_section .activity_banner .nav_wrapper .small_title li.active div:after {
+        transform: scale(1, 1);;
+    }
+    .activity_section .activity_banner .card_list {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .activity_section .activity_banner .card_list li{
+        width: 190px;
+        margin-right: 20px;
+        background-color: white;
+    }
+    .activity_section .activity_banner .card_list li:last-child{
+        margin: 0;
+    }
+    .activity_section .activity_banner .card_list li .img_wrapper{
+        position: relative;
+    }
+    .activity_section .activity_banner .card_list li .img_wrapper img{
+        display: block;
+        width: 100%;
+    }
+    .activity_section .activity_banner .card_list li .img_wrapper .img_cover{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.664);
+        padding-top: 60px;
+        display: none;
+    }
+    .activity_section .activity_banner .card_list li:hover .img_cover{
+        display: block;
+    }
+    .activity_section .activity_banner .card_list li .img_wrapper .img_cover .img_title{
+        color: rgb(250, 192, 116);
+        text-align: center;
+        padding: 0 10px;
+        line-height: 26px;
+    }
+    .activity_section .activity_banner .card_list li .img_wrapper .img_cover p{
+        padding: 0 10px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.664);
+        line-height: 26px;
+        font-size: 12px;
+    }
+    .activity_section .activity_banner .card_list li .title{
+        padding: 10px;
+        color: rgb(73, 73, 73);
+    }
+    .activity_section .activity_banner .card_list li .date{
+        padding: 10px;
+        color: rgb(112, 236, 133);
+        font-size: 12px;
+        background-position: -274px -44px;
+    }
+    .activity_section .activity_banner .card_list li .date i{
+        background-position: -246px -44px;
+        width: 32px;
+        height: 20px;
+    }
+    .activity_section .activity_banner .card_list li:hover .title{
+        color: rgb(112, 236, 133);
+    }
+</style>
+<div class="header_section">
+    <div class="header_cover"></div>
+    <div class="logo_wrapper"><img src="./images/logo.png" alt="" /></div>
+    <div class="header">
+        <div class="nav_wrapper">
+            <ul class="clear">
+                <li class="fl">
+                    <p>游戏资料</p>
+                    <p>GAME INFO</p>
+                </li>
+                <li class="fl">
+                    <p>游戏资料</p>
+                    <p>GAME INFO</p>
+                </li>
+                <li class="fl">
+                    <p>游戏资料</p>
+                    <p>GAME INFO</p>
+                </li>
+                <li class="fl">
+                    <p>游戏资料</p>
+                    <p>GAME INFO</p>
+                </li>
+                <li class="fl">
+                    <p>游戏资料</p>
+                    <p>GAME INFO</p>
+                </li>
+            </ul>
+        </div>
+        <div class="menu_wrapper">
+            <div class="menu_container">
+                <ul class="clear">
+                    <li class="fl">
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                    </li>
+                    <li class="fl">
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                    </li>
+                    <li class="fl">
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                    </li>
+                    <li class="fl">
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                    </li>
+                    <li class="fl">
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                        <p>新手指引</p>
+                        <p>资料库</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="member_wrapper clear">
+        <div class="search_wrapper fl"><i class="topfoot_spr"></i></div>
+        <div class="mobile_wrapper fl">
+            <i class="topfoot_spr"></i>
+            <div class="mobile_erweima topfoot_spr">
+                <img src="./images/erweima.jpg" alt="" />
+                <p>扫码下载掌上英雄联盟</p>
+                <img class="polo" src="./images/polo.gif" alt="" />
+            </div>
+        </div>
+        <div class="user_center_wrapper fl clear">
+            <div>
+                <div class="pic_wrapper topfoot_spr fl">
+                    <img src="./images/default_pic.png" alt="" />
+                </div>
+                <p class="fl">亲爱的召唤师，欢迎<span>登录</span></p>
+            </div>
+            <div class="more_info">
+                <p>
+                    登录并且绑定大区后才可以查看您的具体信息哦(包括战绩、资产、声望）
+                </p>
+                <p>
+                    登录并且绑定大区后才可以查看您的具体信息哦(包括战绩、资产、声望）
+                </p>
+                <a href="#" class="goto_center"><span>进入个人中心</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="view_detail_wrapper topfoot_spr"><a href="#"></a></div>
+    <div class="version_wrapper">
+        当前游戏版本<span>Ver 8.23</span><a href="#">版本详情</a>
+    </div>
+</div>
+<!-- 公告部分 -->
+<div class="notice_section">
+    <div class="notice_container clear">
+        <div class="banner_wrapper fl">
+            <div class="banner"><img src="./images/swiper01.jpg" alt="" /></div>
+            <div class="nav_wrapper">
+                <ul class="clear">
+                    <li class="fl">ig冠军庆典之夜</li>
+                    <li class="fl">ig冠军庆典之夜</li>
+                    <li class="fl">ig冠军庆典之夜</li>
+                    <li class="fl">ig冠军庆典之夜</li>
+                    <li class="fl">ig冠军庆典之夜</li>
+                </ul>
+            </div>
+        </div>
+        <div class="list_wrapper fr">
+            <div class="nav_wrapper">
+                <ul class="clear">
+                    <li class="fl active">
+                        <div>综合 <span class="comm_spr"></span></div>
+                    </li>
+                    <li class="fl">
+                        <div>综合 <span class="comm_spr"></span></div>
+                    </li>
+                    <li class="fl">
+                        <div>综合 <span class="comm_spr"></span></div>
+                    </li>
+                    <li class="fl">
+                        <div>综合 <span class="comm_spr"></span></div>
+                    </li>
+                    <li class="fl">
+                        <div>综合 <span class="comm_spr"></span></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="list_detail">
+                <h2><a href="#">IG冠军之夜 纪念图标领取公告</a></h2>
+                <ul>
+                    <li class="gonggao">
+                        <span>公告</span>
+                        <a class="tof" href="#">8.23版本更新，季前赛改动上线</a>
+                        <em>11-26</em>
+                    </li>
+                    <li class="saishi">
+                        <span>赛事</span>
+                        <a class="tof" href="#">8.23版本更新，季前赛改动上线</a>
+                        <em>11-26</em>
+                    </li>
+                    <li class="shipin">
+                        <span>视频</span>
+                        <a class="tof" href="#">8.23版本更新，季前赛改动上线</a>
+                        <em>11-26</em>
+                    </li>
+                    <li class="gonggao">
+                        <span>公告</span>
+                        <a class="tof" href="#">8.23版本更新，季前赛改动上线</a>
+                        <em>11-26</em>
+                    </li>
+                    <li class="saishi">
+                        <span>赛事</span>
+                        <a class="tof" href="#">8.23版本更新，季前赛改动上线</a>
+                        <em>11-26</em>
+                    </li>
+                    <li class="shipin">
+                        <span>视频</span>
+                        <a class="tof" href="#">8.23版本更新，季前赛改动上线</a>
+                        <em>11-26</em>
+                    </li>
+                    <li class="gonggao">
+                        <span>公告</span>
+                        <a class="tof" href="#">8.23版本更新，季前赛改动上线</a>
+                        <em>11-26</em>
+                    </li>
+                </ul>
+                <div class="more">
+                    <a href="#">阅读更多<span>最新资讯</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 活动部分 -->
+<div class="activity_section">
+    <div class="activity_container clear">
+        <div class="activity_banner fl">
+            <div class="nav_wrapper clear">
+                <div class="big_title fl">热门活动</div>
+                <div class="small_title fr">
+                    <ul class="clear">
+                        <li class="fl active"><div>正在进行</div></li>
+                        <li class="fl"><div>正在进行</div></li>
+                        <li class="fl"><div>正在进行</div></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card_list">
+                <ul class="clear">
+                    <li class="fl">
+                        <a href="#">
+                            <div class="img_wrapper">
+                                <img src="./images/activity01.jpg" alt="">
+                                <div class="img_cover">
+                                    <div class="img_title tof">高校自发赛</div>
+                                    <p>星光悦动,全新阿狸闪耀登场</p>
+                                    <p>2018-11-29 10:30</p>
+                                </div>
+                            </div>
+                            <p class="title tof">高校自发赛</p>
+                            <div class="date clear"><span class="fl">11天后结束</span><i class="comm_spr fr"></i></div>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#">
+                            <div class="img_wrapper">
+                                <img src="./images/activity01.jpg" alt="">
+                                <div class="img_cover">
+                                    <div class="img_title tof">高校自发赛</div>
+                                    <p>星光悦动,全新阿狸闪耀登场</p>
+                                    <p>2018-11-29 10:30</p>
+                                </div>
+                            </div>
+                            <p class="title tof">高校自发赛</p>
+                            <div class="date clear"><span class="fl">11天后结束</span><i class="comm_spr fr"></i></div>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#">
+                            <div class="img_wrapper">
+                                <img src="./images/activity01.jpg" alt="">
+                                <div class="img_cover">
+                                    <div class="img_title tof">高校自发赛</div>
+                                    <p>星光悦动,全新阿狸闪耀登场</p>
+                                    <p>2018-11-29 10:30</p>
+                                </div>
+                            </div>
+                            <p class="title tof">高校自发赛</p>
+                            <div class="date clear"><span class="fl">11天后结束</span><i class="comm_spr fr"></i></div>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="#">
+                            <div class="img_wrapper">
+                                <img src="./images/activity01.jpg" alt="">
+                                <div class="img_cover">
+                                    <div class="img_title tof">高校自发赛</div>
+                                    <p>星光悦动,全新阿狸闪耀登场</p>
+                                    <p>2018-11-29 10:30</p>
+                                </div>
+                            </div>
+                            <p class="title tof">高校自发赛</p>
+                            <div class="date clear"><span class="fl">11天后结束</span><i class="comm_spr fr"></i></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="download_wrapper fl"></div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+<style>
+  .div1 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+  }
+  .div1 p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: blueviolet;
+  }
+  .div2 {
+    position: absolute;
+    top: 20px;
+    left: 220px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  }
+  .div3 {
+    position: absolute;
+    top: 20px;
+    left: 400px;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+  }
+  .div4,.div7 {
+    position: absolute;
+    top: 20px;
+    left: 400px;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+  }
+  .div6{
+    position: fixed;
+    top: 200px;
+    left: 400px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 89, 255);
+  }
+</style>
+
+<div class="div1"><p>we are family</p></div>
+
+<div class="div2">div2</div>
+<div class="div3"></div>
+
+<div class="div3">div3
+    <div class="div4">div4</div>
+</div>
+<div class="div6">div6
+    <div class="div7">div7</div>
+</div>
