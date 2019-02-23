@@ -1,0 +1,27 @@
+<style>
+    div {
+        width: 200px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        color: white;
+        background-color: red;
+        position: relative;
+        top: 0;
+        left: 0;
+        transition: all 0.2s linear;
+    }
+</style>
+<p>鼠标进入、离开下面的元素查看效果</p>
+<div>不要点击我</div>
+<script>
+    document.querySelector("div").addEventListener("mouseenter", function() {
+        this.style.left = "100px";
+    });
+    document.querySelector("div").addEventListener("mouseleave", function() {
+        this.style.left = "0";
+    });
+    document.querySelector("div").addEventListener("click", function() {
+        alert("再点你就死定了！");
+    });
+</script>
