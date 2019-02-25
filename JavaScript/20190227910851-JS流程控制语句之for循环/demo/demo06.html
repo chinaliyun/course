@@ -1,0 +1,15 @@
+<script>
+    var row = "";
+    var len = 9;
+    for (var x = 1; x <= len; x++) {
+        for (var z = 1; z <= len - x; z++) {
+            row += "&nbsp;";
+        }
+        for (var y = 1; y <= x * 2 - 1; y++) {
+            row += "山";
+        }
+        // console.log(row);
+        document.write(row + "<br/>");
+        row = "";
+    }
+</script>
