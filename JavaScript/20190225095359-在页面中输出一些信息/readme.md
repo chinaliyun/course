@@ -26,4 +26,4 @@
 
 ![](./images/02.png)
 
-> `document.writeln()`与`document.writeln()`的区别在于：前者输出文字后，会多输出一个**空格**
+> `document.write()`与`document.writeln()`的区别在于：前者输出文字后，会多输出一个**空格**
