@@ -7,28 +7,21 @@
     41~48：壮年，
     48~65：中年，
     66以后：老年
-*/
+    */
     var age = 30;
-
-    if (age >= 0 && age <= 3) {
+    if (age <= 3) {
         console.log("幼年");
-    }
-    if (age > 3 && age <= 6) {
+    } else if (age <= 6) {
         console.log("童年");
-    }
-    if (age > 6 && age <= 17) {
+    } else if (age <= 17) {
         console.log("少年");
-    }
-    if (age > 17 && age <= 40) {
+    } else if (age <= 40) {
         console.log("青年");
-    }
-    if (age > 40 && age <= 48) {
+    } else if (age <= 48) {
         console.log("壮年");
-    }
-    if (age > 48 && age <= 65) {
+    } else if (age <= 65) {
         console.log("中年");
-    }
-    if (age > 65) {
+    } else if (age > 65) {
         console.log("老年");
     }
 </script>
