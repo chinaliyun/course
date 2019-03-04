@@ -22,6 +22,8 @@
 
 ## 把目标转成数字
 
+JS 会把目标先转成字符串，再尝试转为数字
+
 ```html
 <script>
     console.log("Number('11'):        " + Number("11"));
