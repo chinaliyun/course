@@ -59,7 +59,37 @@ console.log("执行完毕");
 
 ![](./images/03.png)
 
-## 使用 for 循环输出数组的内容
+## 计算 1-100 之间所有数字之和
+
+```html
+<script>
+    var sum = 0;
+    for (var m = 0; m <= 100; m++) {
+        sum += m;
+    }
+    document.write(sum);
+</script>
+```
+
+[案例代码](./demo/demo04.html)
+
+## 计算 1-100 之间所有能被 3 整除的数字之和
+
+```html
+<script>
+    var sum = 0;
+    for (var m = 0; m <= 100; m++) {
+        if (m % 3 == 0) {
+            sum += m;
+        }
+    }
+    document.write(sum);
+</script>
+```
+
+[案例代码](./demo/demo05.html)
+
+## 循环输出数组的内容
 
 ```js
 // 正序输出：
@@ -76,52 +106,6 @@ for (var y = 2; y >= 0; y--) {
 }
 ```
 
-[案例代码](./demo/demo04.html)
-
-![](./images/04.png)
-
-## for 循环输出直角三角形
-
-流程控制语句是可以嵌套使用的，这里使用嵌套来尝试输出一个直角三角形
-
-```html
-<script>
-    var row = "";
-    for (var x = 1; x < 10; x++) {
-        for (var y = 1; y <= x; y++) {
-            row = row + "*";
-        }
-        console.log(row);
-        row = "";
-    }
-</script>
-```
-
 [案例代码](./demo/demo06.html)
 
 ![](./images/06.png)
-
-## for 循环输出九九乘法表
-
-```html
-<script>
-    var row = "";
-    for (var x = 1; x < 10; x++) {
-        for (var y = 1; y <= x; y++) {
-            row += x + "*" + y + "=" + x * y + " ";
-        }
-        console.log(row);
-        row = "";
-    }
-</script>
-```
-
-[案例代码](./demo/demo06.html)
-
-![](./images/06.png)
-
-## 作业
-
-1. 本金 10000 元存入银行，年利率为千分之 5，每年产生的利息会自动转为本金产生利息，5 年后本金一共有多少？
-
-2. 家里有一对兔子，兔子 3 个月可生育一次，每次可生育 2 只兔子。一年后(12 个月)家里一共有多少只兔子

@@ -1,26 +1,29 @@
 # JS 中的函数
 
-当一段代码需要被**多次重复使用**的时候，就可以使用**函数**把代码块封装起来。便于重复使用。
+当一段代码需要在多个位置"重复使用"的时候，可以使用函数把这段代码“封装”起来。
 
 ```js
-console.log(1);
-console.log(2);
-alert(3);
-console.log(1);
-console.log(2);
-alert(3);
-console.log(1);
-console.log(2);
+function test() {
+    var sum = 0;
+    for (var i = 1; i <= 100; i++) {
+        sum += i;
+    }
+    console.log(sum);
+}
+// 第一次调用
+test();
+// 第二次调用
+test();
+// 第三次调用
+test();
 ```
-
-上面的代码中，有 3 段一模一样的代码，这些相同的代码，每次都重复写出来，太降低效率了，这个时候就需要函数出场了。
 
 ## 声明一个函数
 
 ```js
 // 声明一个函数
 function 函数名() {
-    // 代码块...
+    // 函数体...
 }
 ```
 
@@ -154,3 +157,25 @@ var 函数名 = function() {
 [案例代码](./demo/demo06.html)
 
 ![](./images/06.png)
+
+## 函数的 arguments 属性
+
+通过`arguments`可以获取函数调用时传入的所有参数。
+
+```html
+<script>
+    function sum() {
+        console.log(arguments[0], arguments[1], arguments[2]);
+    }
+    sum(1, 2, 3);
+</script>
+```
+
+[案例代码](./demo/demo07.html)
+
+![](./images/07.png)
+
+函数在使用的时候要注意以下几个方面：
+
+-   执行后是否影响调用函数的对象
+-   函数有没有返回值，是什么
