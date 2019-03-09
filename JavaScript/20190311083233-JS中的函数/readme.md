@@ -1,21 +1,18 @@
 # JS 中的函数
 
-当一段代码需要在多个位置"重复使用"的时候，可以使用函数把这段代码“封装”起来。
+当一段代码需要在多个位置"重复使用"的时候，可以使用函数把这段代码“封装”起来。比如之前“for 循环输出直角三角形”的案例，如果想更为方便、快捷的连续输出 2 个不同行数的三角形，就可以使用函数来实现：
 
 ```js
-function test() {
-    var sum = 0;
-    for (var i = 1; i <= 100; i++) {
-        sum += i;
+function triangle(sum) {
+    for (var m = 1; m <= sum; m++) {
+        for (var n = 1; n <= m; n++) {
+            document.write("💕");
+        }
+        document.write("<br/>");
     }
-    console.log(sum);
 }
-// 第一次调用
-test();
-// 第二次调用
-test();
-// 第三次调用
-test();
+triangle(5);
+triangle(10);
 ```
 
 ## 声明一个函数
