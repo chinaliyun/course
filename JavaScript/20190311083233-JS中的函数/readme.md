@@ -171,3 +171,70 @@ var 函数名 = function() {
 [案例代码](./demo/demo07.html)
 
 ![](./images/07.png)
+
+## 在数组中定义函数和调用函数
+
+函数可以作为元素，写在数组里面：
+
+```html
+<script>
+    var arr = [
+        10,
+        function() {
+            return 11;
+        },
+    ];
+    // 调用函数;
+    var result = arr[1]();
+    console.log(result);
+</script>
+```
+
+[案例代码](./demo/demo08.html)
+
+![](./images/08.png)
+
+## 在对象中定义函数和调用函数
+
+```html
+<script>
+    var person = {
+        getName: function() {
+            return "lily";
+        },
+    };
+    // 调用函数;
+    var result = person.getName();
+    console.log(result);
+</script>
+```
+
+[案例代码](./demo/demo09.html)
+
+![](./images/09.png)
+
+## 调用函数案例
+
+```html
+<script>
+    var arr = [
+        10,
+        {
+            goods: [
+                "篮球",
+                "乒乓球",
+                function() {
+                    return "lily";
+                },
+            ],
+        },
+    ];
+    // 调用函数;
+    var result = arr[1].goods[2]();
+    console.log(result);
+</script>
+```
+
+[案例代码](./demo/demo10.html)
+
+![](./images/10.png)
