@@ -88,24 +88,3 @@ console.log("执行完毕");
 ```
 
 [案例代码](./demo/demo05.html)
-
-## 循环输出数组的内容
-
-```js
-// 正序输出：
-console.log("正序输出：");
-var arr = ["张三", "李四", "王五"];
-for (var x = 0; x < 3; x++) {
-    console.log(x + ": " + arr[x]);
-}
-
-// 倒序输出
-console.log("倒序输出");
-for (var y = 2; y >= 0; y--) {
-    console.log(y + ": " + arr[y]);
-}
-```
-
-[案例代码](./demo/demo06.html)
-
-![](./images/06.png)

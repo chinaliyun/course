@@ -1,5 +1,3 @@
-
-
 # JS 中的数据类型
 
 JS 中一共有 6 种基础数据类型和 3 种引用数据类型。
@@ -46,47 +44,6 @@ console.log(name); // undefined
 name = null;
 console.log(name); // null
 ```
-
-## 数组
-
-数组可以用来存放多个数据，声明方式有以下几种,最终的结果是相同的
-
-```js
-// 第一种
-var names1 = new Array();
-names1[0] = "张三";
-names1[1] = "李四";
-names1[2] = "王五";
-
-// 第二种
-var names2 = new Array("张三", "李四", "王五");
-
-// 第三种
-var names3 = ["张三", "李四", "王五"];
-
-// 第四种
-var names4 = [];
-names4[0] = "张三";
-names4[1] = "李四";
-names4[2] = "王五";
-```
-
-[案例代码](./demo/demo01.html)
-
-![](./images/01.png)
-
-数组中的每个数据可以通过下标来获取，下标从 0 开始
-
-```js
-var names = ["张三", "李四", "王五"];
-console.log(names[0]); // '张三'
-console.log(names[1]); // '李四'
-console.log(names[2]); // '王五'
-```
-
-[案例代码](./demo/demo02.html)
-
-![](./images/02.png)
 
 ## 对象
 
