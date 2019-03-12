@@ -26,9 +26,9 @@ JS 内置了一些方法，用于往数组中添加元素，或者删除数组�
 
 ![](./images/01.png)
 
-## 往数组开始插入元素
+## 往数组开头插入元素
 
-`array.unshift(item1, item2, ...)`方法用来往数组的开始插入多个新的元素
+`array.unshift(item1, item2, ...)`方法用来往数组的开头插入多个新的元素
 
 该方法返回一个 `number` 值，表示`当前数组的个数`；
 
@@ -50,7 +50,7 @@ JS 内置了一些方法，用于往数组中添加元素，或者删除数组�
 
 ![](./images/02.png)
 
-## 删除数组开始和结尾的元素
+## 删除数组开头和结尾的元素
 
 ```html
 <script>
@@ -85,11 +85,11 @@ JS 内置了一些方法，用于往数组中添加元素，或者删除数组�
     var arr = ["苹果", "香蕉", "橘子", "西瓜"];
     console.log("splice之前：", arr);
     var a = arr.splice(1, 0, "葡萄");
-    console.log("从下标为1 的位置开始删除0个元素，并插入1个新的元素：", arr, a);
+    console.log("从下标为1 的位置开头删除0个元素，并插入1个新的元素：", arr, a);
     console.log("返回值为：", a);
 
     var b = arr.splice(1, 2);
-    console.log("从下标为1 的位置开始删除2个元素，不插入新的元素：", arr);
+    console.log("从下标为1 的位置开头删除2个元素，不插入新的元素：", arr);
     console.log("返回值为：", b);
 </script>
 ```
@@ -106,7 +106,7 @@ JS 内置了一些方法，用于往数组中添加元素，或者删除数组�
     console.log("arr的原有内容：", arr);
     // unshift
     arr.splice(0, 0, "葡萄");
-    console.log("unshift:在开始位置插入一个新元素:", arr);
+    console.log("unshift:在开头位置插入一个新元素:", arr);
 
     // push
     arr.splice(arr.length, 0, "葡萄");
