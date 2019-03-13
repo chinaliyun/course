@@ -45,7 +45,3 @@ for (var y = arr.length - 1; y >= 0; y--) {
 [案例代码](./demo/demo02.html)
 
 ![](./images/02.png)
-
-## 使用 map 方法遍历数组
-
-## 使用 forEach 方法遍历数组

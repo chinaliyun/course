@@ -1,0 +1,14 @@
+<script>
+    function change(arr) {
+        console.log("原数组：", arr);
+        var tmp = [];
+        for (var m = 0; m < arr.length; m++) {
+            var item = arr[m] + 1;
+            tmp.push(item);
+        }
+        return tmp;
+    }
+    var arr1 = [1, 2, 3, 4, 5];
+    var newArr1 = change(arr1);
+    console.log("新数组：", newArr1);
+</script>

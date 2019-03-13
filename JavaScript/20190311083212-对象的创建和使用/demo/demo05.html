@@ -1,0 +1,13 @@
+<script>
+    var person = {
+        name: "lily",
+        sayHi: function() {
+            console.log(this.name + " say hi");
+        },
+        sayHello: function() {
+            console.log(this.name + " say hello");
+            this.sayHi();
+        },
+    };
+    person.sayHello();
+</script>
