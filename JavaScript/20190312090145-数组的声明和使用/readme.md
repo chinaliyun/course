@@ -88,3 +88,21 @@ var arr2 = [[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]]; //三维数组
 [案例代码](./demo/demo03.html)
 
 ![](./images/03.png)
+
+## 在数组中使用函数
+
+```html
+<script>
+    var arr = [
+        10,
+        function() {
+            console.log("hello world");
+        },
+    ];
+    arr[1]();
+</script>
+```
+
+[案例代码](./demo/demo04.html)
+
+![](./images/04.png)

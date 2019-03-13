@@ -16,9 +16,9 @@
 </script>
 ```
 
-[案例代码](./demo/demo04.html)
+[案例代码](./demo/demo01.html)
 
-![](./images/04.png)
+![](./images/01.png)
 
 配合函数的参数，我们可以让函数返回两个数字的和：
 
@@ -32,9 +32,9 @@
 </script>
 ```
 
-[案例代码](./demo/demo05.html)
+[案例代码](./demo/demo02.html)
 
-![](./images/05.png)
+![](./images/02.png)
 
 注意：
 
@@ -54,6 +54,6 @@
 </script>
 ```
 
-[案例代码](./demo/demo06.html)
+[案例代码](./demo/demo03.html)
 
-![](./images/06.png)
+![](./images/03.png)
