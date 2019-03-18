@@ -141,7 +141,13 @@ var arr2 = [2, 3, 4, 5, 6];
 
 ## map 方法
 
-> `array.map(fn)`方法用来遍历`array`中的每个元素，且经过函数`fn`函数处理之后，返回一个新的数组
+> `array.map(fn(currentValue, index, arr))`方法用来遍历`array`数组，每个元素经过函数`fn`函数处理之后，组合成一个新数组，作为函数的返回值
+
+`fn(currentValue, index, arr)`中：
+
+-   `currentValue`表示当前循环中的元素
+-   `index`表示当前循环中元素的下标
+-   `arr`表示原有数组
 
 ```html
 <meta charset="utf-8" />

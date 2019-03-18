@@ -1,0 +1,12 @@
+<script>
+    var arr = [1, 3, 5, 7, 9];
+    console.log("数组中的元素：", arr);
+    var result = arr.findIndex(function(currentValue, index, arr) {
+        console.log(
+            "currentValue=" + currentValue + ",index=" + index + ",arr=",
+            arr,
+        );
+        return currentValue > 7;
+    });
+    console.log("符合条件的第一个元素是：" + result);
+</script>
