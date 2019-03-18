@@ -72,25 +72,3 @@ if (result) {
 [案例代码](./demo/demo02.html)
 
 ![](./images/02.png)
-
-## indexOf 和 lastIndexOf 方法
-
-`array.indexOf(item)`和`array.lastIndexOf(item)`，可以在`array`中查找是否包含`item`元素，如果有，则返回元素所在的下标，如果没有则返回`-1`
-
-两者不同的是：`indexOf`会从数组的左边往右查找，`lastIndexOf`会从数组的右边往左查找。只要找到一个符合`item`的元素，就会停止，并返回该元素的下标
-
-```html
-<script>
-    var arr = ["苹果", "香蕉", "西瓜", "橘子", "西瓜"];
-
-    console.log("arr的原有内容：", arr);
-    console.log('arr.indexOf("西瓜"): ', arr.indexOf("西瓜"));
-    console.log('arr.lastIndexOf("西瓜"): ', arr.lastIndexOf("西瓜"));
-    console.log('arr.indexOf("葡萄"): ', arr.indexOf("葡萄"));
-    console.log('arr.lastIndexOf("葡萄"): ', arr.lastIndexOf("葡萄"));
-</script>
-```
-
-[案例代码](./demo/demo03.html)
-
-![](./images/03.png)

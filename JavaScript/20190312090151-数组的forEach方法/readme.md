@@ -22,3 +22,37 @@
 [案例代码](./demo/demo01.html)
 
 ![](./images/01.png)
+
+再来看一个复杂的案例
+
+```html
+<script>
+    var arr = [
+        {
+            name: "zhangsan",
+            score: 70,
+        },
+        {
+            name: "wanwu",
+            score: 90,
+        },
+        {
+            name: "lisi",
+            score: 80,
+        },
+    ];
+    arr.forEach(function(currentValue, index, arr) {
+        document.write(
+            "姓名：" +
+                currentValue.name +
+                "的分数是:" +
+                currentValue.score +
+                "<br/>",
+        );
+    });
+</script>
+```
+
+[案例代码](./demo/demo02.html)
+
+![](./images/02.png)
