@@ -1,0 +1,29 @@
+<script>
+    var arr = [
+        {
+            name: "zhangsan",
+            age: 18,
+        },
+        {
+            name: "lisi",
+            age: 20,
+        },
+        {
+            name: "wangwu",
+            age: 13,
+        },
+        {
+            name: "zhaoliu",
+            age: 14,
+        },
+        {
+            name: "zengqi",
+            age: 10,
+        },
+    ];
+    console.log("排序前：", arr);
+    arr.sort(function(a, b) {
+        return a.age - b.age;
+    });
+    console.log("排序后：", arr);
+</script>
