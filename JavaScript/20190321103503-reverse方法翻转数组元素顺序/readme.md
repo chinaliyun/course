@@ -1,6 +1,6 @@
 # reverse 方法翻转数组元素顺序
 
-`arr.reverse()`方法用来对翻转数组中元素的顺序
+`arr.reverse()`方法用来翻转数组中元素的顺序
 
 ```html
 <script>
