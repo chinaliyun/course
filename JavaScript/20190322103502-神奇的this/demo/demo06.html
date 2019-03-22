@@ -1,0 +1,17 @@
+<script>
+    function foo() {
+        console.log("this.a:", this.a);
+    }
+
+    function active(fn) {
+        fn(); // 没有调用者
+    }
+
+    var a = 20;
+    var obj = {
+        a: 10,
+        getA: foo,
+    };
+
+    active(obj.getA);
+</script>
