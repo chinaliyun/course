@@ -1,0 +1,13 @@
+<script>
+    var str = "welcome to china, welcome to china";
+    console.log("替换前的str：", str);
+
+    var res = str.replace("china", function(match, index, oldStr) {
+        console.log("匿名函数第1个参数的值：", match);
+        console.log("匿名函数第2个参数的值：", index);
+        console.log("匿名函数第3个参数的值：", oldStr);
+        return "usa";
+    });
+    console.log("替换后的str：", str);
+    console.log("替换后的返回值：", res);
+</script>

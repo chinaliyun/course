@@ -1,0 +1,33 @@
+<script>
+    var str = "hello world";
+    console.log("原字符串str:     ", str);
+
+    // 默认返回从索引值为2开始到结尾的所有字符组成的新字符串
+    res = str.substr(2);
+    console.log("str.substr(2)后的str是:", str);
+    console.log("str.substr(2)后的返回值是:", res);
+
+    // 返回从索引值2开始，2个字符组成的新字符串
+    res = str.substr(2, 2);
+    console.log("str.substr(2, 2)后的返回值是:", res);
+
+    // 20大于字符串的长度，会返回一个空数组
+    res = str.substr(20);
+    console.log("str.substr(20)后的返回值是:", res);
+
+    // -20的绝对值大于富川长度，自动从0开始提取到结尾
+    res = str.substr(-20);
+    console.log("str.substr(-20)后的返回值是:", res);
+
+    // -20的绝对值大于字符串长度，自动从0开始提取3个字符
+    res = str.substr(-20, 3);
+    console.log("str.substr(-20, 3)的结果是:", res);
+
+    // 从索引值2的位置开始提取0个字符，返回空字符串
+    res = str.substr(2, 0);
+    console.log("str.substr(2, 0)的结果是:", res);
+
+    // length的值为负值，返回空字符串
+    res = str.substr(2, -2);
+    console.log("str.substr(2, -2)的结果是:", res);
+</script>

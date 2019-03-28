@@ -1,0 +1,11 @@
+<script>
+    var str = "welcome to china, welcome to china";
+    console.log("替换前的str：", str);
+
+    // 每替换一次，就把替换后的新字符串，赋值给str
+    while (str.includes("china")) {
+        str = str.replace("china", "usa");
+    }
+    console.log("替换后的str：", str);
+    console.log("替换后的str：", str);
+</script>
