@@ -47,7 +47,7 @@
 -   `beginIndex` 表示提取字符的起始位置，`endIndex` 表示提取自的结束位置
 -   如果没有传递`endIndex`参数，返回的新字符串会包含从`beginIndex` 位置到结尾的所有元素
 -   返回的字符串包含`beginIndex`下标的字符，不包含`endIndex`下标的字符
--   `beginIndex`必须大于`endIndex`，否则会返回一个空字符串
+-   `beginIndex`必须小于`endIndex`，否则会返回一个空字符串
 
 ```html
 <script>
