@@ -1,0 +1,16 @@
+<script>
+    var grade1 = {
+        class: "5班",
+        count: 40,
+    };
+    var grade2 = {
+        class: "6班",
+        count: 42,
+    };
+    var school = [grade1, grade2];
+    console.log(school);
+    console.log("修改grade1.count前的grade1", grade1);
+    school[0].count = 41;
+    console.log(school);
+    console.log("修改grade1.count前的grade1", grade1);
+</script>

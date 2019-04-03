@@ -1,0 +1,18 @@
+<script>
+    var car = {
+        color: ["red", "green", "blue"], // 车身颜色：多种颜色
+        brand: "BMW", // 品牌：宝马
+        year: 2018, // 出厂日期： 2018年
+        isSuv: false, // 是否是SUV车型： 不是
+    };
+    console.log("car.year: ", car.year);
+    console.log('car["year"]: ', car["year"]);
+
+    car.year = 2017;
+    console.log("修改为2017后的car.year: ", car.year);
+    console.log('修改为2017后的car["year"]: ', car["year"]);
+
+    car["year"] = 2019;
+    console.log("修改为2019后的car.year: ", car.year);
+    console.log('修改为2019后的car["year"]: ', car["year"]);
+</script>

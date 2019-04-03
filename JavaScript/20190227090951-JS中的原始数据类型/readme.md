@@ -1,10 +1,15 @@
-# JS 中的数据类型
+# JS 中的原始数据类型
 
-JS 中一共有 6 种基础数据类型和 3 种引用数据类型。
+JS 中的数据类型，分为原始数据类型和引用数据类型。其中原始数据类型一共有 6 中：
 
-基础数据类型： 字符串(string)、数字(number)、布尔值(boolean)、未定义(undefined)、空值(null)、Symbol
+-   字符串(string)
+-   数字(number)
+-   布尔值(boolean)
+-   未定义(undefined)
+-   空值(null)
+-   Symbol
 
-引用类型： 数组(array)、对象(object)、函数(function)
+> 原始数据类型不能修改它的值，只能重新赋值
 
 ## 字符串
 
@@ -15,10 +20,11 @@ var name1 = "张三";
 var name2 = "尼古拉斯-赵四";
 ```
 
-如果字符串中包含引号，可以在引号前面添加`\`符号
+字符串可以使用`+`拼接起来，返回一个新的字符串
 
 ```js
-var name = "江穗兵是个'小女人', 他才\"16岁\"";
+var s1 = "尼古拉斯" + "赵四";
+console.log(s1); // '尼古拉斯赵四'
 ```
 
 ## 数值
@@ -38,9 +44,15 @@ var age2 = 12.2;
 
 当变量被声明却没有赋值的时候，变量的值默认是`undefined`， 变量赋值之后，可以通过`null`清除变量已有的值。
 
-```js
-var name;
-console.log(name); // undefined
-name = null;
-console.log(name); // null
+```html
+<script>
+    var age;
+    console.log(age); // undefined
+    age = null;
+    console.log(age); // null
+</script>
 ```
+
+[](./demo/demo01.html)
+
+![](./images/01.png)
