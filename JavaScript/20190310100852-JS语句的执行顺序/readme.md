@@ -89,5 +89,3 @@ var add = function() {};
 [源码案例](./demo/demo05.html)
 
 ![](./images/05.png)
-
-JS 引擎中，优先提取变量到内存的这个过程，被称为`变量提升`。
