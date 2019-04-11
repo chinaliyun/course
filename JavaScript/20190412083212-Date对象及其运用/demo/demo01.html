@@ -1,0 +1,28 @@
+<script>
+    var date = new Date(); // 获取当前时间，返回一个日期对象
+
+    console.log("date: ", date);
+    console.log("date.getFullYear(): ", date.getFullYear()); // 返回当前年份
+    console.log("date.getMonth(): ", date.getMonth()); // 返回当前月份 0-11
+    console.log("date.getDate(): ", date.getDate()); // 返回当前日期 1-31
+    console.log("date.getDay(): ", date.getDay()); // 返回当前周几 0-6
+    console.log("date.getHours(): ", date.getHours()); // 返回当前小时 0-23
+    console.log("date.getMinutes(): ", date.getMinutes()); // 返回当前分钟 0-59
+    console.log("date.getSeconds(): ", date.getSeconds()); // 返回当前秒数 0-59
+    console.log("date.getMilliseconds(): ", date.getMilliseconds()); // 返回当前的毫秒数
+    console.log("date.getTime(): ", date.getTime()); // 返回从1970年1月1日至今的毫秒数
+
+    console.log("date.setFullYear(3000): ", date.setFullYear(3000)); // 设置当前年份，返回1970年1月1日到当前日期的毫秒数
+    console.log("date.setMonth(1): ", date.setMonth(1)); // 设置当前月份 0-11，返回1970年1月1日到当前日期的毫秒数
+    console.log("date.setDate(12): ", date.setDate(12)); // 设置当前日期 1-31，返回1970年1月1日到当前日期的毫秒数
+    console.log("date.setHours(10): ", date.setHours(10)); // 设置当前小时 0-23，返回1970年1月1日到当前日期的毫秒数
+    console.log("date.setMinutes(30): ", date.setMinutes(30)); // 设置当前分钟 0-59，返回1970年1月1日到当前日期的毫秒数
+    console.log("date.setSeconds(30): ", date.setSeconds(30)); // 设置当前秒数 0-59，返回1970年1月1日到当前日期的毫秒数
+    console.log("date.setMilliseconds(120): ", date.setMilliseconds(120));
+    console.log("date.setTime(32507317830120): ", date.setTime(32507317830120)); // 以毫秒的方式，设置当前日期对象
+
+    console.log(
+        "new Date(3000, 5, 30, 20, 30, 30, 172): ",
+        new Date(3000, 5, 30, 20, 30, 30, 172),
+    ); // 创建日期对象时，直接规定日期对象的年、月、日、时、分、秒、毫秒数
+</script>
