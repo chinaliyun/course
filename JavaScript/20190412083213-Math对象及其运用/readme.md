@@ -48,9 +48,9 @@
 
 ![](./images/02.png)
 
-## Math.random()
+## Math.round()
 
-`Math.random()`方法用于四舍五入，返回四舍五入后的结果
+`Math.round()`方法用于四舍五入，返回四舍五入后的结果
 
 ```html
 <script>
