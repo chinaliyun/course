@@ -1,0 +1,23 @@
+<script>
+    var a, res;
+
+    a = "3.14";
+    res = parseFloat(a);
+    console.log("解析前的字符串：", a);
+    console.log("解析后的返回值：", res);
+
+    a = "314e-2";
+    res = parseFloat(a);
+    console.log("解析前的字符串：", a);
+    console.log("解析后的返回值：", res);
+
+    a = "0.0314E+2";
+    res = parseFloat(a);
+    console.log("解析前的字符串：", a);
+    console.log("解析后的返回值：", res);
+
+    a = "3.14 welcome";
+    res = parseFloat(a);
+    console.log("解析前的字符串：", a);
+    console.log("解析后的返回值：", res);
+</script>

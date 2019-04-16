@@ -1,0 +1,13 @@
+<script>
+    var reg;
+
+    reg = new RegExp("l", "gi");
+    console.log("hello Lily".match(reg));
+
+    reg = new RegExp(/l/, "gi");
+    console.log("hello Lily".match(reg));
+
+    // 新的写法：
+    reg = /l/gi;
+    console.log("hello Lily".match(reg));
+</script>

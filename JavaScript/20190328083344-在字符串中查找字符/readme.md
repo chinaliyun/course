@@ -61,3 +61,25 @@
 [代码案例](./demo/demo03.html)
 
 ![](./images/03.png)
+
+## match()
+
+`string.match(pattern)`方法，也是用来判断字符串中是否包含指定字符的，但该方法会返回一个数组。该数组包含匹配的字符、第一次发现匹配字符的下标、原字符串内容等信息。如果没有匹配字符，该函数返回`null`
+
+```html
+<script>
+    var str, res;
+    str = "welcome lily to lily's home";
+    console.log("str :", str);
+
+    res = str.match("lily");
+    console.log("str.match('lily') :", res);
+
+    res = str.match("l");
+    console.log("str.match('l') :", res);
+</script>
+```
+
+[代码案例](./demo/demo04.html)
+
+![](./images/04.png)

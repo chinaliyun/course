@@ -1,0 +1,18 @@
+<script>
+    var a = "welcome to (@中国)";
+    console.log("原字符串: ", a);
+
+    // 编码
+    var res1 = encodeURI(a);
+    console.log("encodeURI(a): ", res1);
+    // 解码
+    var str1 = decodeURIComponent(res1);
+    console.log("decodeURIComponent(res1): ", str1);
+
+    // 编码
+    var res2 = encodeURIComponent(a);
+    console.log("encodeURIComponent(a): ", res2);
+    // 解码
+    var str2 = decodeURI(res2);
+    console.log("decodeURI(res2): ", str2);
+</script>
