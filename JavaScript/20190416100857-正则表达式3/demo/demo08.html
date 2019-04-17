@@ -1,0 +1,12 @@
+<script>
+    var res;
+    // 匹配所有单词第一个字符是f的字符
+    res = "foo efo".match(/\bf/g);
+    console.log(res);
+    // 这里匹配的是foo中的f
+
+    // 匹配所有单词中最后一个字符是o的字符
+    res = "fro for".match(/o\b/g);
+    console.log(res);
+    // 这里匹配的是fro中的o
+</script>

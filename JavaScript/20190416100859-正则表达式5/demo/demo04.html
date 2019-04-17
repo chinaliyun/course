@@ -1,0 +1,10 @@
+<script>
+    var res;
+    // 匹配AABB类型的叠词
+    res = "aabb abac".match(/(.{1})\1(.{1})\2/g);
+    console.log(res);
+
+    // 匹配ABAC类型的叠词
+    res = "aabb abac".match(/(.{1}).\1./g);
+    console.log(res);
+</script>

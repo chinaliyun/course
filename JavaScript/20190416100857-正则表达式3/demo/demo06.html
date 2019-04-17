@@ -1,0 +1,11 @@
+<script>
+    var res;
+    res = /^\d{11}$/.test("18516081294");
+    console.log(res); // true
+
+    res = /^\d{11}$/.test("185160812943");
+    console.log(res); // false
+
+    res = /^\d{11}$/.test("1851608129");
+    console.log(res); // false
+</script>
