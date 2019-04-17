@@ -11,7 +11,7 @@
 
 ```html
 <script>
-    var a = "http://www.baidu.com?name=张三&height=30#11";
+    var a = "welcome to (中国)";
     console.log("a: ", a);
 
     var res1 = encodeURI(a);
