@@ -1,0 +1,18 @@
+<style>
+    body {
+        height: 150%;
+        width: 150%;
+    }
+</style>
+<script>
+    function scrollFn() {
+        window.scrollBy(10, 10);
+    }
+    // 5秒钟后，让水平和垂直方向的滚动条位置加10
+    var timer = window.setTimeout(scrollFn, 5000);
+
+    // 3秒后，取消定时器timer
+    window.setTimeout(function() {
+        window.clearInterval(timer);
+    }, 3000);
+</script>

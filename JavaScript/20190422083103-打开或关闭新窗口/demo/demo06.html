@@ -1,0 +1,10 @@
+<script>
+    var newWindow = window.open("./demo04.html", "new window demo04");
+
+    console.log("新窗口的name属性值是：", newWindow.name);
+
+    // 这是一个定时器，表示2秒后，修改新窗口的网址，跳转到demo02.html
+    setTimeout(function() {
+        newWindow.location.href = "./demo04.html";
+    }, 2000);
+</script>
