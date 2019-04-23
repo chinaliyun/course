@@ -12,7 +12,7 @@
 | `port`         | 设置或获取 url 中的端口号             |
 | `search`       | 设置或获取 url 中的查询部分           |
 | `hash`         | 设置或获取 url 的锚点部分             |
-| `reload(url)`  | 重新加载本页面                        |
+| `reload()`     | 重新加载本页面                        |
 | `assign(url)`  | 载入一个新页面                        |
 | `replace(url)` | 用新页面替换本页面                    |
 

@@ -7,7 +7,7 @@
 | navigator.appCodeName | 获取浏览器的代码名                     |
 | navigator.appName     | 获取浏览器的名称                       |
 | navigator.appVersion  | 获取浏览器的平台和版本信息             |
-| navigator.appPlatform | 获取浏览器的操作系统平台               |
+| navigator.platform    | 获取浏览器的操作系统平台               |
 | navigator.userAgent   | 获取浏览器给服务器发送信息时的头部信息 |
 
 ![](./images/01.png)
