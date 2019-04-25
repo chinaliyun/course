@@ -1,0 +1,12 @@
+<script>
+    var age = 30;
+    var p1 = {
+        age: 20,
+    };
+    function add() {
+        console.log("this.age: ", this.age);
+    }
+    add();
+    var newFn = add.bind(p1);
+    newFn();
+</script>

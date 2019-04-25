@@ -1,0 +1,12 @@
+<script>
+    var age = 30;
+    var p1 = {
+        age: 20,
+    };
+    function add(x, y) {
+        console.log("x: ", x, "y: ", y);
+        console.log("this.age: ", this.age);
+    }
+    add("zhangXueTong", 14);
+    add.apply(p1, ["liZhi", 14]);
+</script>

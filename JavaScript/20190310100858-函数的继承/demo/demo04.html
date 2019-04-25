@@ -1,0 +1,23 @@
+<script>
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    function Student(name, age, professional) {
+        this.professional = professional;
+        Person.call(this, name, age);
+    }
+    function Teacher(name, age, position) {
+        this.position = position;
+        Person.call(this, name, age);
+    }
+    var s1 = new Student("LiZhi", 16, "前端");
+    var s2 = new Student("ZhangXueTong", 16, "后端");
+    var t1 = new Teacher("LiYun", 27, "javascript");
+    var t2 = new Teacher("ZengXiaoWei", 26, "php");
+
+    console.log("s1: ", s1);
+    console.log("s2: ", s2);
+    console.log("t1: ", t1);
+    console.log("t2: ", t2);
+</script>
