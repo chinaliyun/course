@@ -2,7 +2,7 @@
 
 BOM 提供了几个函数，可以获取浏览器在显示器中的位置和浏览器的尺寸
 
-## screenX 和 screnLeft
+## screenX 和 screenLeft
 
 `window.screenX`和`window.screenLeft`属性用来获取浏览器在显示器中距离显示器最左侧的距离
 
@@ -11,7 +11,7 @@ console.log("浏览器到显示器左侧的距离：", window.screenX);
 console.log("浏览器到显示器左侧的距离：", window.screenLeft);
 ```
 
-## screenX 和 screnLeft
+## screenY 和 screenTop
 
 `window.screenY`和`window.screenTop`属性用来获取浏览器在显示器中距离显示器最顶部的距离
 

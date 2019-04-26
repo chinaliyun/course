@@ -1,0 +1,22 @@
+<script>
+    var age = 30;
+    var p1 = {
+        age: 20,
+    };
+    function add() {
+        console.log("this: ", this);
+        console.log("this.age: ", this.age);
+    }
+    var p1 = {
+        age: 40,
+        getAge: add,
+    };
+    p1.getAge();
+
+    var fn = add.bind(p1);
+    var p2 = {
+        age: 50,
+        getAge: fn,
+    };
+    p2.getAge();
+</script>
