@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>new document</title>
+    </head>
+    <body>
+        <a href="http://baidu.com" class="link">jump to baidu website</a>
+        <script>
+            var ele = document.querySelector("a");
+            console.log("a修改前的文本内容： ", ele.textContent);
+
+            ele.textContent = "jump to sina website";
+            console.log("a修改后的文本内容： ", ele.textContent);
+        </script>
+    </body>
+</html>

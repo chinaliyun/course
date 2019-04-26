@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>new document</title>
+    </head>
+    <body>
+        <a href="http://baidu.com" class="link">jump to baidu website</a>
+        <script>
+            var ele = document.querySelector("a");
+            var hrefAttr = ele.attributes.href;
+            console.log("href属性修改前的文本内容： ", hrefAttr.nodeValue);
+
+            hrefAttr.nodeValue = "http://sina.com";
+            console.log("href属性修改后的文本内容： ", hrefAttr.nodeValue);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>new document</title>
+    </head>
+    <body>
+        <a href="http://baidu.com" class="link">jump to baidu website</a>
+        <script>
+            var ele = document.querySelector("a");
+            console.log("超链接的所有属性: ", ele.attributes);
+            var attrs = ele.attributes;
+            console.log("属性节点href的节点类型为：", attrs.href.nodeType);
+            console.log("属性节点href的节点名字为：", attrs.href.nodeName);
+            console.log("属性节点href的属性值为：", attrs.href.nodeValue);
+        </script>
+    </body>
+</html>

@@ -219,34 +219,3 @@ var t2 = {
 [案例源码](./demo/demo06.html)
 
 ![](./images/06.png)
-
-再来深入了解一下：
-
-```html
-<script>
-    var age = 30;
-    var p1 = {
-        age: 20,
-    };
-    function add() {
-        console.log("this: ", this);
-        console.log("this.age: ", this.age);
-    }
-    var p1 = {
-        age: 40,
-        getAge: add,
-    };
-    p1.getAge(); // 40
-
-    var fn = add.bind(p1);
-    var p2 = {
-        age: 50,
-        getAge: fn,
-    };
-    p2.getAge(); // 依然是40 ,
-</script>
-```
-
-前面我们明明说**当函数有调用者时，函数内的 this 指向调用者本身**， 为什么这里`p2.getAge()`调用时，`this`依然指向了`p1`呢？
-
-这是因为`fn`是通过`bind`更改了`this`指向后返回的函数，函数在调用时，不会因为有调用者，就把`this`重新指向调用者本身。

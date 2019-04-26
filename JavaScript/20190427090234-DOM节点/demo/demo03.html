@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>new document</title>
+    </head>
+    <body>
+        <!-- 这是注释 -->
+        hello world
+        <div class="content">we are family</div>
+        <a href="http://baidu.com">jump to baidu website</a>
+        <script>
+            console.log(document.body.childNodes);
+            // 元素节点的节点类型标识符是1，nodeName是标签名，textContent是元素的所有文字内容
+            var ele = document.querySelector("a");
+            console.log("a元素的节点类型为：", ele.nodeType);
+            console.log("a元素的节点名称为：", ele.nodeName);
+            console.log("a元素的文本内容：", ele.textContent);
+
+            // 文本节点的节点类型标识符是3，nodeName是#text ， textContent是文本内容
+            console.log("-----");
+            ele = document.body.childNodes[2];
+            console.log("文本的节点类型为：", ele.nodeType);
+            console.log("文本的节点名称为：", ele.nodeName);
+            console.log("文本的文本内容：", ele.textContent);
+
+            // 注释节点的类型标识符是8，nodeName是#comment，textContent是注释内容
+            console.log("-----");
+            ele = document.body.childNodes[1];
+            console.log("注释的节点类型为：", ele.nodeType);
+            console.log("注释的节点名称为：", ele.nodeName);
+            console.log("注释的文本内容：", ele.textContent);
+        </script>
+    </body>
+</html>
