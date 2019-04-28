@@ -29,6 +29,7 @@ document
         |--body
             |--#text
             |--#comment: 这是注释
+            |--#text
             |--div class: content
             |  |--#text: we are family
             |--#text
@@ -96,7 +97,6 @@ JS 引擎为这些节点提供了一些属性和方法，用来查找想要的�
 | `nodeType`    | 获取节点的类型                 |
 | `nodeName`    | 获取普通节点或者属性节点的名称 |
 | `textContent` | 获取节点的文本内容             |
-| `nodeValue`   | 获取属性节点的值               |
 
 ```htm
 <html>
@@ -142,7 +142,7 @@ JS 引擎为这些节点提供了一些属性和方法，用来查找想要的�
 
 > 注意属性节点的常量`Node.ATTRIBUE_NODE`常量已被废弃，不建议使用这种方式获取元素的属性值
 
-上面的案例中，`nodeType, nodeName, textContent`都有了，那么`nodeValue`用在哪里呢？html 中使用`attributes`获取到元素的所有属性，这个属性对象中包含了该元素的多个**属性节点**。属性节点也有它自己的`nodeType、nodeName`,如果想获取属性值，就可以使用属性节点的`nodeValue`属性了。
+html 中使用`attributes`获取到元素的所有属性，这个属性对象中包含了该元素的多个**属性节点**。属性节点也有它自己的`nodeType、nodeName、textContent`属性,
 
 ```html
 <html>
@@ -157,7 +157,7 @@ JS 引擎为这些节点提供了一些属性和方法，用来查找想要的�
             var attrs = ele.attributes;
             console.log("属性节点href的节点类型为：", attrs.href.nodeType);
             console.log("属性节点href的节点名字为：", attrs.href.nodeName);
-            console.log("属性节点href的属性值为：", attrs.href.nodeValue);
+            console.log("属性节点href的属性值为：", attrs.href.textContent);
         </script>
     </body>
 </html>
@@ -193,7 +193,7 @@ JS 引擎为这些节点提供了一些属性和方法，用来查找想要的�
 
 ![](./images/05.png)
 
-> 如果想修改超链接`href`的文本内容，也可以借助`nodeValue`去修改，但是这个方法**不被推荐使用**，后面会讲一组专门用来获取、修改元素属性和属性值的方法。这里简单写一下怎么用`nodeValue`修改元素某个属性的值。
+> 如果想修改超链接`href`的文本内容，也可以借助`textContent`去修改，但是这个方法**不被推荐使用**，后面会讲一组专门用来获取、修改元素属性和属性值的方法。这里简单写一下怎么用`textContent`修改元素某个属性的值。
 
 ```html
 <html>
@@ -205,10 +205,10 @@ JS 引擎为这些节点提供了一些属性和方法，用来查找想要的�
         <script>
             var ele = document.querySelector("a");
             var hrefAttr = ele.attributes.href;
-            console.log("href属性修改前的文本内容： ", hrefAttr.nodeValue);
+            console.log("href属性修改前的文本内容： ", hrefAttr.textContent);
 
-            hrefAttr.nodeValue = "http://sina.com";
-            console.log("href属性修改后的文本内容： ", hrefAttr.nodeValue);
+            hrefAttr.textContent = "http://sina.com";
+            console.log("href属性修改后的文本内容： ", hrefAttr.textContent);
         </script>
     </body>
 </html>
