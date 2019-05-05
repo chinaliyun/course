@@ -2,19 +2,19 @@
 
 浏览器提供了一个`location`接口，用来操作浏览器的地址栏。
 
-| 属性/方法      | 作用                                  |
-| -------------- | ------------------------------------- |
-| `href`         | 设置或获取 当前窗口完整的 url         |
-| `protocol`     | 设置或获取 url 中的协议               |
-| `host`         | 设置或获取 url 中的主机名(域名)和端口 |
-| `hostname`     | 设置或获取 url 中的主机名(域名)       |
-| `pathname`     | 设置或获取 url 中的文件路径           |
-| `port`         | 设置或获取 url 中的端口号             |
-| `search`       | 设置或获取 url 中的查询部分           |
-| `hash`         | 设置或获取 url 的锚点部分             |
-| `reload()`     | 重新加载本页面                        |
-| `assign(url)`  | 载入一个新页面                        |
-| `replace(url)` | 用新页面替换本页面                    |
+| 属性/方法               | 作用                                  |
+| ----------------------- | ------------------------------------- |
+| `location.href`         | 设置或获取 当前窗口完整的 url         |
+| `location.protocol`     | 设置或获取 url 中的协议               |
+| `location.host`         | 设置或获取 url 中的主机名(域名)和端口 |
+| `location.hostname`     | 设置或获取 url 中的主机名(域名)       |
+| `location.pathname`     | 设置或获取 url 中的文件路径           |
+| `location.port`         | 设置或获取 url 中的端口号             |
+| `location.search`       | 设置或获取 url 中的查询部分           |
+| `location.hash`         | 设置或获取 url 的锚点部分             |
+| `location.reload()`     | 重新加载本页面                        |
+| `location.assign(url)`  | 载入一个新页面                        |
+| `location.replace(url)` | 用新页面替换本页面                    |
 
 一个标准的网址规则如下：
 

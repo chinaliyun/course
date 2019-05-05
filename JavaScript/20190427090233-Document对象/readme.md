@@ -4,11 +4,11 @@
 
 通过 document 获取当前页面的一些信息：
 
-| 属性          | 作用                               |
-| ------------- | ---------------------------------- |
-| `title`       | 获取当前页面的标题                 |
-| `documentURI` | 获取当前页面的 URI 地址            |
-| `contenType`  | 获取当前页面的`content-type`属性值 |
+| 属性                   | 作用                               |
+| ---------------------- | ---------------------------------- |
+| `document.title`       | 获取当前页面的标题                 |
+| `document.documentURI` | 获取当前页面的 URI 地址            |
+| `document.contenType`  | 获取当前页面的`content-type`属性值 |
 
 ```html
 <head>
@@ -27,26 +27,26 @@
 
 通过`document`获取页面上的指定类型元素：
 
-| 属性/方法         | 作用                    |
-| ----------------- | ----------------------- |
-| `documentElement` | 获取 `html` 元素        |
-| `head`            | 获取 `head` 元素        |
-| `body`            | 获取 `body` 元素        |
-| `scripts`         | 返回所有的`scripts`元素 |
-| `links`           | 返回所有的超链接元素    |
-| `images`          | 返回所有的`img`元素     |
-| `forms`           | 返回所有的`form`元素    |
+| 属性/方法                  | 作用                    |
+| -------------------------- | ----------------------- |
+| `document.documentElement` | 获取 `html` 元素        |
+| `document.head`            | 获取 `head` 元素        |
+| `document.body`            | 获取 `body` 元素        |
+| `document.scripts`         | 返回所有的`scripts`元素 |
+| `document.links`           | 返回所有的超链接元素    |
+| `document.images`          | 返回所有的`img`元素     |
+| `document.forms`           | 返回所有的`form`元素    |
 
 通过其他方式获取元素
 
-| 方法                                | 作用                                                        |
-| ----------------------------------- | ----------------------------------------------------------- |
-| `getElementById(id)`                | 通过`id`属性值查找元素，返回该元素                          |
-| `getElementsByName(name)`           | 通过元素的 name 属性值查找元素，返回**所有**符合条件的元素  |
-| `getElementsByTagName(tagName)`     | 通过元素的标签名查找元素，返回**所有**符合条件的元素        |
-| `getElementsByClassName(className)` | 通过元素的 class 属性值查找元素，返回**所有**符合条件的元素 |
-| `querySelector(cssSelector)`        | 通过 css 选择器查找元素，返回**第 1 个**符合条件的元素      |
-| `querySelectorAll(cssSelector)`     | 通过 css 选择器查找元素，返回**所有**符合条件的元素         |
+| 方法                                         | 作用                                                        |
+| -------------------------------------------- | ----------------------------------------------------------- |
+| `document.getElementById(id)`                | 通过`id`属性值查找元素，返回该元素                          |
+| `document.getElementsByName(name)`           | 通过元素的 name 属性值查找元素，返回**所有**符合条件的元素  |
+| `document.getElementsByTagName(tagName)`     | 通过元素的标签名查找元素，返回**所有**符合条件的元素        |
+| `document.getElementsByClassName(className)` | 通过元素的 class 属性值查找元素，返回**所有**符合条件的元素 |
+| `document.querySelector(cssSelector)`        | 通过 css 选择器查找元素，返回**第 1 个**符合条件的元素      |
+| `document.querySelectorAll(cssSelector)`     | 通过 css 选择器查找元素，返回**所有**符合条件的元素         |
 
 ## createElement()
 
