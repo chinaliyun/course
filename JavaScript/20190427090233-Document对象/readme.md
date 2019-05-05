@@ -47,15 +47,3 @@
 | `document.getElementsByClassName(className)` | 通过元素的 class 属性值查找元素，返回**所有**符合条件的元素 |
 | `document.querySelector(cssSelector)`        | 通过 css 选择器查找元素，返回**第 1 个**符合条件的元素      |
 | `document.querySelectorAll(cssSelector)`     | 通过 css 选择器查找元素，返回**所有**符合条件的元素         |
-
-## createElement()
-
-document 除了获取先要的元素之外，还可以创建一个新的元素。创建的新元素可以被插入到当前文档的指定位置中去。
-
-```html
-<!-- 这段代码会在页面中插入一个input输入框 -->
-<script>
-    var ele = document.createElement("input");
-    document.body.append(ele);
-</script>
-```

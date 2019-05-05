@@ -2,13 +2,13 @@
 
 浏览器提供了`navigator`接口，用来获取当前浏览器的版本信息，该接口有以下属性
 
-| 属性                  | 作用                                   |
-| --------------------- | -------------------------------------- |
-| navigator.appCodeName | 获取浏览器的代码名                     |
-| navigator.appName     | 获取浏览器的名称                       |
-| navigator.appVersion  | 获取浏览器的平台和版本信息             |
-| navigator.platform    | 获取浏览器的操作系统平台               |
-| navigator.userAgent   | 获取浏览器给服务器发送信息时的头部信息 |
+| 属性                    | 作用                                   |
+| ----------------------- | -------------------------------------- |
+| `navigator.appCodeName` | 获取浏览器的代码名                     |
+| `navigator.appName`     | 获取浏览器的名称                       |
+| `navigator.appVersion`  | 获取浏览器的平台和版本信息             |
+| `navigator.platform`    | 获取浏览器的操作系统平台               |
+| `navigator.userAgent`   | 获取浏览器给服务器发送信息时的头部信息 |
 
 ![](./images/01.png)
 

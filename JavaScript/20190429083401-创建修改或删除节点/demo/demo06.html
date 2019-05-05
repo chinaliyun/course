@@ -1,0 +1,11 @@
+<div>
+    <h1>hello world</h1>
+</div>
+<script>
+    window.onload = function() {
+        var divEle = document.querySelector("div");
+        var h1Ele = document.querySelector("h1");
+        var res = divEle.removeChild(h1Ele);
+        console.log(res);
+    };
+</script>

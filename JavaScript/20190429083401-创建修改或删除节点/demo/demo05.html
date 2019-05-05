@@ -1,0 +1,9 @@
+<h1>hello world</h1>
+<script>
+    window.onload = function() {
+        var h1Ele = document.querySelector("h1");
+        var newNode = document.createElement("a");
+        newNode.textContent = "这是个超链接的文本内容";
+        document.body.replaceChild(newNode, h1Ele);
+    };
+</script>

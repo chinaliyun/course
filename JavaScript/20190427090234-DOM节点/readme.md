@@ -140,9 +140,9 @@ JS 引擎为这些节点提供了一些属性和方法，用来查找想要的�
 
 ## 属性节点
 
-> 注意属性节点的常量`Node.ATTRIBUE_NODE`常量已被废弃，不建议使用这种方式获取元素的属性值
+js 中使用`attributes`获取到元素的所有属性，这些属性也叫做**属性节点**，这属性节点也有它自己的`nodeType、nodeName、textContent`属性
 
-html 中使用`attributes`获取到元素的所有属性，这个属性对象中包含了该元素的多个**属性节点**。属性节点也有它自己的`nodeType、nodeName、textContent`属性,
+> 注意：不建议使用这种方式获取元素的属性值
 
 ```html
 <html>
