@@ -1,0 +1,36 @@
+<section>first section element</section>
+<div>
+    <h1>hello world</h1>
+    <h1>hello world</h1>
+    <a href="http://baidu.com" target="_blank" name="link" class="link-a"
+        >jump to baidu website</a
+    >
+    <p>welcome to china</p>
+</div>
+<section>second section element</section>
+<script>
+    var div = document.querySelector("div");
+    console.log("div中所有节点：", div.childNodes);
+    console.log("div中所有元素节点：", div.children);
+    console.log("div中所有元素节点的个数：", div.childElementCount);
+    console.log("div中第一个子元素节点：", div.firstElementChild);
+    console.log("div中最后一个子元素节点：", div.lastElementChild);
+    console.log("div的上一个元素节点：", div.previousElementSibling);
+    console.log("div的下一个元素节点：", div.nextElementSibling);
+    console.log(
+        "div中查找所有类名为'link-a'的元素节点：",
+        div.getElementsByClassName("link-a"),
+    );
+    console.log(
+        "div中查找所有标签为'a'的元素节点：",
+        div.getElementsByTagName("a"),
+    );
+    console.log(
+        "div中通过css选择器'h1'查找第一个元素：",
+        div.querySelector("h1"),
+    );
+    console.log(
+        "div中通过css选择器'h1'查找全部元素：",
+        div.querySelectorAll("h1"),
+    );
+</script>

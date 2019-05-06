@@ -1,0 +1,15 @@
+<div>
+    <a href="http://baidu.com">jump to baidu website</a>
+</div>
+<div>
+    <a href="http://sina.com">jump to sina website</a>
+</div>
+<div>
+    <a href="http://baidu.com">jump to baidu website</a>
+</div>
+<script>
+    var divs = document.querySelectorAll("div");
+    console.log(divs[0].isEqualNode(divs[1]));
+    console.log(divs[0].isEqualNode(divs[2]));
+    console.log(divs[1].isEqualNode(divs[2]));
+</script>

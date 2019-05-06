@@ -1,0 +1,12 @@
+<p>hello world</p>
+<p>hello world</p>
+<script>
+    var p1 = document.getElementsByTagName("p");
+    var p2 = document.querySelectorAll("p");
+    console.log("p1: ", p1, ",       p1.length: ", p1.length);
+    console.log("p2: ", p2, ",        p2.length: ", p2.length);
+
+    document.body.append(p1[0].cloneNode(true));
+    console.log("p1: ", p1, ",        p1.length: ", p1.length);
+    console.log("p2: ", p2, ",        p2.length: ", p2.length);
+</script>
