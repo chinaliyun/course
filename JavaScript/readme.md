@@ -109,3 +109,26 @@
 | `node.cloneNode([deep])`                     | 复制节点 node，返回复制的节点                                  |
 | `parentNode.replaceChild(newNode, oldNode)`  | 用新节点替换旧节点                                             |
 | `parentNode.remove(childNode)`               | 删除父节点中指定的子节点                                       |
+
+## 判断节点
+
+| 属性/方法                   | 作用                               |
+| --------------------------- | ---------------------------------- |
+| `node.isConnected`          | 判断元素是否已经被渲染在当前页面中 |
+| `node.hasChildNodes()`      | 判断节点是否有子节点               |
+| `parentNode.contains(node)` | 判断节点是否是另一个节点的后代     |
+| `node1.isEqualNode(node2)`  | 判断两个节点是否相同               |
+
+## 获取元素节点
+
+| 属性/方法                               | 作用                                                                       |
+| --------------------------------------- | -------------------------------------------------------------------------- |
+| `element.getElementsByClassName(name)`  | 在元素的后代元素中根据**类名**查找元素，返回**所有**符合条件的元素         |
+| `element.getElementsByTagName(name)`    | 在元素的后代元素中根据**标签名**查找元素，返回**所有**符合条件的元素       |
+| `element.querySelector(cssSelector)`    | 在元素的后代元素中使用**css 选择器**查找元素，返回**第一个**符合条件的元素 |
+| `element.querySelectorAll(cssSelector)` | 在元素的后代元素中使用**css 选择器**查找元素，返回**所有**符合条件的元素   |
+| `element.children`                      | 获取元素的所有子元素                                                       |
+| `element.firstElementChild`             | 获取元素的第一个子元素                                                     |
+| `element.lastElementChild`              | 获取元素的最后一个子元素                                                   |
+| `element.previousElementSibling`        | 获取元素的上一个兄弟元素                                                   |
+| `element.nextElementSibling`            | 获取元素的下一个兄弟元素                                                   |
