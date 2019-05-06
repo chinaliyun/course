@@ -1,3 +1,96 @@
+## Array
+
+| 属性/方法                                                             | 作用                                                           |
+| --------------------------------------------------------------------- | -------------------------------------------------------------- |
+| `arr.length`                                                          | 获取数组中元素的个数                                           |
+| `arr.push(item)`                                                      | 往数组结尾插入新元素，返回数组长度                             |
+| `arr.unshift(item)`                                                   | 往数组开头插入新元素，返回数组长度                             |
+| `arr.pop(item)`                                                       | 删除数组最后一个元素，返回删除的元素                           |
+| `arr.shift(item)`                                                     | 删除数组第一个元素，返回删除的元素                             |
+| `arr.splice(index,length,item1,item2)`                                | 在数组的指定位置删除指定数量元素，并添加新元素                 |
+| `arr.concat(item1, item2)`                                            | 合并多个数组，返回合并后的数组                                 |
+| `arr.map(fn(currentValue, currentIndex, arr) [, thisTarget])`         | 遍历数组，处理之后组成新的数组                                 |
+| `arr.forEach(fn(currentValue, currentIndex, arr) [, thisTarget])`     | 遍历数组，没有返回值                                           |
+| `arr.every(fn(currentValue, currentIndex, arr) [, thisTarget])`       | 判断数组中是否每个元素都符合条件                               |
+| `arr.some(fn(currentValue, currentIndex, arr) [, thisTarget])`        | 判断数组中是否至少一个元素符合条件                             |
+| `arr.includes(item)`                                                  | 判断数组中是否包含指定元素                                     |
+| `arr.indexOf(item)`                                                   | 在数组中**从前向后**查找指定元素，返回第一个符合条件的元素下标 |
+| `arr.lastIndexOf(item)`                                               | 在数组中**从后向前**查找指定元素，返回第一个符合条件的元素下标 |
+| `arr.find(fn(currentValue, currentIndex, arr) [, thisTarget])`        | 返回第一个符合条件的元素                                       |
+| `arr.findIndex(fn(currentValue, currentIndex, arr) [, thisTarget])`   | 返回第一个符合条件的元素的索引值(下标)                         |
+| `arr.filter(fn(currentValue, currentIndex, arr) [, thisTarget])`      | 筛选出所有符合条件的元素，并返回它们组成的新数组               |
+| `arr.sort(fn(currentValue, currentIndex, arr) [, thisTarget])`        | 对数组中的元素重新进行排序                                     |
+| `arr.reverse()`                                                       | 翻转数组中的元素                                               |
+| `arr.reduce(fn(currentValue, currentIndex, arr) [, thisTarget])`      | 对数组中的元素**从左到右**按照指定规则统计                     |
+| `arr.reduceRight(fn(currentValue, currentIndex, arr) [, thisTarget])` | 对数组中的元素**从右到左**按照指定规则统计                     |
+| `arr.join(str)`                                                       | 使用指定字符把数组中的元素拼接成字符串                         |
+| `arr.slice(beginIndex[, endIndex])`                                   | 返回指定的开始位置到结束位置之间的元素，不包含结束位置的元素   |
+
+## String
+
+| 属性/方法                             | 作用                                                                                  |
+| ------------------------------------- | ------------------------------------------------------------------------------------- |
+| `str.length`                          | 返回字符串的长度                                                                      |
+| `str.includes(target)`                | 判断字符串中是否包含指定字符                                                          |
+| `str.charAt(index)`                   | 返回字符串中指定位置的字符                                                            |
+| `str.charCodeAt(index)`               | 返回字符串中指定位置的字符的 unicode 码点(10 进制)                                    |
+| `str.slice(beginIndex, endIndex)`     | 返回指定的开始位置到结束位置之间的字符，不包含结束位置的字符                          |
+| `str.substr(beginIndex, length)`      | 从指定位置开始截取指定数量个字符，并返回这些字符                                      |
+| `str.substring(beginIndex, endIndex)` | 返回指定的开始位置到结束位置之间的字符，不包含结束位置的字符，参数小于 0 的会先转成 0 |
+| `str.indexOf(target)`                 | 在字符串中**从前向后**查找指定字符，返回匹配字符中第一个字符所在索引值，没有返回-1    |
+| `str.lastIndexOf(target)`             | 在字符串中**从后向前**查找指定字符，返回匹配字符中第一个字符所在索引值，没有返回-1    |
+| `str.match(target)`                   | 查找字符串中符合条件的字符                                                            |
+| `str.toUpperCase()`                   | 把字符串中的小写字母转成大写字母                                                      |
+| `str.toLowerCase()`                   | 把字符串中的大写字母转成小写字母                                                      |
+| `str.trim()`                          | 去除字符串中前后的空格                                                                |
+| `str.concat(str1, str2)`              | 拼接多个字符串                                                                        |
+| `str.split(condation)`                | 使用指定字符分割字符串，返回分割后的字符组成的数组                                    |
+| `str.replace(newStr, oldStr)`         | 在字符串中使用新字符替换指定的旧字符                                                  |
+
+## Number
+
+| 属性/方法              | 作用                                             |
+| ---------------------- | ------------------------------------------------ |
+| `num.toFixed(x)`       | 把数字转为字符串，可以指定保留的小数部分数字位数 |
+| `num.toString(x)`      | 把数字转为字符串，并指定字符串的显示基数(进制)   |
+| `num.toExponential(x)` | 把数字转为 10 进制计数法                         |
+| `num.toPresion(x)`     | 把数字转为字符串，可以指定保留的整体数字位数     |
+
+## Math 对象
+
+| 属性/方法           | 作用                        |
+| ------------------- | --------------------------- |
+| `Math.random()`     | 获取一个 0-1 之间的随机小数 |
+| `Math.PI`           | 获取圆周率                  |
+| `Math.floor(n)`     | 对数字进行向下取整          |
+| `Math.ceil(n)`      | 对数字进行向上取整          |
+| `Math.round(n)`     | 对数字进行四舍五入          |
+| `Math.max(a,b,c,d)` | 找出最大的数字              |
+| `Math.min(a,b,c,d)` | 找出最小的数字              |
+
+## Date 对象
+
+| 属性/方法               | 作用                              |
+| ----------------------- | --------------------------------- |
+| `var date = new Date()` | 获取当前日期/时间                 |
+| `date.getFullYear()`    | 获取日期的年份                    |
+| `date.getMonth()`       | 获取日期的月份，从 0 开始         |
+| `date.getDate()`        | 获取日期的日期，从 1 开始         |
+| `date.getHours()`       | 获取日期的小时数，从 0 开始       |
+| `date.getMinutes()`     | 获取日期的分钟数，从 0 开始       |
+| `date.getSeconds()`     | 获取日期的秒数，从 0 开始         |
+| `date.getMillseconds()` | 获取日期的毫秒数，从 0 开始       |
+| `date.getDay()`         | 获取日期对应一周的时间，从 0 开始 |
+| `date.getTime()`        | 获取日期的时间戳                  |
+| `date.setFullYear()`    | 修改日期中的年份                  |
+| `date.setMonth()`       | 修改日期中的月份                  |
+| `date.setDate()`        | 修改日期中的日期                  |
+| `date.setHours()`       | 修改日期中的小时数                |
+| `date.setMinutes()`     | 修改日期中的分钟数                |
+| `date.setSeconds()`     | 修改日期中的秒数                  |
+| `date.setMillseconds()` | 修改日期中的毫秒数                |
+| `date.setTime()`        | 修改日期的时间戳                  |
+
 ## window 对象
 
 | 方法或属性                       | 作用                                                             |
