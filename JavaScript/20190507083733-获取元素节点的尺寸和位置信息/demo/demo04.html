@@ -1,0 +1,32 @@
+<style>
+    body {
+        margin: 0;
+    }
+    section {
+        width: 300px;
+        margin-left: 100px;
+        margin-top: 100px;
+        background-color: rgb(142, 201, 253);
+        border: 10px solid red;
+        padding: 20px;
+    }
+    div {
+        width: 200px;
+        height: 80px;
+        border: 10px solid red;
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
+<section>
+    <div>div element</div>
+    section element
+</section>
+
+<script>
+    var div = document.querySelector("div");
+    console.log("div.offsetLeft: ", div.offsetLeft);
+    console.log("div.offsetTop: ", div.offsetTop);
+    console.log("div.offsetWidth: ", div.offsetWidth);
+    console.log("div.offsetHeight: ", div.offsetHeight);
+</script>

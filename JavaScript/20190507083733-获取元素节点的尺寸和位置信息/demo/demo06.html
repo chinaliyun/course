@@ -1,0 +1,24 @@
+<style>
+    body {
+        height: 800px;
+    }
+    div {
+        width: 200px;
+        height: 80px;
+        border: 10px solid red;
+        padding: 10px;
+    }
+    div:nth-child(2) {
+        box-sizing: border-box;
+    }
+</style>
+<div>we are family1</div>
+<div>we are family2</div>
+
+<script>
+    var div1 = document.querySelector("div:nth-child(1)");
+    console.log("div1:", div1.getBoundingClientRect());
+
+    var div2 = document.querySelector("div:nth-child(2)");
+    console.log("div2:", div2.getBoundingClientRect());
+</script>

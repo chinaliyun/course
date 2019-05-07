@@ -116,13 +116,13 @@
 
 ## navigator 对象
 
-| 属性                  | 作用                                   |
-| --------------------- | -------------------------------------- |
-| navigator.appCodeName | 获取浏览器的代码名                     |
-| navigator.appName     | 获取浏览器的名称                       |
-| navigator.appVersion  | 获取浏览器的平台和版本信息             |
-| navigator.platform    | 获取浏览器的操作系统平台               |
-| navigator.userAgent   | 获取浏览器给服务器发送信息时的头部信息 |
+| 属性                    | 作用                                   |
+| ----------------------- | -------------------------------------- |
+| `navigator.appCodeName` | 获取浏览器的代码名                     |
+| `navigator.appName`     | 获取浏览器的名称                       |
+| `navigator.appVersion`  | 获取浏览器的平台和版本信息             |
+| `navigator.platform`    | 获取浏览器的操作系统平台               |
+| `navigator.userAgent`   | 获取浏览器给服务器发送信息时的头部信息 |
 
 ## location 对象
 
@@ -170,29 +170,19 @@
 | `document.querySelector(cssSelector)`        | 通过 css 选择器查找元素，返回**第 1 个**符合条件的元素      |
 | `document.querySelectorAll(cssSelector)`     | 通过 css 选择器查找元素，返回**所有**符合条件的元素         |
 
-## 查找节点
+## 操作 DOM 节点
 
-| 属性/方法              | 作用                                               |
-| ---------------------- | -------------------------------------------------- |
-| `node.childNodes`      | 获取当前节点包含的所有节点，返回一个 NodeList 对象 |
-| `node.parentNode`      | 获取当前节点的父节点                               |
-| `node.firstChild`      | 获取当前节点包含的第一个子节点 ，没有返回`null`    |
-| `node.lastChild`       | 获取当前节点包含的最后一个子节点，没有返回`null`   |
-| `node.previousSibling` | 获取当前节点的前一个兄弟节点                       |
-| `node.nextSibling`     | 获取当前节点的后一个兄弟节点                       |
-
-## 节点属性
-
-| 属性               | 作用                           |
-| ------------------ | ------------------------------ |
-| `node.nodeType`    | 获取节点的类型                 |
-| `node.nodeName`    | 获取普通节点或者属性节点的名称 |
-| `node.textContent` | 获取节点的文本内容             |
-
-## 操作节点
-
-| 方法                                         | 作用                                                           |
+| 属性/方法                                    | 作用                                                           |
 | -------------------------------------------- | -------------------------------------------------------------- |
+| `node.childNodes`                            | 获取当前节点包含的所有节点，返回一个 NodeList 对象             |
+| `node.parentNode`                            | 获取当前节点的父节点                                           |
+| `node.firstChild`                            | 获取当前节点包含的第一个子节点 ，没有返回`null`                |
+| `node.lastChild`                             | 获取当前节点包含的最后一个子节点，没有返回`null`               |
+| `node.previousSibling`                       | 获取当前节点的前一个兄弟节点                                   |
+| `node.nextSibling`                           | 获取当前节点的后一个兄弟节点                                   |
+| `node.nodeType`                              | 获取节点的类型                                                 |
+| `node.nodeName`                              | 获取普通节点或者属性节点的名称                                 |
+| `node.textContent`                           | 获取节点的文本内容                                             |
 | `document.createElement(tagName)`            | 创建一个元素节点                                               |
 | `document.createTextNode(data)`              | 创建一个文本节点                                               |
 | `document.createComment(data)`               | 创建一个注释节点                                               |
@@ -202,15 +192,10 @@
 | `node.cloneNode([deep])`                     | 复制节点 node，返回复制的节点                                  |
 | `parentNode.replaceChild(newNode, oldNode)`  | 用新节点替换旧节点                                             |
 | `parentNode.remove(childNode)`               | 删除父节点中指定的子节点                                       |
-
-## 判断节点
-
-| 属性/方法                   | 作用                               |
-| --------------------------- | ---------------------------------- |
-| `node.isConnected`          | 判断元素是否已经被渲染在当前页面中 |
-| `node.hasChildNodes()`      | 判断节点是否有子节点               |
-| `parentNode.contains(node)` | 判断节点是否是另一个节点的后代     |
-| `node1.isEqualNode(node2)`  | 判断两个节点是否相同               |
+| `node.isConnected`                           | 判断元素是否已经被渲染在当前页面中                             |
+| `node.hasChildNodes()`                       | 判断节点是否有子节点                                           |
+| `parentNode.contains(node)`                  | 判断节点是否是另一个节点的后代                                 |
+| `node1.isEqualNode(node2)`                   | 判断两个节点是否相同                                           |
 
 ## 获取元素节点
 
