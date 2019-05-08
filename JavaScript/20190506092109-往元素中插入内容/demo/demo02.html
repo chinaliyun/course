@@ -1,0 +1,16 @@
+<section></section>
+<div>
+    <p>p element</p>
+</div>
+<section></section>
+
+<script>
+    var div = document.querySelector("div");
+    div.insertAdjacentHTML("beforebegin", "<h3>beforebegin</h3>");
+
+    div.insertAdjacentHTML("afterbegin", "<h3>afterbegin</h3>");
+
+    div.insertAdjacentHTML("beforeend", "<h3>beforeend</h3>");
+
+    div.insertAdjacentHTML("afterend", "<h3>afterend</h3>");
+</script>

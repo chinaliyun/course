@@ -1,0 +1,28 @@
+<div>div element</div>
+<script>
+    var div = document.querySelector("div");
+    var divAttrs = div.attributes;
+    console.log("判断元素是否有属性：", div.hasAttributes());
+    console.log("判断元素是否有class属性：", div.hasAttribute("class"));
+
+    // 新增class属性,设置属性值为logo
+    div.setAttribute("class", "logo");
+    console.log("元素的class属性值：", div.attributes.class.value);
+
+    // 新增id属性，属性值为member
+    div.setAttribute("id", "member");
+    console.log("元素的id属性值：", div.attributes.id.value);
+
+    // 获取class的所有属性名
+    console.log("获取所有属性名：", div.getAttributeNames());
+    console.log("获取所有class属性值：", div.getAttribute("class"));
+    console.log("获取所有id属性值：", div.getAttribute("id"));
+
+    // 修改class属性值为logo2
+    div.setAttribute("class", "logo2");
+    console.log("元素的class属性值：", div.getAttribute("class"));
+
+    // 删除class属性
+    div.removeAttribute("class");
+    console.log("元素的所有属性名： ", div.getAttributeNames());
+</script>

@@ -1,0 +1,16 @@
+<div class="logo1 logo2" id="member" title="logo title"></div>
+<script>
+    var div = document.querySelector("div");
+    console.log("div.attributes: ");
+    console.log(div.attributes);
+
+    console.log("通过'属性节点.value'获取-------------------");
+    console.log("    class的属性值: ", div.attributes.class.value);
+    console.log("    id的属性值: ", div.attributes.id.value);
+    console.log("    title的属性值: ", div.attributes.title.value);
+
+    console.log("通过'属性节点.nodeValue'获取-------------------");
+    console.log("    class的属性值: ", div.attributes.class.nodeValue);
+    console.log("    id的属性值: ", div.attributes.id.nodeValue);
+    console.log("    title的属性值: ", div.attributes.title.nodeValue);
+</script>

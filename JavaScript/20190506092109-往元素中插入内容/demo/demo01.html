@@ -1,0 +1,21 @@
+<section></section>
+<div>
+    <p>p element</p>
+</div>
+<section></section>
+
+<script>
+    var div = document.querySelector("div");
+    var h3 = document.createElement("h3");
+    h3.textContent = "beforebegin";
+    div.insertAdjacentElement("beforebegin", h3.cloneNode(true));
+
+    h3.textContent = "afterbegin";
+    div.insertAdjacentElement("afterbegin", h3.cloneNode(true));
+
+    h3.textContent = "beforeend";
+    div.insertAdjacentElement("beforeend", h3.cloneNode(true));
+
+    h3.textContent = "afterend";
+    div.insertAdjacentElement("afterend", h3.cloneNode(true));
+</script>

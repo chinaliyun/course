@@ -40,6 +40,8 @@
 
 ![](./images/02.png)
 
+## class 属性的值
+
 这些标签属性中`class`属于特殊情况，不能通过这个属性获取元素的类名，要通过`element.className`或者`element.classList`来获取：
 
 ```html
