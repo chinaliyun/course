@@ -1,0 +1,42 @@
+# 连续操作元素样式的案例
+
+```html
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(74, 194, 154);
+        transition: all 0.5s linear;
+        position: fixed;
+        left: 10px;
+        top: 10px;
+    }
+</style>
+<div></div>
+<script>
+    window.onload = function() {
+        var div = document.querySelector("div");
+        setTimeout(function() {
+            div.style.left = "100px";
+            div.style.backgroundColor = "rgb(194, 162, 74)";
+        }, 1000);
+
+        setTimeout(function() {
+            div.style.top = "100px";
+            div.style.backgroundColor = "rgb(194, 74, 164)";
+        }, 2000);
+
+        setTimeout(function() {
+            div.style.left = "10px";
+            div.style.backgroundColor = "rgb(90, 139, 230)";
+        }, 3000);
+
+        setTimeout(function() {
+            div.style.top = "10px";
+            div.style.backgroundColor = "rgb(74, 194, 154)";
+        }, 4000);
+    };
+</script>
+```
+
+[案例源码](./demo/demo01.html)

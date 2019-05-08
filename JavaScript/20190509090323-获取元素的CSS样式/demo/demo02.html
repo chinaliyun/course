@@ -1,0 +1,13 @@
+<style>
+    h1 {
+        color: red;
+    }
+</style>
+
+<h1 style="background-color: green;">hello world</h1>
+<script>
+    var h1 = document.querySelector("h1");
+    var styles = window.getComputedStyle(h1);
+    console.log("color: ", styles.color);
+    console.log("background-color: ", styles.backgroundColor);
+</script>

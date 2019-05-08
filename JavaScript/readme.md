@@ -70,26 +70,26 @@
 
 ## Date 对象
 
-| 属性/方法               | 作用                              |
-| ----------------------- | --------------------------------- |
-| `var date = new Date()` | 获取当前日期/时间                 |
-| `date.getFullYear()`    | 获取日期的年份                    |
-| `date.getMonth()`       | 获取日期的月份，从 0 开始         |
-| `date.getDate()`        | 获取日期的日期，从 1 开始         |
-| `date.getHours()`       | 获取日期的小时数，从 0 开始       |
-| `date.getMinutes()`     | 获取日期的分钟数，从 0 开始       |
-| `date.getSeconds()`     | 获取日期的秒数，从 0 开始         |
-| `date.getMillseconds()` | 获取日期的毫秒数，从 0 开始       |
-| `date.getDay()`         | 获取日期对应一周的时间，从 0 开始 |
-| `date.getTime()`        | 获取日期的时间戳                  |
-| `date.setFullYear()`    | 修改日期中的年份                  |
-| `date.setMonth()`       | 修改日期中的月份                  |
-| `date.setDate()`        | 修改日期中的日期                  |
-| `date.setHours()`       | 修改日期中的小时数                |
-| `date.setMinutes()`     | 修改日期中的分钟数                |
-| `date.setSeconds()`     | 修改日期中的秒数                  |
-| `date.setMillseconds()` | 修改日期中的毫秒数                |
-| `date.setTime()`        | 修改日期的时间戳                  |
+| 属性/方法                | 作用                              |
+| ------------------------ | --------------------------------- |
+| `var date = new Date()`  | 获取当前日期/时间                 |
+| `date.getFullYear()`     | 获取日期的年份                    |
+| `date.getMonth()`        | 获取日期的月份，从 0 开始         |
+| `date.getDate()`         | 获取日期的日期，从 1 开始         |
+| `date.getHours()`        | 获取日期的小时数，从 0 开始       |
+| `date.getMinutes()`      | 获取日期的分钟数，从 0 开始       |
+| `date.getSeconds()`      | 获取日期的秒数，从 0 开始         |
+| `date.getMilliseconds()` | 获取日期的毫秒数，从 0 开始       |
+| `date.getDay()`          | 获取日期对应一周的时间，从 0 开始 |
+| `date.getTime()`         | 获取日期的时间戳                  |
+| `date.setFullYear()`     | 修改日期中的年份                  |
+| `date.setMonth()`        | 修改日期中的月份                  |
+| `date.setDate()`         | 修改日期中的日期                  |
+| `date.setHours()`        | 修改日期中的小时数                |
+| `date.setMinutes()`      | 修改日期中的分钟数                |
+| `date.setSeconds()`      | 修改日期中的秒数                  |
+| `date.setMilliseconds()` | 修改日期中的毫秒数                |
+| `date.setTime()`         | 修改日期的时间戳                  |
 
 ## window 对象
 
