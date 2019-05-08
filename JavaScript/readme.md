@@ -197,16 +197,34 @@
 | `parentNode.contains(node)`                  | 判断节点是否是另一个节点的后代                                 |
 | `node1.isEqualNode(node2)`                   | 判断两个节点是否相同                                           |
 
-## 获取元素节点
+## 操作元素
 
-| 属性/方法                               | 作用                                                                       |
-| --------------------------------------- | -------------------------------------------------------------------------- |
-| `element.getElementsByClassName(name)`  | 在元素的后代元素中根据**类名**查找元素，返回**所有**符合条件的元素         |
-| `element.getElementsByTagName(name)`    | 在元素的后代元素中根据**标签名**查找元素，返回**所有**符合条件的元素       |
-| `element.querySelector(cssSelector)`    | 在元素的后代元素中使用**css 选择器**查找元素，返回**第一个**符合条件的元素 |
-| `element.querySelectorAll(cssSelector)` | 在元素的后代元素中使用**css 选择器**查找元素，返回**所有**符合条件的元素   |
-| `element.children`                      | 获取元素的所有子元素                                                       |
-| `element.firstElementChild`             | 获取元素的第一个子元素                                                     |
-| `element.lastElementChild`              | 获取元素的最后一个子元素                                                   |
-| `element.previousElementSibling`        | 获取元素的上一个兄弟元素                                                   |
-| `element.nextElementSibling`            | 获取元素的下一个兄弟元素                                                   |
+| 属性/方法                                         | 作用                                                                       |
+| ------------------------------------------------- | -------------------------------------------------------------------------- |
+| `element.getElementsByClassName(name)`            | 在元素的后代元素中根据**类名**查找元素，返回**所有**符合条件的元素         |
+| `element.getElementsByTagName(name)`              | 在元素的后代元素中根据**标签名**查找元素，返回**所有**符合条件的元素       |
+| `element.querySelector(cssSelector)`              | 在元素的后代元素中使用**css 选择器**查找元素，返回**第一个**符合条件的元素 |
+| `element.querySelectorAll(cssSelector)`           | 在元素的后代元素中使用**css 选择器**查找元素，返回**所有**符合条件的元素   |
+| `element.children`                                | 获取元素的所有子元素                                                       |
+| `element.firstElementChild`                       | 获取元素的第一个子元素                                                     |
+| `element.lastElementChild`                        | 获取元素的最后一个子元素                                                   |
+| `element.previousElementSibling`                  | 获取元素的上一个兄弟元素                                                   |
+| `element.nextElementSibling`                      | 获取元素的下一个兄弟元素                                                   |
+| `element.insertAdjacentElement(position,element)` | 在元素的指定位置插入一个新元素                                             |
+| `element.insertAdjacentHTML(position,text)`       | 把 text 解析成 html 元素。并插入到指定位置                                 |
+| `element.insertAdjacentText(position,text)`       | 在元素的指定位置插入一段文本                                               |
+
+## 元素的标签属性
+
+| 属性/方法                          | 作用                               |
+| ---------------------------------- | ---------------------------------- |
+| `element.attributes()`             | 获取元素所有的属性节点             |
+| `elment.hasAttributes()`           | 判断元素标签中是否有属性节点       |
+| `elment.hasAttribute(name)`        | 判断元素标签中是否含有指定属性节点 |
+| `elment.setAttribute(name, value)` | 在元素上新增或修改属性节点         |
+| `elment.getAttributeNames()`       | 获取元素标签中的所有属性名         |
+| `elment.getAttribute(name)`        | 获取元素标签中指定属性的值         |
+| `elment.removeAttribute(name)`     | 移除元素中的某个属性节点           |
+| `elment.classList`                 | 获取元素的 class 属性值列表        |
+| `elment.className`                 | 获取元素的 class 属性值            |
+| `elment.style`                     | 获取元素的行内样式                 |
