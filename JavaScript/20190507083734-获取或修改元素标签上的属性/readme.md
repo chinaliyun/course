@@ -40,20 +40,4 @@
 
 ![](./images/02.png)
 
-## class 属性的值
 
-这些标签属性中`class`属于特殊情况，不能通过这个属性获取元素的类名，要通过`element.className`或者`element.classList`来获取：
-
-```html
-<h1 id="logo" title="logo title" class="logo1 logo2 logo3">h1 element</h1>
-
-<script>
-    var h1 = document.querySelector("h1");
-    console.log("h1.className: ", h1.className);
-    console.log("h1.classList: ", h1.classList);
-</script>
-```
-
-[案例源码](./demo/demo03.html)
-
-![](./images/03.png)

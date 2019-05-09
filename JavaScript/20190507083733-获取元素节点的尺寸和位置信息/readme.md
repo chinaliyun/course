@@ -12,7 +12,7 @@
 | `element.offsetTop`               | 获取元素**上边框边缘**到**文档最顶边**的距离 |
 | `element.offsetWidth`             | 获取元素的`内容+padding+border`的宽度        |
 | `element.offsetHeight`            | 获取元素的`内容+padding+border`的高度        |
-| `element.getClientBoundingRect()` | 获取元素的大小和相对于可视区域的位置         |
+| `element.getBoundingClientRect()` | 获取元素的大小和相对于可视区域的位置         |
 
 ## clientLeft clientTop clientWidth clientHeight
 
@@ -154,9 +154,9 @@
 
 ![](./images/05.png)
 
-## getClientBoundingRect()
+## getBoundingClientRect()
 
-`element.getClientBoundingRect()`方法获取的是一个对象，该对象包含了元素的所有尺寸和位置信息：
+`element.getBoundingClientRect()`方法获取的是一个对象，该对象包含了元素的所有尺寸和位置信息：
 
 | 属性名   | 属性值                                       |
 | -------- | -------------------------------------------- |

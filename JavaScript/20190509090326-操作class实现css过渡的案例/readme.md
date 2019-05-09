@@ -2,24 +2,24 @@
 
 ```html
 <style>
-    div {
+    .begin {
         width: 100px;
         height: 100px;
         background-color: rgb(74, 194, 154);
         transition: all 0.5s linear;
     }
-    .hover {
+    .end {
         width: 200px;
         height: 150px;
         background-color: rgb(216, 139, 38);
     }
 </style>
-<div></div>
+<div class="begin"></div>
 <script>
     window.onload = function() {
         var div = document.querySelector("div");
         setTimeout(function() {
-            div.setAttribute("class", "hover");
+            div.classList.add("end");
         }, 2000);
     };
 </script>
