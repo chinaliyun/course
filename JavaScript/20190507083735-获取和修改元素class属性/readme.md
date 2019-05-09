@@ -25,3 +25,31 @@
 | `element.classList.add(name)`    | 给元素添加类名                               |
 | `element.classList.remove(name)` | 删除已有类名                                 |
 | `element.classList.toggle(name)` | 如果已有该类名，就删除该类名，否则添加该类名 |
+
+```html
+<h1>h1 element</h1>
+
+<script>
+    var h1 = document.querySelector("h1");
+    console.log("h1.className: ", h1.className);
+
+    h1.classList.add("logo");
+    console.log("h1.className: ", h1.className);
+
+    h1.classList.remove("logo");
+    console.log("h1.className: ", h1.className);
+
+    h1.classList.toggle("logo");
+    console.log("h1.className: ", h1.className);
+
+    h1.classList.toggle("logo");
+    console.log("h1.className: ", h1.className);
+
+    h1.classList.toggle("logo");
+    console.log("h1.className: ", h1.className);
+</script>
+```
+
+[案例源码](./demo/demo02.html)
+
+![](./images/02.png)
