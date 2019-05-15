@@ -54,7 +54,19 @@
 | `num.toFixed(x)`       | 把数字转为字符串，可以指定保留的小数部分数字位数 |
 | `num.toString(x)`      | 把数字转为字符串，并指定字符串的显示基数(进制)   |
 | `num.toExponential(x)` | 把数字转为 10 进制计数法                         |
-| `num.toPrecision(x)`     | 把数字转为字符串，可以指定保留的整体数字位数     |
+| `num.toPrecision(x)`   | 把数字转为字符串，可以指定保留的整体数字位数     |
+
+## 全局函数
+
+| 函数                         | 作用                                  |
+| ---------------------------- | ------------------------------------- |
+| `encodeURI(string)`          | 编码字符串                            |
+| `decodeURI(string)`          | 解码字符串                            |
+| `encodeComponentURI(string)` | 编码字符串，比`encodeURI`编码范围更大 |
+| `decodeComponentURI(string)` | 解码字符串，比`decodeURI`解码范围更大 |
+| `parseInt(string [,radio])`  | 按照指定的基数提取字符串中的整数      |
+| `parseFloat(string)`         | 提取字符串中的数字部分                |
+| `isNaN(n)`                   | 判断参数是否不是一个数组              |
 
 ## Math 对象
 
@@ -191,7 +203,7 @@
 | `parentNode.insertBefore(newNode, nextNode)` | 在父节点中插入一个新节点，并让新节点插入到指定节点的前一个位置 |
 | `node.cloneNode([deep])`                     | 复制节点 node，返回复制的节点                                  |
 | `parentNode.replaceChild(newNode, oldNode)`  | 用新节点替换旧节点                                             |
-| `parentNode.removeChild(childNode)`               | 删除父节点中指定的子节点                                       |
+| `parentNode.removeChild(childNode)`          | 删除父节点中指定的子节点                                       |
 | `node.isConnected`                           | 判断元素是否已经被渲染在当前页面中                             |
 | `node.hasChildNodes()`                       | 判断节点是否有子节点                                           |
 | `parentNode.contains(node)`                  | 判断节点是否是另一个节点的后代                                 |
@@ -216,15 +228,18 @@
 
 ## 元素的标签属性
 
-| 属性/方法                          | 作用                               |
-| ---------------------------------- | ---------------------------------- |
-| `element.attributes()`             | 获取元素所有的属性节点             |
-| `elment.hasAttributes()`           | 判断元素标签中是否有属性节点       |
-| `elment.hasAttribute(name)`        | 判断元素标签中是否含有指定属性节点 |
-| `elment.setAttribute(name, value)` | 在元素上新增或修改属性节点         |
-| `elment.getAttributeNames()`       | 获取元素标签中的所有属性名         |
-| `elment.getAttribute(name)`        | 获取元素标签中指定属性的值         |
-| `elment.removeAttribute(name)`     | 移除元素中的某个属性节点           |
-| `elment.classList`                 | 获取元素的 class 属性值列表        |
-| `elment.className`                 | 获取元素的 class 属性值            |
-| `elment.style`                     | 获取元素的行内样式                 |
+| 属性/方法                          | 作用                                    |
+| ---------------------------------- | --------------------------------------- |
+| `element.attributes()`             | 获取元素所有的属性节点                  |
+| `elment.hasAttributes()`           | 判断元素标签中是否有属性节点            |
+| `elment.hasAttribute(name)`        | 判断元素标签中是否含有指定属性节点      |
+| `elment.setAttribute(name, value)` | 在元素上新增或修改属性节点              |
+| `elment.getAttributeNames()`       | 获取元素标签中的所有属性名              |
+| `elment.getAttribute(name)`        | 获取元素标签中指定属性的值              |
+| `elment.removeAttribute(name)`     | 移除元素中的某个属性节点                |
+| `elment.style`                     | 获取或者设置元素的行内样式              |
+| `elment.className`                 | 获取元素的 class 属性值(字符串)         |
+| `elment.classList`                 | 获取元素的 class 属性值列表(类数组集合) |
+| `elment.classList.add(string)`     | 给元素新增指定类名                      |
+| `elment.classList.remove(string)`  | 移除元素指定类名                        |
+| `elment.classList.toggle(string)`  | 新增或移除元素的指定类名                |
