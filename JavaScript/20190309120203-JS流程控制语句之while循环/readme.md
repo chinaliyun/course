@@ -6,8 +6,8 @@
 var x = 5;
 
 while (x > 0) {
-console.log(x);
-x--;
+    console.log(x);
+    x--;
 }
 ```
 
@@ -26,16 +26,16 @@ var arr = ["张三", "李四", "王五"];
 console.log("正序输出: ");
 var x = 0;
 while (x <= 2) {
-console.log(x + ": " + arr[x]);
-x++;
+    console.log(x + ": " + arr[x]);
+    x++;
 }
 
 // 倒序输出
 console.log("倒序输出: ");
 var y = 2;
 while (y >= 0) {
-console.log(y + ": " + arr[y]);
-y--;
+    console.log(y + ": " + arr[y]);
+    y--;
 }
 ```
 
@@ -49,14 +49,14 @@ y--;
 
 ```html
 <script>
-var x = 5;
-while (x > 0) {
-if (x == 2) {
-break;
-}
-console.log(x);
-x--;
-}
+    var x = 5;
+    while (x > 0) {
+        if (x == 2) {
+            break;
+        }
+        console.log(x);
+        x--;
+    }
 </script>
 ```
 

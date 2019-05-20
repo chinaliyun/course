@@ -1,13 +1,13 @@
 <script>
-var name = "zhangsan";
-var p1 = {
-name: "lisi",
-run: function(a) {
-console.log("this.name:", this.name);
-},
-};
-p1.run();
+    var name = "zhangsan";
+    var p1 = {
+        name: "lisi",
+        run: function(a) {
+            console.log("this.name:", this.name);
+        },
+    };
+    p1.run();
 
-var foo = p1.run;
-foo();
+    var foo = p1.run;
+    foo();
 </script>

@@ -10,15 +10,15 @@ JS 中有一个类似《X 战警》中变形女角色的存在`this`。它的值
 
 ```html
 <script>
-console.log("this === window", this === window);
-var name = "lily";
-console.log("name: ", name);
+    console.log("this === window", this === window);
+    var name = "lily";
+    console.log("name: ", name);
 
-window.name = "zhangsan";
-console.log("name: ", name);
+    window.name = "zhangsan";
+    console.log("name: ", name);
 
-this.name = "lisi";
-console.log("name: ", name);
+    this.name = "lisi";
+    console.log("name: ", name);
 </script>
 ```
 
@@ -30,8 +30,8 @@ console.log("name: ", name);
 
 函数内的 this，要分为两种情况
 
-- 直接调用函数
-- 被其他对象调用
+-   直接调用函数
+-   被其他对象调用
 
 ### 直接调用函数
 
@@ -39,10 +39,10 @@ console.log("name: ", name);
 
 ```html
 <script>
-function add() {
-console.log("this == window", this == window);
-}
-add();
+    function add() {
+        console.log("this == window", this == window);
+    }
+    add();
 </script>
 ```
 
@@ -56,14 +56,14 @@ add();
 
 ```html
 <script>
-var p1 = {
-name: "zhangsan",
-run: function() {
-console.log("this.name:", this.name);
-console.log("this == p1", this === p1);
-},
-};
-p1.run();
+    var p1 = {
+        name: "zhangsan",
+        run: function() {
+            console.log("this.name:", this.name);
+            console.log("this == p1", this === p1);
+        },
+    };
+    p1.run();
 </script>
 ```
 
@@ -75,19 +75,19 @@ p1.run();
 
 ```html
 <script>
-var p1 = {
-name: "zhangsan",
-run: function() {
-console.log("this.name:", this.name);
-console.log("this == p1", this === p1);
-console.log("this == p2", this === p2);
-},
-};
-var p2 = {
-name: "lisi",
-run: p1.run,
-};
-p2.run();
+    var p1 = {
+        name: "zhangsan",
+        run: function() {
+            console.log("this.name:", this.name);
+            console.log("this == p1", this === p1);
+            console.log("this == p2", this === p2);
+        },
+    };
+    var p2 = {
+        name: "lisi",
+        run: p1.run,
+    };
+    p2.run();
 </script>
 ```
 
@@ -101,17 +101,17 @@ p2.run();
 
 ```html
 <script>
-var name = "zhangsan";
-var p1 = {
-name: "lisi",
-run: function(a) {
-console.log("this.name:", this.name);
-},
-};
-p1.run();
+    var name = "zhangsan";
+    var p1 = {
+        name: "lisi",
+        run: function(a) {
+            console.log("this.name:", this.name);
+        },
+    };
+    p1.run();
 
-var foo = p1.run;
-foo();
+    var foo = p1.run;
+    foo();
 </script>
 ```
 
@@ -127,21 +127,21 @@ foo();
 
 ```html
 <script>
-function foo() {
-console.log("this.a", this.a);
-}
+    function foo() {
+        console.log("this.a", this.a);
+    }
 
-function active(fn) {
-fn(); // 没有调用者
-}
+    function active(fn) {
+        fn(); // 没有调用者
+    }
 
-var a = 20;
-var obj = {
-a: 10,
-getA: foo,
-};
+    var a = 20;
+    var obj = {
+        a: 10,
+        getA: foo,
+    };
 
-active(obj.getA);
+    active(obj.getA);
 </script>
 ```
 
@@ -155,16 +155,16 @@ active(obj.getA);
 
 ```html
 <script>
-function foo() {}
-var arr = [
-10,
-function() {
-console.log("this == window", this == window);
-console.log("this == arr", this == arr);
-console.log("this[0]=", this[0]);
-},
-];
-arr[1]();
+    function foo() {}
+    var arr = [
+        10,
+        function() {
+            console.log("this == window", this == window);
+            console.log("this == arr", this == arr);
+            console.log("this[0]=", this[0]);
+        },
+    ];
+    arr[1]();
 </script>
 ```
 

@@ -8,14 +8,14 @@
 
 ```html
 <script>
-var arr = [1, 2, 3, 4, 5];
-var a = arr.forEach(function(item, index, arr) {
-console.log(
-"当前元素=" + item + ",index=" + index + ",原数组内容=",
-arr,
-);
-});
-console.log("forEach方法的返回值为：", a);
+    var arr = [1, 2, 3, 4, 5];
+    var a = arr.forEach(function(item, index, arr) {
+        console.log(
+            "当前元素=" + item + ",index=" + index + ",原数组内容=",
+            arr,
+        );
+    });
+    console.log("forEach方法的返回值为：", a);
 </script>
 ```
 
@@ -27,29 +27,29 @@ console.log("forEach方法的返回值为：", a);
 
 ```html
 <script>
-var arr = [
-{
-name: "zhangsan",
-score: 70,
-},
-{
-name: "wanwu",
-score: 90,
-},
-{
-name: "lisi",
-score: 80,
-},
-];
-arr.forEach(function(currentValue, index, arr) {
-document.write(
-"姓名：" +
-currentValue.name +
-"的分数是:" +
-currentValue.score +
-"<br/>",
-);
-});
+    var arr = [
+        {
+            name: "zhangsan",
+            score: 70,
+        },
+        {
+            name: "wanwu",
+            score: 90,
+        },
+        {
+            name: "lisi",
+            score: 80,
+        },
+    ];
+    arr.forEach(function(currentValue, index, arr) {
+        document.write(
+            "姓名：" +
+                currentValue.name +
+                "的分数是:" +
+                currentValue.score +
+                "<br/>",
+        );
+    });
 </script>
 ```
 

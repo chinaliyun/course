@@ -2,28 +2,28 @@
 
 `arr.reduce(fn(totalValue, currentValue,currentIndex, arr),[initialValue])`会使用`fn`函数把数组中所有的元素都统计一遍。
 
-- `initialValue` 可选参数，表示第一次调用 `fn` 函数时 `total` 的值，如果设置了该参数，第一次执行 `fn` 函数时 `total` 参数会使用这个值，如果没有设置，参数`total`会使用数组中第一个元素的值
-- `total` 表示`fn`上一次执行后的返回值
-- `currentValue` 表示当前正在处理的元素，如果设置了 `initialValue`，该值从第 1 个元素开始，如果没有设置，该值从第 2 个元素开始
-- `currentIndex` 表示当前正在处理的元素下标，如果设置了`initialValue`，该值从`0`开始计算，如果没有设置，该值从`1`开始计算
-- `arr` 表示原数组
+-   `initialValue` 可选参数，表示第一次调用 `fn` 函数时 `total` 的值，如果设置了该参数，第一次执行 `fn` 函数时 `total` 参数会使用这个值，如果没有设置，参数`total`会使用数组中第一个元素的值
+-   `total` 表示`fn`上一次执行后的返回值
+-   `currentValue` 表示当前正在处理的元素，如果设置了 `initialValue`，该值从第 1 个元素开始，如果没有设置，该值从第 2 个元素开始
+-   `currentIndex` 表示当前正在处理的元素下标，如果设置了`initialValue`，该值从`0`开始计算，如果没有设置，该值从`1`开始计算
+-   `arr` 表示原数组
 
 先看看简单的用法：
 
 ```html
 <script>
-var arr = [1, 3, 5, 7, 9];
-var res = arr.reduce(function(total, currentValue, currentIndex, arr) {
-console.log(
-"total=" + total,
-"currentValue=" + currentValue,
-"currentIndex=" + currentIndex,
-"arr=",
-arr,
-);
-return total + currentValue;
-});
-console.log("res：", res);
+    var arr = [1, 3, 5, 7, 9];
+    var res = arr.reduce(function(total, currentValue, currentIndex, arr) {
+        console.log(
+            "total=" + total,
+            "currentValue=" + currentValue,
+            "currentIndex=" + currentIndex,
+            "arr=",
+            arr,
+        );
+        return total + currentValue;
+    });
+    console.log("res：", res);
 </script>
 ```
 
@@ -37,18 +37,18 @@ console.log("res：", res);
 
 ```html
 <script>
-var arr = [1, 3, 5, 7, 9];
-var res = arr.reduce(function(total, currentValue, currentIndex, arr) {
-console.log(
-"total=" + total,
-"currentValue=" + currentValue,
-"currentIndex=" + currentIndex,
-"arr=",
-arr,
-);
-return total + currentValue;
-}, 10);
-console.log("res：", res);
+    var arr = [1, 3, 5, 7, 9];
+    var res = arr.reduce(function(total, currentValue, currentIndex, arr) {
+        console.log(
+            "total=" + total,
+            "currentValue=" + currentValue,
+            "currentIndex=" + currentIndex,
+            "arr=",
+            arr,
+        );
+        return total + currentValue;
+    }, 10);
+    console.log("res：", res);
 </script>
 ```
 
@@ -64,18 +64,18 @@ console.log("res：", res);
 
 ```html
 <script>
-var arr = [1, 3, 5, 7, 9];
-var res = arr.reduceRight(function(total, currentValue, currentIndex, arr) {
-console.log(
-"total=" + total,
-"currentValue=" + currentValue,
-"currentIndex=" + currentIndex,
-"arr=",
-arr,
-);
-return total + currentValue;
-});
-console.log("res：", res);
+    var arr = [1, 3, 5, 7, 9];
+    var res = arr.reduceRight(function(total, currentValue, currentIndex, arr) {
+        console.log(
+            "total=" + total,
+            "currentValue=" + currentValue,
+            "currentIndex=" + currentIndex,
+            "arr=",
+            arr,
+        );
+        return total + currentValue;
+    });
+    console.log("res：", res);
 </script>
 ```
 
@@ -89,14 +89,14 @@ console.log("res：", res);
 
 ```html
 <script>
-var arr = [1, 3, 5, 3, 9, 2, 1, 7, 9];
-var res = arr.reduceRight(function(total, currentValue, currentIndex, arr) {
-if (!total.includes(currentValue)) {
-total.push(currentValue);
-}
-return total;
-}, []);
-console.log("res：", res);
+    var arr = [1, 3, 5, 3, 9, 2, 1, 7, 9];
+    var res = arr.reduceRight(function(total, currentValue, currentIndex, arr) {
+        if (!total.includes(currentValue)) {
+            total.push(currentValue);
+        }
+        return total;
+    }, []);
+    console.log("res：", res);
 </script>
 ```
 
@@ -110,40 +110,40 @@ console.log("res：", res);
 
 ```html
 <script>
-var arr = [
-{
-name: "zhangsan",
-score: 18,
-},
-{
-name: "lisi",
-score: 20,
-},
-{
-name: "wangwu",
-score: 13,
-},
-{
-name: "zhaoliu",
-score: 14,
-},
-{
-name: "zengqi",
-score: 10,
-},
-];
-var res = arr.reduce(function(total, currentValue, currentIndex, arr) {
-console.log(
-"total=" + total,
-"currentValue=",
-currentValue,
-"currentIndex=" + currentIndex,
-"arr=",
-arr,
-);
-return total + currentValue.score;
-}, 0);
-console.log("返回值：", res);
+    var arr = [
+        {
+            name: "zhangsan",
+            score: 18,
+        },
+        {
+            name: "lisi",
+            score: 20,
+        },
+        {
+            name: "wangwu",
+            score: 13,
+        },
+        {
+            name: "zhaoliu",
+            score: 14,
+        },
+        {
+            name: "zengqi",
+            score: 10,
+        },
+    ];
+    var res = arr.reduce(function(total, currentValue, currentIndex, arr) {
+        console.log(
+            "total=" + total,
+            "currentValue=",
+            currentValue,
+            "currentIndex=" + currentIndex,
+            "arr=",
+            arr,
+        );
+        return total + currentValue.score;
+    }, 0);
+    console.log("返回值：", res);
 </script>
 ```
 

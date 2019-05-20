@@ -4,12 +4,12 @@
 
 ```html
 <script>
-var person = {
-age: 19,
-};
+    var person = {
+        age: 19,
+    };
 
-person.run();
-console.log("执行完毕");
+    person.run();
+    console.log("执行完毕");
 </script>
 ```
 
@@ -23,16 +23,16 @@ console.log("执行完毕");
 
 ```html
 <script>
-var person = {
-age: 19,
-};
+    var person = {
+        age: 19,
+    };
 
-try {
-person.run();
-} catch (e) {
-console.log(e);
-}
-console.log("执行完毕");
+    try {
+        person.run();
+    } catch (e) {
+        console.log(e);
+    }
+    console.log("执行完毕");
 </script>
 ```
 
@@ -48,18 +48,18 @@ console.log("执行完毕");
 
 ```html
 <script>
-var person = {
-age: 19,
-};
+    var person = {
+        age: 19,
+    };
 
-try {
-person.run();
-} catch (e) {
-console.log(e);
-} finally {
-console.log("不管有没有错误抛出，这句话都会被执行");
-}
-console.log("执行完毕");
+    try {
+        person.run();
+    } catch (e) {
+        console.log(e);
+    } finally {
+        console.log("不管有没有错误抛出，这句话都会被执行");
+    }
+    console.log("执行完毕");
 </script>
 ```
 
@@ -76,13 +76,13 @@ console.log("执行完毕");
 ```html
 <meta charset="utf-8" />
 <script>
-function add(x) {
-if (isNaN(x)) {
-throw new Error("params x must is a number");
-}
-console.log(Math.floor(x));
-}
-add("abc");
+    function add(x) {
+        if (isNaN(x)) {
+            throw new Error("params x must is a number");
+        }
+        console.log(Math.floor(x));
+    }
+    add("abc");
 </script>
 ```
 

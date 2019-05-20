@@ -4,14 +4,14 @@
 
 ```html
 <script>
-var arr1 = ["张三", "李四", "王五"];
-var arr2 = ["赵六", "曾七"];
-var arr3 = ["钱八", "孙九"];
-var arr = arr1.concat(arr2);
-console.log("arr1、arr2、arr3中的元素被组合起来，赋值给了变量arr：", arr);
-console.log("arr1的值没有任何变化：", arr1);
-console.log("arr2的值没有任何变化：", arr2);
-console.log("arr3的值没有任何变化：", arr3);
+    var arr1 = ["张三", "李四", "王五"];
+    var arr2 = ["赵六", "曾七"];
+    var arr3 = ["钱八", "孙九"];
+    var arr = arr1.concat(arr2);
+    console.log("arr1、arr2、arr3中的元素被组合起来，赋值给了变量arr：", arr);
+    console.log("arr1的值没有任何变化：", arr1);
+    console.log("arr2的值没有任何变化：", arr2);
+    console.log("arr3的值没有任何变化：", arr3);
 </script>
 ```
 

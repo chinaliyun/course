@@ -4,12 +4,12 @@
 
 ```js
 function triangle(sum) {
-for (var m = 1; m <= sum; m++) {
-for (var n = 1; n <= m; n++) {
-document.write("💕");
-}
-document.write("<br/>");
-}
+    for (var m = 1; m <= sum; m++) {
+        for (var n = 1; n <= m; n++) {
+            document.write("💕");
+        }
+        document.write("<br/>");
+    }
 }
 triangle(5);
 triangle(10);
@@ -20,21 +20,21 @@ triangle(10);
 ```js
 // 声明一个函数
 function 函数名() {
-// 函数体...
+    // 函数体...
 }
 ```
 
 如上所示，关键字`function`用来声明后面是一个函数，函数名是必须有的，大括号内是需要被重复执行的代码块。要注意：
 
-- 这里的`function`必须是全小写
-- 函数名是区分大小写的，也就是说`getname`和`getName`是两个不同的函数。
-- 和声明变量一样，函数不能使用 JS 已有的关键字作为函数名
+-   这里的`function`必须是全小写
+-   函数名是区分大小写的，也就是说`getname`和`getName`是两个不同的函数。
+-   和声明变量一样，函数不能使用 JS 已有的关键字作为函数名
 
 函数其实也是一个变量，上面的函数也可以这么写：
 
 ```js
 var 函数名 = function() {
-// 代码块
+    // 代码块
 };
 ```
 
@@ -44,11 +44,11 @@ var 函数名 = function() {
 
 ```html
 <script>
-function sum() {
-console.log(1);
-}
-sum();
-sum();
+    function sum() {
+        console.log(1);
+    }
+    sum();
+    sum();
 </script>
 ```
 

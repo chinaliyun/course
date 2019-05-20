@@ -1,36 +1,36 @@
 <script>
-var arr = [
-{
-name: "zhangsan",
-score: 18,
-},
-{
-name: "lisi",
-score: 20,
-},
-{
-name: "wangwu",
-score: 13,
-},
-{
-name: "zhaoliu",
-score: 14,
-},
-{
-name: "zengqi",
-score: 10,
-},
-];
-var res = arr.reduce(function(total, currentValue, currentIndex, arr) {
-console.log(
-"total=" + total,
-"currentValue=",
-currentValue,
-"currentIndex=" + currentIndex,
-"arr=",
-arr,
-);
-return total + currentValue.score;
-}, 0);
-console.log("返回值：", res);
+    var arr = [
+        {
+            name: "zhangsan",
+            score: 18,
+        },
+        {
+            name: "lisi",
+            score: 20,
+        },
+        {
+            name: "wangwu",
+            score: 13,
+        },
+        {
+            name: "zhaoliu",
+            score: 14,
+        },
+        {
+            name: "zengqi",
+            score: 10,
+        },
+    ];
+    var res = arr.reduce(function(total, currentValue, currentIndex, arr) {
+        console.log(
+            "total=" + total,
+            "currentValue=",
+            currentValue,
+            "currentIndex=" + currentIndex,
+            "arr=",
+            arr,
+        );
+        return total + currentValue.score;
+    }, 0);
+    console.log("返回值：", res);
 </script>

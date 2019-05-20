@@ -2,7 +2,7 @@
 
 ```js
 do {
-语句;
+    语句;
 } while (条件);
 ```
 
@@ -12,12 +12,12 @@ do {
 
 ```html
 <script>
-var x = 0;
+    var x = 0;
 
-while (x <= 9) {
-console.log(x);
-x++;
-}
+    while (x <= 9) {
+        console.log(x);
+        x++;
+    }
 </script>
 ```
 
@@ -29,23 +29,23 @@ x++;
 
 ```html
 <script>
-var arr = ["张三", "李四", "王五"];
+    var arr = ["张三", "李四", "王五"];
 
-// 正序输出
-console.log("正序输出: ");
-var x = 0;
-do {
-console.log(x + ": " + arr[x]);
-x++;
-} while (x <= 2);
+    // 正序输出
+    console.log("正序输出: ");
+    var x = 0;
+    do {
+        console.log(x + ": " + arr[x]);
+        x++;
+    } while (x <= 2);
 
-// 倒序输出
-console.log("倒序输出: ");
-var y = 2;
-do {
-console.log(y + ": " + arr[y]);
-y--;
-} while (y >= 0);
+    // 倒序输出
+    console.log("倒序输出: ");
+    var y = 2;
+    do {
+        console.log(y + ": " + arr[y]);
+        y--;
+    } while (y >= 0);
 </script>
 ```
 
@@ -59,14 +59,14 @@ y--;
 
 ```html
 <script>
-var x = 5;
-do {
-if (x == 2) {
-break;
-}
-console.log(x);
-x--;
-} while (x > 0);
+    var x = 5;
+    do {
+        if (x == 2) {
+            break;
+        }
+        console.log(x);
+        x--;
+    } while (x > 0);
 </script>
 ```
 

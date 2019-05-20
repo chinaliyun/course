@@ -6,22 +6,22 @@
 
 `fn(currentValue, index, arr)`中：
 
-- `currentValue`表示当前循环中的元素
-- `index`表示当前循环中元素的下标
-- `arr`表示原有数组
+-   `currentValue`表示当前循环中的元素
+-   `index`表示当前循环中元素的下标
+-   `arr`表示原有数组
 
 ```html
 <script>
-var arr = [1, 3, 5, 7, 9];
-console.log("数组中的元素：", arr);
-var result = arr.find(function(currentValue, index, arr) {
-console.log(
-"currentValue=" + currentValue + ",index=" + index + ",arr=",
-arr,
-);
-return currentValue > 4;
-});
-console.log("符合条件的第一个元素是：" + result);
+    var arr = [1, 3, 5, 7, 9];
+    console.log("数组中的元素：", arr);
+    var result = arr.find(function(currentValue, index, arr) {
+        console.log(
+            "currentValue=" + currentValue + ",index=" + index + ",arr=",
+            arr,
+        );
+        return currentValue > 4;
+    });
+    console.log("符合条件的第一个元素是：" + result);
 </script>
 ```
 
@@ -31,16 +31,16 @@ console.log("符合条件的第一个元素是：" + result);
 
 ```html
 <script>
-var arr = [1, 3, 5, 7, 9];
-console.log("数组中的元素：", arr);
-var result = arr.find(function(currentValue, index, arr) {
-console.log(
-"currentValue=" + currentValue + ",index=" + index + ",arr=",
-arr,
-);
-return currentValue > 10;
-});
-console.log("符合条件的第一个元素是：" + result);
+    var arr = [1, 3, 5, 7, 9];
+    console.log("数组中的元素：", arr);
+    var result = arr.find(function(currentValue, index, arr) {
+        console.log(
+            "currentValue=" + currentValue + ",index=" + index + ",arr=",
+            arr,
+        );
+        return currentValue > 10;
+    });
+    console.log("符合条件的第一个元素是：" + result);
 </script>
 ```
 
@@ -54,16 +54,16 @@ console.log("符合条件的第一个元素是：" + result);
 
 ```html
 <script>
-var arr = [1, 3, 5, 7, 9];
-console.log("数组中的元素：", arr);
-var result = arr.findIndex(function(currentValue, index, arr) {
-console.log(
-"currentValue=" + currentValue + ",index=" + index + ",arr=",
-arr,
-);
-return currentValue > 7;
-});
-console.log("符合条件的第一个元素是：" + result);
+    var arr = [1, 3, 5, 7, 9];
+    console.log("数组中的元素：", arr);
+    var result = arr.findIndex(function(currentValue, index, arr) {
+        console.log(
+            "currentValue=" + currentValue + ",index=" + index + ",arr=",
+            arr,
+        );
+        return currentValue > 7;
+    });
+    console.log("符合条件的第一个元素是：" + result);
 </script>
 ```
 
@@ -75,16 +75,16 @@ console.log("符合条件的第一个元素是：" + result);
 
 ```html
 <script>
-var arr = [1, 3, 5, 7, 9];
-console.log("数组中的元素：", arr);
-var result = arr.findIndex(function(currentValue, index, arr) {
-console.log(
-"currentValue=" + currentValue + ",index=" + index + ",arr=",
-arr,
-);
-return currentValue > 10;
-});
-console.log("符合条件的第一个元素是：" + result);
+    var arr = [1, 3, 5, 7, 9];
+    console.log("数组中的元素：", arr);
+    var result = arr.findIndex(function(currentValue, index, arr) {
+        console.log(
+            "currentValue=" + currentValue + ",index=" + index + ",arr=",
+            arr,
+        );
+        return currentValue > 10;
+    });
+    console.log("符合条件的第一个元素是：" + result);
 </script>
 ```
 

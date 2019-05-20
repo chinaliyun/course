@@ -4,9 +4,9 @@
 
 ```js
 var person1 = {
-name: '张三'
-width: '80kg',
-height: '180cm',
+    name: '张三'
+    width: '80kg',
+    height: '180cm',
 }
 ```
 
@@ -16,7 +16,7 @@ height: '180cm',
 
 也可以先赋值一个空对象，再往里面添加数据，添加方式有两种:
 
-- 使用`.`运算符：
+-   使用`.`运算符：
 
 ```js
 // 方法1
@@ -27,7 +27,7 @@ person1.height = "180cm";
 console.log(person1);
 ```
 
-- 使用`[]`运算符
+-   使用`[]`运算符
 
 ```js
 // 方法2
@@ -50,9 +50,9 @@ console.log(person2);
 
 ```js
 var person1 = {
-name: "张三",
-width: "80kg",
-height: "180cm",
+    name: "张三",
+    width: "80kg",
+    height: "180cm",
 };
 // 第一种方式：
 console.log(person1.name); // '张三'
@@ -70,12 +70,12 @@ console.log(person1["name"]); // '张三'
 
 ```html
 <script>
-var person = {
-sayHi: function() {
-console.log("say hi");
-},
-};
-person.sayHi();
+    var person = {
+        sayHi: function() {
+            console.log("say hi");
+        },
+    };
+    person.sayHi();
 </script>
 ```
 
@@ -93,13 +93,13 @@ person.sayHi();
 
 ```html
 <script>
-var person = {
-name: "lily",
-sayHi: function() {
-console.log(this.name + " say hi");
-},
-};
-person.sayHi();
+    var person = {
+        name: "lily",
+        sayHi: function() {
+            console.log(this.name + " say hi");
+        },
+    };
+    person.sayHi();
 </script>
 ```
 
@@ -111,17 +111,17 @@ person.sayHi();
 
 ```html
 <script>
-var person = {
-name: "lily",
-sayHi: function() {
-console.log(this.name + " say hi");
-},
-sayHello: function() {
-console.log(this.name + " say hello");
-this.sayHi();
-},
-};
-person.sayHello();
+    var person = {
+        name: "lily",
+        sayHi: function() {
+            console.log(this.name + " say hi");
+        },
+        sayHello: function() {
+            console.log(this.name + " say hello");
+            this.sayHi();
+        },
+    };
+    person.sayHello();
 </script>
 ```
 

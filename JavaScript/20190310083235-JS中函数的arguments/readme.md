@@ -4,10 +4,10 @@
 
 ```html
 <script>
-function sum() {
-console.log(arguments[0], arguments[1], arguments[2]);
-}
-sum(1, 2, 3);
+    function sum() {
+        console.log(arguments[0], arguments[1], arguments[2]);
+    }
+    sum(1, 2, 3);
 </script>
 ```
 

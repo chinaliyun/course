@@ -8,11 +8,11 @@
 
 ```html
 <script>
-var arr = [1, 3, 5, 7, 9];
-var res = arr.slice(3);
+    var arr = [1, 3, 5, 7, 9];
+    var res = arr.slice(3);
 
-console.log("arr", arr);
-console.log("res", res);
+    console.log("arr", arr);
+    console.log("res", res);
 </script>
 ```
 
@@ -26,11 +26,11 @@ console.log("res", res);
 
 ```html
 <script>
-var arr = [1, 3, 5, 7, 9];
-var res = arr.slice(2, 5);
+    var arr = [1, 3, 5, 7, 9];
+    var res = arr.slice(2, 5);
 
-console.log("arr", arr);
-console.log("res", res);
+    console.log("arr", arr);
+    console.log("res", res);
 </script>
 ```
 
@@ -44,11 +44,11 @@ console.log("res", res);
 
 ```html
 <script>
-var arr = [1, 3, 5, 7, 9];
-var res = arr.slice(-5, -2);
+    var arr = [1, 3, 5, 7, 9];
+    var res = arr.slice(-5, -2);
 
-console.log("arr", arr);
-console.log("res", res);
+    console.log("arr", arr);
+    console.log("res", res);
 </script>
 ```
 
@@ -62,11 +62,11 @@ console.log("res", res);
 
 ```html
 <script>
-var arr = [1, 3, 5, 7, 9];
-var res = arr.slice(-2, -5);
+    var arr = [1, 3, 5, 7, 9];
+    var res = arr.slice(-2, -5);
 
-console.log("arr", arr);
-console.log("res", res);
+    console.log("arr", arr);
+    console.log("res", res);
 </script>
 ```
 

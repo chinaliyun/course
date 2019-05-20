@@ -4,7 +4,7 @@
 
 ```js
 function add() {
-console.log(this === window); // true
+    console.log(this === window); // true
 }
 add();
 ```
@@ -17,16 +17,16 @@ JS 提供了三个函数可以在函数单独调用时，改变函数内`this`�
 
 ```html
 <script>
-var age = 30;
-var p1 = {
-age: 20,
-};
-function add() {
-console.log("this.age: ", this.age);
-}
-add();
-var newFn = add.bind(p1);
-newFn();
+    var age = 30;
+    var p1 = {
+        age: 20,
+    };
+    function add() {
+        console.log("this.age: ", this.age);
+    }
+    add();
+    var newFn = add.bind(p1);
+    newFn();
 </script>
 ```
 
@@ -40,15 +40,15 @@ newFn();
 
 ```html
 <script>
-var age = 30;
-var p1 = {
-age: 20,
-};
-function add() {
-console.log("this.age: ", this.age);
-}
-add();
-add.call(p1);
+    var age = 30;
+    var p1 = {
+        age: 20,
+    };
+    function add() {
+        console.log("this.age: ", this.age);
+    }
+    add();
+    add.call(p1);
 </script>
 ```
 
@@ -60,16 +60,16 @@ add.call(p1);
 
 ```html
 <script>
-var age = 30;
-var p1 = {
-age: 20,
-};
-function add(x, y) {
-console.log("x: ", x, "y: ", y);
-console.log("this.age: ", this.age);
-}
-add("zhangXueTong", 14);
-add.call(p1, "liZhi", 14);
+    var age = 30;
+    var p1 = {
+        age: 20,
+    };
+    function add(x, y) {
+        console.log("x: ", x, "y: ", y);
+        console.log("this.age: ", this.age);
+    }
+    add("zhangXueTong", 14);
+    add.call(p1, "liZhi", 14);
 </script>
 ```
 
@@ -83,16 +83,16 @@ add.call(p1, "liZhi", 14);
 
 ```html
 <script>
-var age = 30;
-var p1 = {
-age: 20,
-};
-function add(x, y) {
-console.log("x: ", x, "y: ", y);
-console.log("this.age: ", this.age);
-}
-add("zhangXueTong", 14);
-add.apply(p1, ["liZhi", 14]); // 注意传递参数的方式和call不同
+    var age = 30;
+    var p1 = {
+        age: 20,
+    };
+    function add(x, y) {
+        console.log("x: ", x, "y: ", y);
+        console.log("this.age: ", this.age);
+    }
+    add("zhangXueTong", 14);
+    add.apply(p1, ["liZhi", 14]); // 注意传递参数的方式和call不同
 </script>
 ```
 
@@ -104,26 +104,26 @@ add.apply(p1, ["liZhi", 14]); // 注意传递参数的方式和call不同
 
 ```html
 <script>
-var age = 30;
-var p1 = {
-age: 20,
-};
-function add() {
-console.log("this: ", this);
-console.log("this.age: ", this.age);
-}
-var p1 = {
-age: 40,
-getAge: add,
-};
-p1.getAge();
+    var age = 30;
+    var p1 = {
+        age: 20,
+    };
+    function add() {
+        console.log("this: ", this);
+        console.log("this.age: ", this.age);
+    }
+    var p1 = {
+        age: 40,
+        getAge: add,
+    };
+    p1.getAge();
 
-var fn = add.bind(p1);
-var p2 = {
-age: 50,
-getAge: fn,
-};
-p2.getAge();
+    var fn = add.bind(p1);
+    var p2 = {
+        age: 50,
+        getAge: fn,
+    };
+    p2.getAge();
 </script>
 ```
 

@@ -6,13 +6,13 @@
 
 ```html
 <script>
-// 基本字符串
-var a = "lily";
-console.log(a, typeof a);
+    // 基本字符串
+    var a = "lily";
+    console.log(a, typeof a);
 
-// 字符串对象
-var b = new String("lily");
-console.log(b, typeof b);
+    // 字符串对象
+    var b = new String("lily");
+    console.log(b, typeof b);
 </script>
 ```
 
@@ -26,8 +26,8 @@ console.log(b, typeof b);
 
 ```html
 <script>
-var str = "welcome " + "to" + " china";
-console.log(str);
+    var str = "welcome " + "to" + " china";
+    console.log(str);
 </script>
 ```
 
@@ -41,11 +41,11 @@ console.log(str);
 
 ```html
 <script>
-var str =
-"welcome\
-to\
+    var str =
+        "welcome\
+        to\
  china";
-console.log(str);
+    console.log(str);
 </script>
 ```
 
@@ -59,8 +59,8 @@ console.log(str);
 
 ```html
 <script>
-var str = "welcome'to' \"china\"";
-console.log(str);
+    var str = "welcome  'to' \"china\"";
+    console.log(str);
 </script>
 ```
 
@@ -72,12 +72,12 @@ console.log(str);
 
 常用的需要转义的特殊字符：
 
-| 转义字符 | 作用 |
+| 转义字符 | 作用         |
 | -------- | ------------ |
-| `\0` | 空字符 |
-| `\'` | 单引号 |
-| `\"` | 双引号 |
-| `\\` | 反斜杠 |
-| `\n` | 换行 |
-| `\r` | 回车 |
+| `\0`     | 空字符       |
+| `\'`     | 单引号       |
+| `\"`     | 双引号       |
+| `\\`     | 反斜杠       |
+| `\n`     | 换行         |
+| `\r`     | 回车         |
 | `\uXXXX` | Unicode 码点 |

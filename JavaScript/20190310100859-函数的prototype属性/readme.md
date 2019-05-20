@@ -4,8 +4,8 @@
 
 ```js
 function Person(name, age) {
-this.name = name;
-this.age = age;
+    this.name = name;
+    this.age = age;
 }
 var p1 = new Person("zhangxuetong", 14);
 
@@ -16,25 +16,25 @@ var p2 = new Person("lizhi", 16);
 
 ```html
 <script>
-function Person(name, age) {
-this.name = name;
-this.age = age;
-}
-var p1 = new Person("ZhangXueTong", 14);
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    var p1 = new Person("ZhangXueTong", 14);
 
-var p2 = new Person("LiZhi", 16);
+    var p2 = new Person("LiZhi", 16);
 
-p1.getAge = function() {
-console.log(this.name + " 今年 " + this.age + " 岁了。");
-};
-p2.getAge = function() {
-console.log(this.name + " 今年 " + this.age + " 岁了。");
-};
-console.log("p1: ", p1);
-console.log("p2: ", p2);
+    p1.getAge = function() {
+        console.log(this.name + " 今年 " + this.age + " 岁了。");
+    };
+    p2.getAge = function() {
+        console.log(this.name + " 今年 " + this.age + " 岁了。");
+    };
+    console.log("p1: ", p1);
+    console.log("p2: ", p2);
 
-p1.getAge();
-p2.getAge();
+    p1.getAge();
+    p2.getAge();
 </script>
 ```
 
@@ -46,22 +46,22 @@ p2.getAge();
 
 ```html
 <script>
-function Person(name, age) {
-this.name = name;
-this.age = age;
-}
-var p1 = new Person("ZhangXueTong", 14);
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    var p1 = new Person("ZhangXueTong", 14);
 
-var p2 = new Person("LiZhi", 16);
+    var p2 = new Person("LiZhi", 16);
 
-Person.prototype.getAge = function() {
-console.log(this.name + " 今年 " + this.age + " 岁了。");
-};
-console.log("p1: ", p1);
-console.log("p2: ", p2);
+    Person.prototype.getAge = function() {
+        console.log(this.name + " 今年 " + this.age + " 岁了。");
+    };
+    console.log("p1: ", p1);
+    console.log("p2: ", p2);
 
-p1.getAge();
-p2.getAge();
+    p1.getAge();
+    p2.getAge();
 </script>
 ```
 
@@ -75,25 +75,25 @@ p2.getAge();
 
 ```html
 <script>
-function Person(name, age) {
-this.name = name;
-this.age = age;
-}
-var p1 = new Person("ZhangXueTong", 14);
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    var p1 = new Person("ZhangXueTong", 14);
 
-var p2 = new Person("LiZhi", 16);
+    var p2 = new Person("LiZhi", 16);
 
-Person.prototype.getAge = function() {
-console.log(this.name + " 今年 " + this.age + " 岁了。");
-};
-console.log("p1: ", p1);
-console.log("p2: ", p2);
+    Person.prototype.getAge = function() {
+        console.log(this.name + " 今年 " + this.age + " 岁了。");
+    };
+    console.log("p1: ", p1);
+    console.log("p2: ", p2);
 
-p1.getAge();
-p2.getAge();
+    p1.getAge();
+    p2.getAge();
 
-console.log(p1.__proto__ === Person.prototype);
-console.log(p2.__proto__ === Person.prototype);
+    console.log(p1.__proto__ === Person.prototype);
+    console.log(p2.__proto__ === Person.prototype);
 </script>
 ```
 
@@ -111,23 +111,23 @@ console.log(p2.__proto__ === Person.prototype);
 
 ```html
 <script>
-function Person(name, age) {
-this.name = name;
-this.age = age;
-}
-var p1 = new Person("ZhangXueTong", 14);
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    var p1 = new Person("ZhangXueTong", 14);
 
-var p2 = new Person("LiZhi", 16);
+    var p2 = new Person("LiZhi", 16);
 
-Person.prototype.getAge = function() {
-console.log(this.name + " 今年 " + this.age + " 岁了。");
-};
-console.log("p1.constructor: ", p1.constructor);
-console.log("p2.constructor: ", p2.constructor);
+    Person.prototype.getAge = function() {
+        console.log(this.name + " 今年 " + this.age + " 岁了。");
+    };
+    console.log("p1.constructor: ", p1.constructor);
+    console.log("p2.constructor: ", p2.constructor);
 
-console.log(p1.constructor === p2.constructor);
-console.log(Person === p1.constructor);
-console.log(Person === p2.constructor);
+    console.log(p1.constructor === p2.constructor);
+    console.log(Person === p1.constructor);
+    console.log(Person === p2.constructor);
 </script>
 ```
 

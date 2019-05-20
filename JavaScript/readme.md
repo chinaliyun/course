@@ -167,7 +167,7 @@
 | -------------------------------------------- | ----------------------------------------------------------- |
 | `document.title`                             | 获取当前页面的标题                                          |
 | `document.documentURI`                       | 获取当前页面的 URI 地址                                     |
-| `document.contentType`                        | 获取当前页面的`content-type`属性值                          |
+| `document.contenType`                        | 获取当前页面的`content-type`属性值                          |
 | `document.documentElement`                   | 获取 `html` 元素                                            |
 | `document.head`                              | 获取 `head` 元素                                            |
 | `document.body`                              | 获取 `body` 元素                                            |
@@ -230,17 +230,16 @@
 
 | 属性/方法                          | 作用                                    |
 | ---------------------------------- | --------------------------------------- |
-| `eleement.attributes()`             | 获取元素所有的属性节点                  |
-| `element.hasAttributes()`           | 判断元素标签中是否有属性节点            |
-| `element.hasAttribute(name)`        | 判断元素标签中是否含有指定属性节点      |
-| `element.setAttribute(name, value)` | 在元素上新增或修改属性节点              |
-| `element.getAttributeNames()`       | 获取元素标签中的所有属性名              |
-| `element.getAttribute(name)`        | 获取元素标签中指定属性的值              |
-| `element.removeAttribute(name)`     | 移除元素中的某个属性节点                |
-| `element.style`                     | 获取或者设置元素的行内样式              |
-| `element.className`                 | 获取元素的 class 属性值(字符串)         |
-| `element.classList`                 | 获取元素的 class 属性值列表(类数组集合) |
-| `element.classList.add(string)`     | 给元素新增指定类名                      |
-| `element.classList.remove(string)`  | 移除元素指定类名                        |
-| `element.classList.toggle(string)`  | 新增或移除元素的指定类名                |
-
+| `element.attributes()`             | 获取元素所有的属性节点                  |
+| `elment.hasAttributes()`           | 判断元素标签中是否有属性节点            |
+| `elment.hasAttribute(name)`        | 判断元素标签中是否含有指定属性节点      |
+| `elment.setAttribute(name, value)` | 在元素上新增或修改属性节点              |
+| `elment.getAttributeNames()`       | 获取元素标签中的所有属性名              |
+| `elment.getAttribute(name)`        | 获取元素标签中指定属性的值              |
+| `elment.removeAttribute(name)`     | 移除元素中的某个属性节点                |
+| `elment.style`                     | 获取或者设置元素的行内样式              |
+| `elment.className`                 | 获取元素的 class 属性值(字符串)         |
+| `elment.classList`                 | 获取元素的 class 属性值列表(类数组集合) |
+| `elment.classList.add(string)`     | 给元素新增指定类名                      |
+| `elment.classList.remove(string)`  | 移除元素指定类名                        |
+| `elment.classList.toggle(string)`  | 新增或移除元素的指定类名                |

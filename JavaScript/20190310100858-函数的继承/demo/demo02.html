@@ -1,16 +1,16 @@
 <script>
-var age = 30;
-var p1 = {
-age: 20,
-};
-function add() {
-this.age = 40;
-// 这里的this其实还是指向了p1
-}
-function foo() {
-add.call(this);
-// 把函数add中的this指向改为foo函数中的this，其实还是p1
-}
-foo.call(p1); // 把foo函数中的this指向改为p1对象
-console.log("p1: ", p1);
+    var age = 30;
+    var p1 = {
+        age: 20,
+    };
+    function add() {
+        this.age = 40;
+        // 这里的this其实还是指向了p1
+    }
+    function foo() {
+        add.call(this);
+        // 把函数add中的this指向改为foo函数中的this，其实还是p1
+    }
+    foo.call(p1); // 把foo函数中的this指向改为p1对象
+    console.log("p1: ", p1);
 </script>

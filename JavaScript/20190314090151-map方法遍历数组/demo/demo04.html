@@ -1,24 +1,24 @@
 <script>
-function add(item) {
-return item + 1;
-}
-function change(arr, fn) {
-console.log("原数组：", arr);
-var tmp = [];
-for (var m = 0; m < arr.length; m++) {
-var item = fn(arr[m], m, arr);
-tmp.push(item);
-}
-return tmp;
-}
-var arr1 = [1, 2, 3, 4, 5];
-var newArr1 = change(arr1, function(currentValue, index, arr) {
-return currentValue + arr[1];
-});
-console.log("新数组,currentValue + arr[1]：", newArr1);
+    function add(item) {
+        return item + 1;
+    }
+    function change(arr, fn) {
+        console.log("原数组：", arr);
+        var tmp = [];
+        for (var m = 0; m < arr.length; m++) {
+            var item = fn(arr[m], m, arr);
+            tmp.push(item);
+        }
+        return tmp;
+    }
+    var arr1 = [1, 2, 3, 4, 5];
+    var newArr1 = change(arr1, function(currentValue, index, arr) {
+        return currentValue + arr[1];
+    });
+    console.log("新数组,currentValue + arr[1]：", newArr1);
 
-var newArr2 = change(arr1, function(currentValue, index, arr) {
-return currentValue + arr[2];
-});
-console.log("新数组,currentValue + arr[2]：", newArr2);
+    var newArr2 = change(arr1, function(currentValue, index, arr) {
+        return currentValue + arr[2];
+    });
+    console.log("新数组,currentValue + arr[2]：", newArr2);
 </script>

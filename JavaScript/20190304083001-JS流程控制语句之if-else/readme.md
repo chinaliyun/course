@@ -6,7 +6,7 @@
 
 ```js
 if (表达式) {
-语句1;
+    语句1;
 }
 ```
 
@@ -15,7 +15,7 @@ if (表达式) {
 ```js
 var a = 2;
 if (a > 1) {
-console.log("a的值大于1");
+    console.log("a的值大于1");
 }
 ```
 
@@ -24,9 +24,9 @@ console.log("a的值大于1");
 ```js
 var a = 2;
 if (a > 3) {
-console.log("a的值大于3");
+    console.log("a的值大于3");
 } else {
-console.log("a的值小于等于3");
+    console.log("a的值小于等于3");
 }
 ```
 
@@ -36,36 +36,36 @@ console.log("a的值小于等于3");
 
 ```js
 /*
-0~3：幼年，
-4~6：童年，
-7~17：少年，
-18~40：青年，
-41~48：壮年，
-48~65：中年，
-66以后：老年
+    0~3：幼年，
+    4~6：童年，
+    7~17：少年，
+    18~40：青年，
+    41~48：壮年，
+    48~65：中年，
+    66以后：老年
 */
 var age = 30;
 
 if (age >= 0 && age <= 3) {
-console.log("幼年");
+    console.log("幼年");
 }
 if (age > 3 && age <= 6) {
-console.log("童年");
+    console.log("童年");
 }
 if (age > 6 && age <= 17) {
-console.log("少年");
+    console.log("少年");
 }
 if (age > 17 && age <= 40) {
-console.log("青年");
+    console.log("青年");
 }
 if (age > 40 && age <= 48) {
-console.log("壮年");
+    console.log("壮年");
 }
 if (age > 48 && age <= 65) {
-console.log("中年");
+    console.log("中年");
 }
 if (age > 65) {
-console.log("老年");
+    console.log("老年");
 }
 ```
 
@@ -76,19 +76,19 @@ console.log("老年");
 ```js
 var age = 30;
 if (age <= 3) {
-console.log("幼年");
+    console.log("幼年");
 } else if (age <= 6) {
-console.log("童年");
+    console.log("童年");
 } else if (age <= 17) {
-console.log("少年");
+    console.log("少年");
 } else if (age <= 40) {
-console.log("青年");
+    console.log("青年");
 } else if (age <= 48) {
-console.log("壮年");
+    console.log("壮年");
 } else if (age <= 65) {
-console.log("中年");
+    console.log("中年");
 } else if (age > 65) {
-console.log("老年");
+    console.log("老年");
 }
 ```
 

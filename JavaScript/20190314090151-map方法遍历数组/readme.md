@@ -13,18 +13,18 @@ var arr2 = [2, 3, 4, 5, 6];
 
 ```html
 <script>
-function change(arr) {
-console.log("原数组：", arr);
-var tmp = [];
-for (var m = 0; m < arr.length; m++) {
-var item = arr[m] + 1;
-tmp.push(item);
-}
-return tmp;
-}
-var arr1 = [1, 2, 3, 4, 5];
-var newArr1 = change(arr1);
-console.log("新数组：", newArr1);
+    function change(arr) {
+        console.log("原数组：", arr);
+        var tmp = [];
+        for (var m = 0; m < arr.length; m++) {
+            var item = arr[m] + 1;
+            tmp.push(item);
+        }
+        return tmp;
+    }
+    var arr1 = [1, 2, 3, 4, 5];
+    var newArr1 = change(arr1);
+    console.log("新数组：", newArr1);
 </script>
 ```
 
@@ -38,28 +38,28 @@ console.log("新数组：", newArr1);
 
 ```html
 <script>
-function add(item) {
-return item + 1;
-}
-function change(arr, fn) {
-console.log("原数组：", arr);
-var tmp = [];
-for (var m = 0; m < arr.length; m++) {
-var item = fn(arr[m]);
-tmp.push(item);
-}
-return tmp;
-}
-var arr1 = [1, 2, 3, 4, 5];
-var newArr1 = change(arr1, function(currentValue) {
-return currentValue + 2;
-});
-console.log("新数组,currentValue + 1：", newArr1);
+    function add(item) {
+        return item + 1;
+    }
+    function change(arr, fn) {
+        console.log("原数组：", arr);
+        var tmp = [];
+        for (var m = 0; m < arr.length; m++) {
+            var item = fn(arr[m]);
+            tmp.push(item);
+        }
+        return tmp;
+    }
+    var arr1 = [1, 2, 3, 4, 5];
+    var newArr1 = change(arr1, function(currentValue) {
+        return currentValue + 2;
+    });
+    console.log("新数组,currentValue + 1：", newArr1);
 
-var newArr2 = change(arr1, function(currentValue) {
-return currentValue - 1;
-});
-console.log("新数组,currentValue - 1：", newArr2);
+    var newArr2 = change(arr1, function(currentValue) {
+        return currentValue - 1;
+    });
+    console.log("新数组,currentValue - 1：", newArr2);
 </script>
 ```
 
@@ -73,28 +73,28 @@ console.log("新数组,currentValue - 1：", newArr2);
 
 ```html
 <script>
-function add(item) {
-return item + 1;
-}
-function change(arr, fn) {
-console.log("原数组：", arr);
-var tmp = [];
-for (var m = 0; m < arr.length; m++) {
-var item = fn(arr[m], m);
-tmp.push(item);
-}
-return tmp;
-}
-var arr1 = [1, 2, 3, 4, 5];
-var newArr1 = change(arr1, function(currentValue, index) {
-return currentValue + index;
-});
-console.log("新数组,currentValue + index：", newArr1);
+    function add(item) {
+        return item + 1;
+    }
+    function change(arr, fn) {
+        console.log("原数组：", arr);
+        var tmp = [];
+        for (var m = 0; m < arr.length; m++) {
+            var item = fn(arr[m], m);
+            tmp.push(item);
+        }
+        return tmp;
+    }
+    var arr1 = [1, 2, 3, 4, 5];
+    var newArr1 = change(arr1, function(currentValue, index) {
+        return currentValue + index;
+    });
+    console.log("新数组,currentValue + index：", newArr1);
 
-var newArr2 = change(arr1, function(currentValue, index) {
-return currentValue * index;
-});
-console.log("新数组,currentValue * index：", newArr2);
+    var newArr2 = change(arr1, function(currentValue, index) {
+        return currentValue * index;
+    });
+    console.log("新数组,currentValue * index：", newArr2);
 </script>
 ```
 
@@ -108,28 +108,28 @@ console.log("新数组,currentValue * index：", newArr2);
 
 ```html
 <script>
-function add(item) {
-return item + 1;
-}
-function change(arr, fn) {
-console.log("原数组：", arr);
-var tmp = [];
-for (var m = 0; m < arr.length; m++) {
-var item = fn(arr[m], m, arr);
-tmp.push(item);
-}
-return tmp;
-}
-var arr1 = [1, 2, 3, 4, 5];
-var newArr1 = change(arr1, function(currentValue, index, arr) {
-return currentValue + arr[1];
-});
-console.log("新数组,currentValue + arr[1]：", newArr1);
+    function add(item) {
+        return item + 1;
+    }
+    function change(arr, fn) {
+        console.log("原数组：", arr);
+        var tmp = [];
+        for (var m = 0; m < arr.length; m++) {
+            var item = fn(arr[m], m, arr);
+            tmp.push(item);
+        }
+        return tmp;
+    }
+    var arr1 = [1, 2, 3, 4, 5];
+    var newArr1 = change(arr1, function(currentValue, index, arr) {
+        return currentValue + arr[1];
+    });
+    console.log("新数组,currentValue + arr[1]：", newArr1);
 
-var newArr2 = change(arr1, function(currentValue, index, arr) {
-return currentValue + arr[2];
-});
-console.log("新数组,currentValue + arr[2]：", newArr2);
+    var newArr2 = change(arr1, function(currentValue, index, arr) {
+        return currentValue + arr[2];
+    });
+    console.log("新数组,currentValue + arr[2]：", newArr2);
 </script>
 ```
 
@@ -145,27 +145,27 @@ console.log("新数组,currentValue + arr[2]：", newArr2);
 
 `fn(currentValue, index, arr)`中：
 
-- `currentValue`表示当前循环中的元素
-- `index`表示当前循环中元素的下标
-- `arr`表示原有数组
+-   `currentValue`表示当前循环中的元素
+-   `index`表示当前循环中元素的下标
+-   `arr`表示原有数组
 
 ```html
 <meta charset="utf-8" />
 <script>
-var arr = [1, 2, 3, 4, 5];
-var newArr1 = arr.map(function(currentValue, index, arr) {
-console.log(
-"每次循环传递的参数: currentValue=" +
-currentValue +
-",index=" +
-index +
-",原数组内容=",
-arr,
-);
-return currentValue + 1;
-});
-console.log("原有数组：", arr);
-console.log("新数组：", newArr1);
+    var arr = [1, 2, 3, 4, 5];
+    var newArr1 = arr.map(function(currentValue, index, arr) {
+        console.log(
+            "每次循环传递的参数: currentValue=" +
+                currentValue +
+                ",index=" +
+                index +
+                ",原数组内容=",
+            arr,
+        );
+        return currentValue + 1;
+    });
+    console.log("原有数组：", arr);
+    console.log("新数组：", newArr1);
 </script>
 ```
 
@@ -178,10 +178,10 @@ console.log("新数组：", newArr1);
 ```html
 <meta charset="utf-8" />
 <script>
-var arr = [1, 2, 3, 4, 5];
-var newArr1 = arr.map(function(currentValue, index, arr) {});
-console.log("原有数组：", arr);
-console.log("新数组：", newArr1);
+    var arr = [1, 2, 3, 4, 5];
+    var newArr1 = arr.map(function(currentValue, index, arr) {});
+    console.log("原有数组：", arr);
+    console.log("新数组：", newArr1);
 </script>
 ```
 
