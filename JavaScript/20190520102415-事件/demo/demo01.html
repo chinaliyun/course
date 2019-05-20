@@ -1,0 +1,21 @@
+<img src="http://pic37.nipic.com/20140113/8800276_184927469000_2.png" alt="" />
+<script>
+    window.onload = function() {
+        console.log("页面资源已经加载完成");
+    };
+    var img = document.querySelector("img");
+    img.onload = function() {
+        console.log("img loaded");
+    };
+    img.onerror = function() {
+        console.log("img load error");
+    };
+
+    setTimeout(function() {
+        img.src = "";
+    }, 8000);
+
+    img.onabort = function() {
+        console.log("img load aboronabort");
+    };
+</script>

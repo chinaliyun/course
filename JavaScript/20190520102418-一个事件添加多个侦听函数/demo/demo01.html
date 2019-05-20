@@ -1,0 +1,20 @@
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+    }
+</style>
+<div></div>
+<script>
+    var div = document.querySelector("div");
+    div.addEventListener("click", function() {
+        console.log("event1");
+    });
+    div.addEventListener("click", function() {
+        console.log("event2");
+    });
+    div.addEventListener("click", function() {
+        console.log("event3");
+    });
+</script>

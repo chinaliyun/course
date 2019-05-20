@@ -1,0 +1,21 @@
+<style>
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: coral;
+        margin: 0 auto;
+    }
+</style>
+<div></div>
+<script>
+    var div = document.querySelector("div");
+    div.addEventListener(
+        "click",
+        function() {
+            console.log("这里的文字只会被执行一次");
+        },
+        {
+            once: true,
+        },
+    );
+</script>

@@ -1,0 +1,59 @@
+<style>
+    body {
+        margin: 0;
+        background-color: darksalmon;
+    }
+    div {
+        margin: 0 auto;
+    }
+    .outer {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+    }
+    .inner {
+        width: 100px;
+        height: 100px;
+        background-color: cadetblue;
+    }
+</style>
+
+<div class="outer">
+    <div class="inner"></div>
+</div>
+
+<script>
+    var outerEle = document.querySelector(".outer");
+    var innerEle = document.querySelector(".inner");
+
+    document.body.addEventListener(
+        "click",
+        function() {
+            console.log("点击了body");
+        },
+        true,
+    );
+    document.body.addEventListener("click", function() {
+        console.log("点击了body2");
+    });
+    outerEle.addEventListener(
+        "click",
+        function() {
+            console.log("点击了.outer元素");
+        },
+        true,
+    );
+    outerEle.addEventListener("click", function() {
+        console.log("点击了.outer元素2");
+    });
+    innerEle.addEventListener(
+        "click",
+        function() {
+            console.log("点击了.inner元素");
+        },
+        true,
+    );
+    innerEle.addEventListener("click", function() {
+        console.log("点击了.inner元素2");
+    });
+</script>
