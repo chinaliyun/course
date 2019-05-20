@@ -4,13 +4,13 @@
 
 ```html
 <script>
-    var str = "welcome";
-    console.log("str:", str);
-    console.log("str.length:", str.length);
+var str = "welcome";
+console.log("str:", str);
+console.log("str.length:", str.length);
 
-    str = "home";
-    console.log("str:", str);
-    console.log("str.length:", str.length);
+str = "home";
+console.log("str:", str);
+console.log("str.length:", str.length);
 </script>
 ```
 
@@ -20,13 +20,13 @@
 
 ```html
 <script>
-    var str = "welcome";
-    console.log("str:", str);
-    console.log("str[0]:", str[0]);
-    console.log("str[1]:", str[1]);
-    console.log("str[3]:", str[3]);
-    console.log("str[5]:", str[5]);
-    console.log("str[7]:", str[7]);
+var str = "welcome";
+console.log("str:", str);
+console.log("str[0]:", str[0]);
+console.log("str[1]:", str[1]);
+console.log("str[3]:", str[3]);
+console.log("str[5]:", str[5]);
+console.log("str[7]:", str[7]);
 </script>
 ```
 

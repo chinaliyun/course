@@ -1,19 +1,19 @@
 <script>
-    var age = 0;
+var age = 0;
 
-    var arr = [1, 3, 5, 7, 9];
+var arr = [1, 3, 5, 7, 9];
 
-    var res = arr.every(function(currentValue) {
-        return currentValue > this.age;
-    });
-    console.log("res:", res);
+var res = arr.every(function(currentValue) {
+return currentValue > this.age;
+});
+console.log("res:", res);
 
-    var person = {
-        age: 3,
-    };
-    // 把this指向修改为person对象
-    res = arr.every(function(currentValue) {
-        return currentValue > this.age;
-    }, person);
-    console.log("this指向被修改后的res:", res);
+var person = {
+age: 3,
+};
+// 把this指向修改为person对象
+res = arr.every(function(currentValue) {
+return currentValue > this.age;
+}, person);
+console.log("this指向被修改后的res:", res);
 </script>

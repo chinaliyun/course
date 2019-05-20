@@ -2,7 +2,7 @@
 
 ```html
 <script>
-    3 > 4 ? console.log("执行第一句") : console.log("执行第二句");
+3 > 4 ? console.log("执行第一句") : console.log("执行第二句");
 </script>
 ```
 
@@ -14,29 +14,29 @@
 
 ```html
 <script>
-    var x = 8;
+var x = 8;
 
-    if (x > 5) {
-        if (x > 7) {
-            console.log("x>7");
-        } else {
-            console.log("x<7");
-        }
-    } else {
-        if (x > 3) {
-            console.log("x>3");
-        } else {
-            console.log("x<3");
-        }
-    }
-    // 使用三元运算符代替
-    x > 5
-        ? x > 7
-            ? console.log("x>7")
-            : console.log("x<7")
-        : x > 3
-        ? console.log("x>3")
-        : console.log("x<3");
+if (x > 5) {
+if (x > 7) {
+console.log("x>7");
+} else {
+console.log("x<7");
+}
+} else {
+if (x > 3) {
+console.log("x>3");
+} else {
+console.log("x<3");
+}
+}
+// 使用三元运算符代替
+x > 5
+? x > 7
+? console.log("x>7")
+: console.log("x<7")
+: x > 3
+? console.log("x>3")
+: console.log("x<3");
 </script>
 ```
 

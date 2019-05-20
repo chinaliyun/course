@@ -20,9 +20,9 @@ var arr4 = new Array("张三", "李四", "王五");
 
 ```html
 <script>
-    var arr1 = ["张三", "李四", "王五"];
-    var arr2 = new Array("张三", "李四", "王五");
-    console.log(arr1, arr2);
+var arr1 = ["张三", "李四", "王五"];
+var arr2 = new Array("张三", "李四", "王五");
+console.log(arr1, arr2);
 </script>
 ```
 
@@ -36,16 +36,16 @@ var arr4 = new Array("张三", "李四", "王五");
 
 ```html
 <script>
-    var arr = [];
-    // 添加元素：
-    arr[0] = "张三";
-    arr[1] = "李四";
-    arr[2] = "王五";
-    cosole.log(arr);
+var arr = [];
+// 添加元素：
+arr[0] = "张三";
+arr[1] = "李四";
+arr[2] = "王五";
+cosole.log(arr);
 
-    // 修改元素内容：
-    arr[0] = "赵六";
-    cosole.log(arr);
+// 修改元素内容：
+arr[0] = "赵六";
+cosole.log(arr);
 </script>
 ```
 
@@ -70,18 +70,18 @@ var arr2 = [[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]]; //三维数组
 
 ```html
 <script>
-    var arr1 = [];
-    var arr2 = {};
-    if (Array.isArray(arr1)) {
-        console.log("arr1是一个数组");
-    } else {
-        console.log("arr1不是一个数组");
-    }
-    if (Array.isArray(arr2)) {
-        console.log("arr2是一个数组");
-    } else {
-        console.log("arr2不是一个数组");
-    }
+var arr1 = [];
+var arr2 = {};
+if (Array.isArray(arr1)) {
+console.log("arr1是一个数组");
+} else {
+console.log("arr1不是一个数组");
+}
+if (Array.isArray(arr2)) {
+console.log("arr2是一个数组");
+} else {
+console.log("arr2不是一个数组");
+}
 </script>
 ```
 
@@ -93,13 +93,13 @@ var arr2 = [[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]]; //三维数组
 
 ```html
 <script>
-    var arr = [
-        10,
-        function() {
-            console.log("hello world");
-        },
-    ];
-    arr[1]();
+var arr = [
+10,
+function() {
+console.log("hello world");
+},
+];
+arr[1]();
 </script>
 ```
 

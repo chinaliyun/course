@@ -4,16 +4,16 @@
 
 ```js
 var p1 = {
-    name: "lijun",
-    age: 14,
+name: "lijun",
+age: 14,
 };
 var p2 = {
-    name: "zhangxuetong",
-    age: 14,
+name: "zhangxuetong",
+age: 14,
 };
 var p3 = {
-    name: "liumeichao",
-    age: 14,
+name: "liumeichao",
+age: 14,
 };
 // ......
 ```
@@ -25,9 +25,9 @@ var p3 = {
 ```js
 // 定义一个构造函数
 function Person() {
-    this.name = "zhangxuetong";
-    this.age = 14;
-    console.log(this);
+this.name = "zhangxuetong";
+this.age = 14;
+console.log(this);
 }
 
 // 通过关键字new生成Person函数的一个实例对象
@@ -44,12 +44,12 @@ var p1 = new Person();
 
 ```html
 <script>
-    function Person() {
-        this.name = "zhangsan";
-        this.age = 14;
-        console.log(this);
-    }
-    Person();
+function Person() {
+this.name = "zhangsan";
+this.age = 14;
+console.log(this);
+}
+Person();
 </script>
 ```
 
@@ -61,13 +61,13 @@ var p1 = new Person();
 
 ```html
 <script>
-    function Person() {
-        this.name = "zhangsan";
-        this.age = 14;
-        console.log("this: ", this);
-    }
-    var p1 = new Person();
-    console.log("p1: ", p1);
+function Person() {
+this.name = "zhangsan";
+this.age = 14;
+console.log("this: ", this);
+}
+var p1 = new Person();
+console.log("p1: ", p1);
 </script>
 ```
 
@@ -81,16 +81,16 @@ var p1 = new Person();
 
 ```html
 <script>
-    function Person(name, age) {
-        this.name = name;
-        this.age = age;
-        console.log("this: ", this);
-    }
-    var p1 = new Person("zhangxuetong", 14);
-    console.log("p1: ", p1);
+function Person(name, age) {
+this.name = name;
+this.age = age;
+console.log("this: ", this);
+}
+var p1 = new Person("zhangxuetong", 14);
+console.log("p1: ", p1);
 
-    var p2 = new Person("lizhi", 16);
-    console.log("p2: ", p2);
+var p2 = new Person("lizhi", 16);
+console.log("p2: ", p2);
 </script>
 ```
 
@@ -116,20 +116,20 @@ console.log(p1.name); // 'lizhi'
 
 ```html
 <script>
-    function Person(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    var p1 = new Person("zhangxuetong", 14);
-    console.log("p1: ", p1);
+function Person(name, age) {
+this.name = name;
+this.age = age;
+}
+var p1 = new Person("zhangxuetong", 14);
+console.log("p1: ", p1);
 
-    var p2 = new Person("lizhi", 16);
-    console.log("p2: ", p2);
+var p2 = new Person("lizhi", 16);
+console.log("p2: ", p2);
 
-    console.log("----- 修改 p1.name 属性值之后 ------");
-    p1.name = "lijun";
-    console.log("p1: ", p1);
-    console.log("p2: ", p2);
+console.log("----- 修改 p1.name 属性值之后 ------");
+p1.name = "lijun";
+console.log("p1: ", p1);
+console.log("p2: ", p2);
 </script>
 ```
 

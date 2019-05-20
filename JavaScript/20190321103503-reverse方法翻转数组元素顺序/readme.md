@@ -4,10 +4,10 @@
 
 ```html
 <script>
-    var arr = ["orange", "watermelon", "apple", "banana"];
-    console.log("翻转前：", arr);
-    arr.reverse();
-    console.log("翻转后：", arr);
+var arr = ["orange", "watermelon", "apple", "banana"];
+console.log("翻转前：", arr);
+arr.reverse();
+console.log("翻转后：", arr);
 </script>
 ```
 

@@ -4,11 +4,11 @@
 
 ```html
 <script>
-    if (1) {
-        console.log(1);
-    } else {
-        console.log(2);
-    }
+if (1) {
+console.log(1);
+} else {
+console.log(2);
+}
 </script>
 ```
 
@@ -20,7 +20,7 @@
 
 ```html
 <script>
-    undefined ? console.log(1) : console.log(2);
+undefined ? console.log(1) : console.log(2);
 </script>
 ```
 
@@ -32,7 +32,7 @@
 
 ```html
 <script>
-    !undefined ? console.log(1) : console.log(2);
+!undefined ? console.log(1) : console.log(2);
 </script>
 ```
 
@@ -48,29 +48,29 @@
 
 ### `+`运算符
 
--   如果任意一边为字符串类型，则`+`用作字符串拼接
+- 如果任意一边为字符串类型，则`+`用作字符串拼接
 
--   如果运算符两边有字符串之外的原始数据类型，需要转为数值类型，再进行运算
+- 如果运算符两边有字符串之外的原始数据类型，需要转为数值类型，再进行运算
 
--   如果运算符两边有引用数据类型，需要先转为字符串，再进行字符串拼接
+- 如果运算符两边有引用数据类型，需要先转为字符串，再进行字符串拼接
 
 ```html
 <script>
-    console.log('2 + "abc"', "=", 2 + "abc");
-    console.log('2 + "123"', "=", 2 + "123");
+console.log('2 + "abc"', "=", 2 + "abc");
+console.log('2 + "123"', "=", 2 + "123");
 
-    console.log("2 + 123", "=", 2 + 123);
-    console.log("2 + true", "=", 2 + true);
-    console.log("2 + false", "=", 2 + false);
-    console.log("2 + undefined", "=", 2 + undefined);
-    console.log("2 + null", "=", 2 + null);
+console.log("2 + 123", "=", 2 + 123);
+console.log("2 + true", "=", 2 + true);
+console.log("2 + false", "=", 2 + false);
+console.log("2 + undefined", "=", 2 + undefined);
+console.log("2 + null", "=", 2 + null);
 
-    console.log("2 + []", "=", 2 + []); // 在console面板中，输出的2是黑色文字，是一个字符串类型
-    console.log("2 + [123]", "=", 2 + [123]);
-    console.log("2 + [1,2]", "=", 2 + [1, 2]);
+console.log("2 + []", "=", 2 + []); // 在console面板中，输出的2是黑色文字，是一个字符串类型
+console.log("2 + [123]", "=", 2 + [123]);
+console.log("2 + [1,2]", "=", 2 + [1, 2]);
 
-    console.log("2 + {}", "=", 2 + {});
-    console.log("2 + { age: 18 }", "=", 2 + { age: 18 });
+console.log("2 + {}", "=", 2 + {});
+console.log("2 + { age: 18 }", "=", 2 + { age: 18 });
 </script>
 ```
 
@@ -80,27 +80,27 @@
 
 ### `- * / ==`运算符：
 
--   如果运算符两边有原始数据类型，则将他们转为数字后进行运算
+- 如果运算符两边有原始数据类型，则将他们转为数字后进行运算
 
--   如果运算符两边有引用数据类型，先将它们转为字符串，再转为数值类型，最后进行算数运算
+- 如果运算符两边有引用数据类型，先将它们转为字符串，再转为数值类型，最后进行算数运算
 
 ```html
 <script>
-    console.log('2 - "abc"', "=", 2 - "abc");
-    console.log('2 - "123"', "=", 2 - "123");
+console.log('2 - "abc"', "=", 2 - "abc");
+console.log('2 - "123"', "=", 2 - "123");
 
-    console.log("2 - 123", "=", 2 - 123);
-    console.log("2 - true", "=", 2 - true);
-    console.log("2 - false", "=", 2 - false);
-    console.log("2 - undefined", "=", 2 - undefined);
-    console.log("2 - null", "=", 2 - null);
+console.log("2 - 123", "=", 2 - 123);
+console.log("2 - true", "=", 2 - true);
+console.log("2 - false", "=", 2 - false);
+console.log("2 - undefined", "=", 2 - undefined);
+console.log("2 - null", "=", 2 - null);
 
-    console.log("2 - []", "=", 2 - []); // 在console面板中，输出的2是黑色文字，是一个字符串类型
-    console.log("2 - [123]", "=", 2 - [123]);
-    console.log("2 - [1,2]", "=", 2 - [1, 2]);
+console.log("2 - []", "=", 2 - []); // 在console面板中，输出的2是黑色文字，是一个字符串类型
+console.log("2 - [123]", "=", 2 - [123]);
+console.log("2 - [1,2]", "=", 2 - [1, 2]);
 
-    console.log("2 - {}", "=", 2 - {});
-    console.log("2 - { age: 18 }", "=", 2 - { age: 18 });
+console.log("2 - {}", "=", 2 - {});
+console.log("2 - { age: 18 }", "=", 2 - { age: 18 });
 </script>
 ```
 

@@ -1,19 +1,19 @@
 <script>
-    var arr = ["苹果", "香蕉", "橘子", "西瓜"];
-    console.log("arr的原有内容：", arr);
-    // unshift
-    arr.splice(0, 0, "葡萄");
-    console.log("unshift:在开始位置插入一个新元素:", arr);
+var arr = ["苹果", "香蕉", "橘子", "西瓜"];
+console.log("arr的原有内容：", arr);
+// unshift
+arr.splice(0, 0, "葡萄");
+console.log("unshift:在开始位置插入一个新元素:", arr);
 
-    // push
-    arr.splice(arr.length, 0, "葡萄");
-    console.log("push:在结束位置插入一个新元素:", arr);
+// push
+arr.splice(arr.length, 0, "葡萄");
+console.log("push:在结束位置插入一个新元素:", arr);
 
-    // shift
-    arr.splice(0, 1);
-    console.log("shift:删除第一个元素:", arr);
+// shift
+arr.splice(0, 1);
+console.log("shift:删除第一个元素:", arr);
 
-    // pop
-    arr.splice(arr.length - 1, 1);
-    console.log("pop:删除最后一个元素:", arr);
+// pop
+arr.splice(arr.length - 1, 1);
+console.log("pop:删除最后一个元素:", arr);
 </script>

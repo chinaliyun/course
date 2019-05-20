@@ -6,13 +6,13 @@
 
 ```html
 <script>
-    console.log("String(11):          " + String(11));
-    console.log("String(true):        " + String(true));
-    console.log("String(false):       " + String(false));
-    console.log("String(undefined):   " + String(undefined));
-    console.log("String(null):        " + String(null));
-    console.log("String([]):          " + String([]));
-    console.log("String({}):          " + String({}));
+console.log("String(11):" + String(11));
+console.log("String(true):" + String(true));
+console.log("String(false): " + String(false));
+console.log("String(undefined): " + String(undefined));
+console.log("String(null):" + String(null));
+console.log("String([]):" + String([]));
+console.log("String({}):" + String({}));
 </script>
 ```
 
@@ -28,15 +28,15 @@ JS 会把目标先转成字符串，再尝试转为数字
 
 ```html
 <script>
-    console.log("Number('11'):        " + Number("11"));
-    console.log("Number('abc'):        " + Number("abc"));
-    console.log("Number(''):        " + Number(""));
-    console.log("Number(true):        " + Number(true));
-    console.log("Number(false):       " + Number(false));
-    console.log("Number(undefined):   " + Number(undefined));
-    console.log("Number(null):        " + Number(null));
-    console.log("Number([]):          " + Number([]));
-    console.log("Number({}):          " + Number({}));
+console.log("Number('11'):" + Number("11"));
+console.log("Number('abc'):" + Number("abc"));
+console.log("Number(''):" + Number(""));
+console.log("Number(true):" + Number(true));
+console.log("Number(false): " + Number(false));
+console.log("Number(undefined): " + Number(undefined));
+console.log("Number(null):" + Number(null));
+console.log("Number([]):" + Number([]));
+console.log("Number({}):" + Number({}));
 </script>
 ```
 
@@ -48,16 +48,16 @@ JS 会把目标先转成字符串，再尝试转为数字
 
 ```html
 <script>
-    console.log("Boolean('11'):        " + Boolean("11"));
-    console.log("Boolean('abc'):        " + Boolean("abc"));
-    console.log("Boolean(''):        " + Boolean(""));
-    console.log("Boolean(NaN):        " + Boolean(NaN));
-    console.log("Boolean(0):           " + Boolean(0));
-    console.log("Boolean(1):           " + Boolean(1));
-    console.log("Boolean(undefined):   " + Boolean(undefined));
-    console.log("Boolean(null):        " + Boolean(null));
-    console.log("Boolean([]):          " + Boolean([]));
-    console.log("Boolean({}):          " + Boolean({}));
+console.log("Boolean('11'):" + Boolean("11"));
+console.log("Boolean('abc'):" + Boolean("abc"));
+console.log("Boolean(''):" + Boolean(""));
+console.log("Boolean(NaN):" + Boolean(NaN));
+console.log("Boolean(0): " + Boolean(0));
+console.log("Boolean(1): " + Boolean(1));
+console.log("Boolean(undefined): " + Boolean(undefined));
+console.log("Boolean(null):" + Boolean(null));
+console.log("Boolean([]):" + Boolean([]));
+console.log("Boolean({}):" + Boolean({}));
 </script>
 ```
 

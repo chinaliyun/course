@@ -4,9 +4,9 @@
 
 ```html
 <script>
-    alert(2);
-    alert(5);
-    alert(8);
+alert(2);
+alert(5);
+alert(8);
 </script>
 ```
 
@@ -25,10 +25,10 @@ var add = function() {};
 
 ```html
 <script>
-    debugger;
-    console.log("这里插入一个断点");
-    function add() {}
-    var foo = function() {};
+debugger;
+console.log("这里插入一个断点");
+function add() {}
+var foo = function() {};
 </script>
 ```
 
@@ -44,11 +44,11 @@ var add = function() {};
 
 ```html
 <script>
-    add();
+add();
 
-    function add() {
-        console.log("我所在的函数被调用了");
-    }
+function add() {
+console.log("我所在的函数被调用了");
+}
 </script>
 ```
 
@@ -60,12 +60,12 @@ var add = function() {};
 
 ```html
 <script>
-    // 在变量被赋值前，使用变量，变量的值是undefined
-    console.log(add);
+// 在变量被赋值前，使用变量，变量的值是undefined
+console.log(add);
 
-    var add = 10;
+var add = 10;
 
-    console.log(add);
+console.log(add);
 </script>
 ```
 
@@ -77,12 +77,12 @@ var add = function() {};
 
 ```html
 <script>
-    // 变量add还没有被赋值，调用时会抛出错误
-    add();
+// 变量add还没有被赋值，调用时会抛出错误
+add();
 
-    var add = function() {
-        console.log("我被调用了");
-    };
+var add = function() {
+console.log("我被调用了");
+};
 </script>
 ```
 

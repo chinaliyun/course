@@ -4,15 +4,15 @@
 
 ```html
 <script>
-    var age = 30;
-    var p1 = {
-        age: 20,
-    };
-    function add() {
-        this.age = 40;
-    }
-    add.call(p1);
-    console.log("p1: ", p1);
+var age = 30;
+var p1 = {
+age: 20,
+};
+function add() {
+this.age = 40;
+}
+add.call(p1);
+console.log("p1: ", p1);
 </script>
 ```
 
@@ -26,20 +26,20 @@
 
 ```html
 <script>
-    var age = 30;
-    var p1 = {
-        age: 20,
-    };
-    function add() {
-        this.age = 40;
-        // 这里的this其实还是指向了p1
-    }
-    function foo() {
-        // 把函数add中的this指向改为foo函数中的this，其实还是p1
-        add.call(this);
-    }
-    foo.call(p1); // 把foo函数中的this指向改为p1对象
-    console.log("p1: ", p1);
+var age = 30;
+var p1 = {
+age: 20,
+};
+function add() {
+this.age = 40;
+// 这里的this其实还是指向了p1
+}
+function foo() {
+// 把函数add中的this指向改为foo函数中的this，其实还是p1
+add.call(this);
+}
+foo.call(p1); // 把foo函数中的this指向改为p1对象
+console.log("p1: ", p1);
 </script>
 ```
 
@@ -51,24 +51,24 @@ ok，现在有这么一个需求：要求统计学校老师和学生信息，老
 
 ```js
 var s1 = {
-    age: 16,
-    name: "LiZhi",
-    professional: "前端",
+age: 16,
+name: "LiZhi",
+professional: "前端",
 };
 var s2 = {
-    age: 16,
-    name: "ZhangXueTong",
-    professional: "后端",
+age: 16,
+name: "ZhangXueTong",
+professional: "后端",
 };
 var t1 = {
-    age: 27,
-    name: "LiYun",
-    position: "javascript",
+age: 27,
+name: "LiYun",
+position: "javascript",
 };
 var t2 = {
-    age: 26,
-    name: "ZengXiaoWei",
-    position: "php",
+age: 26,
+name: "ZengXiaoWei",
+position: "php",
 };
 ```
 
@@ -76,24 +76,24 @@ var t2 = {
 
 ```html
 <script>
-    function Student(name, age, professional) {
-        this.name = name;
-        this.age = age;
-        this.professional = professional;
-    }
-    function Teacher(name, age, position) {
-        this.name = name;
-        this.age = age;
-        this.position = position;
-    }
-    var s1 = new Student("LiZhi", 16, "前端");
-    var s2 = new Student("ZhangXueTong", 16, "后端");
-    var t1 = new Teacher("LiYun", 27, "javascript");
-    var t2 = new Teacher("ZengXiaoWei", 26, "php");
-    console.log("s1: ", s1);
-    console.log("s2: ", s2);
-    console.log("t1: ", t1);
-    console.log("t2: ", t2);
+function Student(name, age, professional) {
+this.name = name;
+this.age = age;
+this.professional = professional;
+}
+function Teacher(name, age, position) {
+this.name = name;
+this.age = age;
+this.position = position;
+}
+var s1 = new Student("LiZhi", 16, "前端");
+var s2 = new Student("ZhangXueTong", 16, "后端");
+var t1 = new Teacher("LiYun", 27, "javascript");
+var t2 = new Teacher("ZengXiaoWei", 26, "php");
+console.log("s1: ", s1);
+console.log("s2: ", s2);
+console.log("t1: ", t1);
+console.log("t2: ", t2);
 </script>
 ```
 
@@ -105,28 +105,28 @@ var t2 = {
 
 ```html
 <script>
-    function Person(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    function Student(name, age, professional) {
-        this.professional = professional;
-        Person.call(this, name, age);
-        // 通过call调用Person函数，达到修改实例对象的目的
-    }
-    function Teacher(name, age, position) {
-        this.position = position;
-        Person.call(this, name, age);
-    }
-    var s1 = new Student("LiZhi", 16, "前端");
-    var s2 = new Student("ZhangXueTong", 16, "后端");
-    var t1 = new Teacher("LiYun", 27, "javascript");
-    var t2 = new Teacher("ZengXiaoWei", 26, "php");
+function Person(name, age) {
+this.name = name;
+this.age = age;
+}
+function Student(name, age, professional) {
+this.professional = professional;
+Person.call(this, name, age);
+// 通过call调用Person函数，达到修改实例对象的目的
+}
+function Teacher(name, age, position) {
+this.position = position;
+Person.call(this, name, age);
+}
+var s1 = new Student("LiZhi", 16, "前端");
+var s2 = new Student("ZhangXueTong", 16, "后端");
+var t1 = new Teacher("LiYun", 27, "javascript");
+var t2 = new Teacher("ZengXiaoWei", 26, "php");
 
-    console.log("s1: ", s1);
-    console.log("s2: ", s2);
-    console.log("t1: ", t1);
-    console.log("t2: ", t2);
+console.log("s1: ", s1);
+console.log("s2: ", s2);
+console.log("t1: ", t1);
+console.log("t2: ", t2);
 </script>
 ```
 
@@ -142,34 +142,34 @@ var t2 = {
 
 ```html
 <script>
-    function Person(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    function Student(name, age, professional) {
-        this.professional = professional;
-        Person.call(this, name, age);
-    }
-    function Teacher(name, age, position) {
-        this.position = position;
-        Person.call(this, name, age);
-    }
-    var s1 = new Student("LiZhi", 16, "前端");
-    var s2 = new Student("ZhangXueTong", 16, "后端");
-    var t1 = new Teacher("LiYun", 27, "javascript");
-    var t2 = new Teacher("ZengXiaoWei", 26, "php");
+function Person(name, age) {
+this.name = name;
+this.age = age;
+}
+function Student(name, age, professional) {
+this.professional = professional;
+Person.call(this, name, age);
+}
+function Teacher(name, age, position) {
+this.position = position;
+Person.call(this, name, age);
+}
+var s1 = new Student("LiZhi", 16, "前端");
+var s2 = new Student("ZhangXueTong", 16, "后端");
+var t1 = new Teacher("LiYun", 27, "javascript");
+var t2 = new Teacher("ZengXiaoWei", 26, "php");
 
-    console.log("s1: ", s1);
-    console.log("s2: ", s2);
-    console.log("t1: ", t1);
-    console.log("t2: ", t2);
+console.log("s1: ", s1);
+console.log("s2: ", s2);
+console.log("t1: ", t1);
+console.log("t2: ", t2);
 
-    console.log("修改后：");
-    s1.name = "LiJun";
-    console.log("s1: ", s1);
-    console.log("s2: ", s2);
-    console.log("t1: ", t1);
-    console.log("t2: ", t2);
+console.log("修改后：");
+s1.name = "LiJun";
+console.log("s1: ", s1);
+console.log("s2: ", s2);
+console.log("t1: ", t1);
+console.log("t2: ", t2);
 </script>
 ```
 
@@ -181,38 +181,38 @@ var t2 = {
 
 ```html
 <script>
-    function Person(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    function Student(name, age, professional) {
-        this.professional = professional;
-        Person.call(this, name, age);
-    }
-    function Teacher(name, age, position) {
-        this.position = position;
-        Person.call(this, name, age);
-    }
-    var s1 = new Student("LiZhi", 16, "前端");
-    var s2 = new Student("ZhangXueTong", 16, "后端");
-    var t1 = new Teacher("LiYun", 27, "javascript");
-    var t2 = new Teacher("ZengXiaoWei", 26, "php");
+function Person(name, age) {
+this.name = name;
+this.age = age;
+}
+function Student(name, age, professional) {
+this.professional = professional;
+Person.call(this, name, age);
+}
+function Teacher(name, age, position) {
+this.position = position;
+Person.call(this, name, age);
+}
+var s1 = new Student("LiZhi", 16, "前端");
+var s2 = new Student("ZhangXueTong", 16, "后端");
+var t1 = new Teacher("LiYun", 27, "javascript");
+var t2 = new Teacher("ZengXiaoWei", 26, "php");
 
-    console.log("s1: ", s1);
-    console.log("s2: ", s2);
-    console.log("t1: ", t1);
-    console.log("t2: ", t2);
+console.log("s1: ", s1);
+console.log("s2: ", s2);
+console.log("t1: ", t1);
+console.log("t2: ", t2);
 
-    console.log("修改后：");
-    s1.run = function() {
-        console.log(this.name + "今年" + age + "岁了。");
-    };
-    console.log("s1: ", s1);
-    console.log("s2: ", s2);
-    console.log("t1: ", t1);
-    console.log("t2: ", t2);
+console.log("修改后：");
+s1.run = function() {
+console.log(this.name + "今年" + age + "岁了。");
+};
+console.log("s1: ", s1);
+console.log("s2: ", s2);
+console.log("t1: ", t1);
+console.log("t2: ", t2);
 
-    s1.run();
+s1.run();
 </script>
 ```
 

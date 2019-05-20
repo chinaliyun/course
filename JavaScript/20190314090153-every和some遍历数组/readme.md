@@ -6,16 +6,16 @@
 
 ```html
 <script>
-    var arr = [1, 3, 5, 7, 9];
-    console.log("数组中的元素：", arr);
-    var result = arr.every(function(currentValue, index, arr) {
-        console.log(
-            "currentValue=" + currentValue + ",index=" + index + ",arr=",
-            arr,
-        );
-        return currentValue > 0;
-    });
-    console.log("返回值为：", result);
+var arr = [1, 3, 5, 7, 9];
+console.log("数组中的元素：", arr);
+var result = arr.every(function(currentValue, index, arr) {
+console.log(
+"currentValue=" + currentValue + ",index=" + index + ",arr=",
+arr,
+);
+return currentValue > 0;
+});
+console.log("返回值为：", result);
 </script>
 ```
 
@@ -27,16 +27,16 @@
 
 ```html
 <script>
-    var arr = [1, 3, 5, 7, 9];
-    console.log("数组中的元素：", arr);
-    var result = arr.every(function(currentValue, index, arr) {
-        console.log(
-            "currentValue=" + currentValue + ",index=" + index + ",arr=",
-            arr,
-        );
-        return currentValue > 10;
-    });
-    console.log("返回值为：", result);
+var arr = [1, 3, 5, 7, 9];
+console.log("数组中的元素：", arr);
+var result = arr.every(function(currentValue, index, arr) {
+console.log(
+"currentValue=" + currentValue + ",index=" + index + ",arr=",
+arr,
+);
+return currentValue > 10;
+});
+console.log("返回值为：", result);
 </script>
 ```
 
@@ -50,16 +50,16 @@
 
 ```html
 <script>
-    var arr = [1, 3, 5, 7, 9];
-    console.log("数组中的元素：", arr);
-    var result = arr.some(function(currentValue, index, arr) {
-        console.log(
-            "currentValue=" + currentValue + ",index=" + index + ",arr=",
-            arr,
-        );
-        return currentValue > 0;
-    });
-    console.log("返回值为：", result);
+var arr = [1, 3, 5, 7, 9];
+console.log("数组中的元素：", arr);
+var result = arr.some(function(currentValue, index, arr) {
+console.log(
+"currentValue=" + currentValue + ",index=" + index + ",arr=",
+arr,
+);
+return currentValue > 0;
+});
+console.log("返回值为：", result);
 </script>
 ```
 
@@ -71,16 +71,16 @@
 
 ```html
 <script>
-    var arr = [1, 3, 5, 7, 9];
-    console.log("数组中的元素：", arr);
-    var result = arr.some(function(currentValue, index, arr) {
-        console.log(
-            "currentValue=" + currentValue + ",index=" + index + ",arr=",
-            arr,
-        );
-        return currentValue > 10;
-    });
-    console.log("返回值为：", result);
+var arr = [1, 3, 5, 7, 9];
+console.log("数组中的元素：", arr);
+var result = arr.some(function(currentValue, index, arr) {
+console.log(
+"currentValue=" + currentValue + ",index=" + index + ",arr=",
+arr,
+);
+return currentValue > 10;
+});
+console.log("返回值为：", result);
 </script>
 ```
 

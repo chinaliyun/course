@@ -8,7 +8,7 @@
 
 ```js
 for (var x = 0; x < 10; x++) {
-    console.log(x);
+console.log(x);
 }
 console.log("执行完毕");
 ```
@@ -19,9 +19,9 @@ console.log("执行完毕");
 
 在上面的语句中：
 
--   `var x=0`声明一个变量，且定义了变量`x`的初始值，
--   `x<1`定义了代码块执行的条件。当表达式`x<1`为`true`的时候，才会执行花括号中的代码块,
--   `x++`定义了代码块执行之后执行的语句。`x++`执行之后, 如果`x<10`依然为`true`就循环执行下去，直到`x<10`的结果为`false`，才会停止循环
+- `var x=0`声明一个变量，且定义了变量`x`的初始值，
+- `x<1`定义了代码块执行的条件。当表达式`x<1`为`true`的时候，才会执行花括号中的代码块,
+- `x++`定义了代码块执行之后执行的语句。`x++`执行之后, 如果`x<10`依然为`true`就循环执行下去，直到`x<10`的结果为`false`，才会停止循环
 
 ## 使用 break 打断 for 循环
 
@@ -29,10 +29,10 @@ console.log("执行完毕");
 
 ```js
 for (var x = 0; x < 5; x++) {
-    if (x == 3) {
-        break;
-    }
-    console.log(x);
+if (x == 3) {
+break;
+}
+console.log(x);
 }
 console.log("执行完毕");
 ```
@@ -47,10 +47,10 @@ console.log("执行完毕");
 
 ```js
 for (var x = 0; x < 5; x++) {
-    if (x == 3) {
-        continue;
-    }
-    console.log(x);
+if (x == 3) {
+continue;
+}
+console.log(x);
 }
 console.log("执行完毕");
 ```
@@ -63,11 +63,11 @@ console.log("执行完毕");
 
 ```html
 <script>
-    var sum = 0;
-    for (var m = 0; m <= 100; m++) {
-        sum += m;
-    }
-    document.write(sum);
+var sum = 0;
+for (var m = 0; m <= 100; m++) {
+sum += m;
+}
+document.write(sum);
 </script>
 ```
 
@@ -77,13 +77,13 @@ console.log("执行完毕");
 
 ```html
 <script>
-    var sum = 0;
-    for (var m = 0; m <= 100; m++) {
-        if (m % 3 == 0) {
-            sum += m;
-        }
-    }
-    document.write(sum);
+var sum = 0;
+for (var m = 0; m <= 100; m++) {
+if (m % 3 == 0) {
+sum += m;
+}
+}
+document.write(sum);
 </script>
 ```
 

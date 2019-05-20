@@ -10,8 +10,8 @@
 
 ```html
 <script>
-    var a = 0；
-    var b = a++;
+var a = 0；
+var b = a++;
 </script>
 ```
 
@@ -29,12 +29,12 @@
 
 ```html
 <script>
-    var sum = 0;
-    for (var a = 1; a < 10; a++) {
-        sum += a;
-        alert(sum);
-    }
-    console.log(sum);
+var sum = 0;
+for (var a = 1; a < 10; a++) {
+sum += a;
+alert(sum);
+}
+console.log(sum);
 </script>
 ```
 
@@ -46,12 +46,12 @@
 
 ```html
 <script>
-    var sum = 0;
-    for (var a = 1; a < 10; a++) {
-        sum += a;
-        console.log(sum);
-    }
-    console.log(sum);
+var sum = 0;
+for (var a = 1; a < 10; a++) {
+sum += a;
+console.log(sum);
+}
+console.log(sum);
 </script>
 ```
 
@@ -68,11 +68,11 @@
 
 ![](./images/04.png)
 
--   选中当前页面的文件，点击代码所在的行数数字，可以添加断点
--   刷新页面后，JS 会在断点的位置暂停执行
--   按下`F11`，或者点击对应的位置，可以分步执行 JS
--   分步执行 JS 的时候，可以在每一步执行的过程中，鼠标放在变量名上，查看变量当前的值
--   `watch`面板可以新增或删除要观察的变量
+- 选中当前页面的文件，点击代码所在的行数数字，可以添加断点
+- 刷新页面后，JS 会在断点的位置暂停执行
+- 按下`F11`，或者点击对应的位置，可以分步执行 JS
+- 分步执行 JS 的时候，可以在每一步执行的过程中，鼠标放在变量名上，查看变量当前的值
+- `watch`面板可以新增或删除要观察的变量
 
 ## debugger 关键字
 
@@ -80,12 +80,12 @@
 
 ```html
 <script>
-    var sum = 0;
-    debugger;
-    for (var a = 1; a < 10; a++) {
-        sum += a;
-    }
-    console.log(sum);
+var sum = 0;
+debugger;
+for (var a = 1; a < 10; a++) {
+sum += a;
+}
+console.log(sum);
 </script>
 ```
 

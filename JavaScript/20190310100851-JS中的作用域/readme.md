@@ -6,13 +6,13 @@
 
 ```html
 <script>
-    var a = "我是a的变量值，函数内可访问到";
-    function add() {
-        console.log(a);
-        var b = "我是b的变量值，函数外不可以访问到";
-    }
-    add();
-    console.log(b);
+var a = "我是a的变量值，函数内可访问到";
+function add() {
+console.log(a);
+var b = "我是b的变量值，函数外不可以访问到";
+}
+add();
+console.log(b);
 </script>
 ```
 
@@ -30,12 +30,12 @@
 
 ```html
 <script>
-    var name = "lily";
-    document.write(window.name);
+var name = "lily";
+document.write(window.name);
 
-    function add() {
-        console.log("通过window.add()也可以执行这个方法");
-    }
+function add() {
+console.log("通过window.add()也可以执行这个方法");
+}
 </script>
 ```
 

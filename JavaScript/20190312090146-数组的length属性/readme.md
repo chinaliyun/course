@@ -4,8 +4,8 @@
 
 ```html
 <script>
-    var arr = ["张三", "李四", "王五"];
-    console.log(arr.length);
+var arr = ["张三", "李四", "王五"];
+console.log(arr.length);
 </script>
 ```
 

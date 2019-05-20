@@ -6,13 +6,13 @@
 
 ```html
 <script>
-    var arr = ["苹果", "香蕉", "西瓜", "橘子", "西瓜"];
+var arr = ["苹果", "香蕉", "西瓜", "橘子", "西瓜"];
 
-    var res1 = arr.indexOf("西瓜");
-    console.log("res1:", res1);
+var res1 = arr.indexOf("西瓜");
+console.log("res1:", res1);
 
-    var res2 = arr.lastIndexOf("西瓜");
-    console.log("res2:", res2);
+var res2 = arr.lastIndexOf("西瓜");
+console.log("res2:", res2);
 </script>
 ```
 
@@ -24,13 +24,13 @@
 
 ```html
 <script>
-    var arr = [1, 2, "3", 4, 5];
+var arr = [1, 2, "3", 4, 5];
 
-    var res1 = arr.indexOf("2");
-    console.log("res1", res1);
+var res1 = arr.indexOf("2");
+console.log("res1", res1);
 
-    var res2 = arr.indexOf(3);
-    console.log("res2", res2);
+var res2 = arr.indexOf(3);
+console.log("res2", res2);
 </script>
 ```
 
