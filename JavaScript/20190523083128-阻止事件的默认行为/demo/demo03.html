@@ -1,0 +1,10 @@
+<a href="http://baidu.com">jump to baidu website</a>
+
+<script>
+    var a = document.querySelector("a");
+    a.addEventListener("click", function(event) {
+        // a元素被点击后，不会再有跳转行为了
+        event.preventDefault();
+        console.log("click事件的默认行为是否能被取消：", event.cancelable);
+    });
+</script>

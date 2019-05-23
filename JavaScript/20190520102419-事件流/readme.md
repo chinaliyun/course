@@ -160,32 +160,32 @@
     document.body.addEventListener(
         "click",
         function() {
-            console.log("点击了body");
+            console.log("捕获阶段触发body");
         },
         true,
     );
     document.body.addEventListener("click", function() {
-        console.log("点击了body2");
+        console.log("冒泡阶段触发body");
     });
     outerEle.addEventListener(
         "click",
         function() {
-            console.log("点击了.outer元素");
+            console.log("捕获阶段触发outer");
         },
         true,
     );
     outerEle.addEventListener("click", function() {
-        console.log("点击了.outer元素2");
+        console.log("冒泡阶段触发outer");
     });
     innerEle.addEventListener(
         "click",
         function() {
-            console.log("点击了.inner元素");
+            console.log("捕获阶段触发inner");
         },
         true,
     );
     innerEle.addEventListener("click", function() {
-        console.log("点击了.inner元素2");
+        console.log("冒泡阶段触发inner");
     });
 </script>
 ```
@@ -193,6 +193,86 @@
 [案例源码](./demo/demo03.html)
 
 ![](./images/03.png)
+
+从控制台中可以看出，添加的这些侦听函数，确实是先执行了定义在捕获阶段执行的函数，再执行定义在冒泡阶段的函数。
+
+## 注意
+
+现在我们把前面的代码顺序调整一下：
+
+```html
+<style>
+    body {
+        margin: 0;
+        background-color: darksalmon;
+    }
+    div {
+        margin: 0 auto;
+    }
+    .outer {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+    }
+    .inner {
+        width: 100px;
+        height: 100px;
+        background-color: cadetblue;
+    }
+</style>
+
+<div class="outer">
+    <div class="inner"></div>
+</div>
+
+<script>
+    var outerEle = document.querySelector(".outer");
+    var innerEle = document.querySelector(".inner");
+
+    document.body.addEventListener(
+        "click",
+        function() {
+            console.log("捕获阶段触发body");
+        },
+        true,
+    );
+    document.body.addEventListener("click", function() {
+        console.log("冒泡阶段触发body");
+    });
+    outerEle.addEventListener(
+        "click",
+        function() {
+            console.log("捕获阶段触发outer");
+        },
+        true,
+    );
+    outerEle.addEventListener("click", function() {
+        console.log("冒泡阶段触发outer");
+    });
+    innerEle.addEventListener("click", function() {
+        console.log("冒泡阶段触发inner");
+    });
+    innerEle.addEventListener(
+        "click",
+        function() {
+            console.log("捕获阶段触发inner");
+        },
+        true,
+    );
+</script>
+```
+
+[案例源码](./demo/demo04.html)
+
+![](./images/04.png)
+
+这个案例和上一个案例唯一不同之处在于，关于`inner`元素桑的两种侦听函数的添加顺序不同。导致最终结果不同，这是因为：
+
+1. 事件流包含三个阶段：捕获阶段-处于目标阶段-冒泡阶段
+2. 祖先元素的侦听函数，会根据`useCapture`参数的值，在捕获阶段或者冒泡阶段执行
+3. 触发事件的目标元素上的侦听函数，则不受`useCapture`参数的影响，会按照侦听函数添加的先后顺序执行。
+
+## addEventListener 的第二种用法
 
 `element.addEventListener()`函数还有第二种用法：`element.addEventListener(type, fn [, options])`,`option`可以传入一个对象，在这个对象中也可以设置侦听函数的执行方式。
 
@@ -260,6 +340,8 @@
 </script>
 ```
 
-[案例源码](./demo/demo04.html)
+[案例源码](./demo/demo05.html)
 
-![](./images/04.png)
+![](./images/05.png)
+
+> 为了兼容早期版本的 IE 浏览器，一般很少会把侦听事件放在捕获阶段执行

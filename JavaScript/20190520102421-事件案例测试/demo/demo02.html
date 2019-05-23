@@ -1,0 +1,41 @@
+<script>
+    function formatTime(n) {
+        return n < 10 ? "0" + n : n;
+    }
+    function getTime() {
+        var time = new Date();
+        var year = time.getFullYear();
+        var month = formatTime(time.getMonth());
+        var date = formatTime(time.getDate());
+        var hours = formatTime(time.getHours());
+        var minutes = formatTime(time.getMinutes());
+        var seconds = formatTime(time.getSeconds());
+        var str =
+            year +
+            "-" +
+            month +
+            "-" +
+            date +
+            " " +
+            hours +
+            ":" +
+            minutes +
+            ":" +
+            seconds;
+        return str;
+    }
+    window.onload = function() {
+        var btn = document.createElement("button");
+        btn.textContent = "新增li";
+        document.body.appendChild(btn);
+        var ul = document.createElement("ul");
+        document.body.appendChild(ul);
+
+        var li = document.createElement("li");
+        btn.addEventListener("click", function() {
+            var ele = li.cloneNode(true);
+            ele.textContent = getTime();
+            ul.appendChild(ele);
+        });
+    };
+</script>

@@ -1,0 +1,31 @@
+<style>
+    body {
+        margin: 0;
+    }
+    div {
+        margin: 0 auto;
+    }
+    .outer {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+    }
+</style>
+
+<div class="outer"></div>
+
+<script>
+    var outer = document.querySelector(".outer");
+    outer.addEventListener("click", function() {
+        console.log("outer第1个侦听函数");
+    });
+    outer.addEventListener("click", function() {
+        console.log("outer第2个侦听函数");
+    });
+    outer.addEventListener("click", function() {
+        console.log("outer第3个侦听函数");
+    });
+    outer.addEventListener("click", function() {
+        console.log("outer第4个侦听函数");
+    });
+</script>

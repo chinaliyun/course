@@ -1,0 +1,16 @@
+<script>
+    window.onload = function() {
+        var btn = document.createElement("button");
+        btn.textContent = "新增li";
+        document.body.appendChild(btn);
+        var ul = document.createElement("ul");
+        document.body.appendChild(ul);
+
+        var li = document.createElement("li");
+        btn.addEventListener("click", function() {
+            var ele = li.cloneNode(true);
+            ele.textContent = new Date().getTime();
+            ul.appendChild(ele);
+        });
+    };
+</script>

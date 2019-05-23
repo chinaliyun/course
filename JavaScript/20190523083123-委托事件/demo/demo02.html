@@ -1,0 +1,25 @@
+<ul>
+    <li>apple</li>
+    <li>orange</li>
+    <li>banana</li>
+</ul>
+<button type="button">添加水果</button>
+<script>
+    var lis = document.querySelectorAll("li");
+    var len = lis.length;
+    for (var i = 0; i < len; i++) {
+        var li = lis[i];
+        li.addEventListener("click", function(event) {
+            console.log(event.target.textContent);
+        });
+    }
+
+    var btn = document.querySelector("button");
+    // 点击按钮后，新增一个li标签，内容是pear
+    btn.addEventListener("click", function() {
+        var li = document.querySelector("li");
+        var ele = li.cloneNode(true);
+        ele.textContent = "pear";
+        li.parentNode.appendChild(ele);
+    });
+</script>

@@ -1,0 +1,22 @@
+<ul>
+    <li>apple</li>
+    <li>orange</li>
+    <li>banana</li>
+</ul>
+<button type="button">添加水果</button>
+<script>
+    var ul = document.querySelector("ul");
+    ul.addEventListener("click", function(event) {
+        if ((event.target.nodeName = "LI")) {
+            console.log(event.target.textContent);
+        }
+    });
+
+    var btn = document.querySelector("button");
+    btn.addEventListener("click", function() {
+        var li = document.querySelector("li");
+        var ele = li.cloneNode(true);
+        ele.textContent = "pear";
+        li.parentNode.appendChild(ele);
+    });
+</script>

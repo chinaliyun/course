@@ -1,0 +1,23 @@
+<style>
+    .outer {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+    }
+</style>
+<div class="outer"></div>
+<script>
+    var outer = document.querySelector(".outer");
+    function clickMaoPao() {
+        console.log("click冒泡阶段执行");
+    }
+    function clickBuHuo() {
+        console.log("click捕获阶段执行");
+    }
+    outer.addEventListener("click", clickBuHuo, {
+        capture: true,
+    });
+    outer.addEventListener("click", clickMaoPao);
+
+    outer.removeEventListener("click", clickBuHuo, true);
+</script>

@@ -29,31 +29,31 @@
     document.body.addEventListener(
         "click",
         function() {
-            console.log("点击了body");
+            console.log("捕获阶段触发body");
         },
         true,
     );
     document.body.addEventListener("click", function() {
-        console.log("点击了body2");
+        console.log("冒泡阶段触发body");
     });
     outerEle.addEventListener(
         "click",
         function() {
-            console.log("点击了.outer元素");
+            console.log("捕获阶段触发outer");
         },
         true,
     );
     outerEle.addEventListener("click", function() {
-        console.log("点击了.outer元素2");
+        console.log("冒泡阶段触发outer");
     });
     innerEle.addEventListener(
         "click",
         function() {
-            console.log("点击了.inner元素");
+            console.log("捕获阶段触发inner");
         },
         true,
     );
     innerEle.addEventListener("click", function() {
-        console.log("点击了.inner元素2");
+        console.log("冒泡阶段触发inner");
     });
 </script>
