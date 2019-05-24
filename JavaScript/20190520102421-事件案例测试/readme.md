@@ -50,3 +50,14 @@
 4. https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2595508360,28762262&fm=26&gp=0.jpg
 5. https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4271137042,1949666209&fm=26&gp=0.jpg
 ```
+
+## 案例五
+
+```
+在页面中插入一个按钮
+在页面中插入 5 个 img 元素
+把元素设置为相对定位，参照物是 body，top、left 都是 50px；默认只显示第一个图片元素，其他元素隐藏
+给按钮添加点击事件
+每点击一次按钮，让下一个图片显示，其他图片继续隐藏
+先隐藏上一个元素，再显示下一个元素
+```

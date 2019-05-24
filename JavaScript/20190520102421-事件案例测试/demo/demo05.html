@@ -1,0 +1,56 @@
+<style>
+    body {
+        margin: 0;
+        position: relative;
+    }
+    img {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+</style>
+<script>
+    var imgs = [
+        "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2905893513,2695425341&fm=26&gp=0.jpg",
+        "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2364547894,2895798227&fm=26&gp=0.jpg",
+        "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2883422974,2939969757&fm=26&gp=0.jpg",
+        "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2595508360,28762262&fm=26&gp=0.jpg",
+        "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4271137042,1949666209&fm=26&gp=0.jpg",
+    ];
+    window.onload = function() {
+        var html = document.createDocumentFragment();
+
+        var btn = document.createElement("button");
+        btn.textContent = "切换图片";
+        html.appendChild(btn);
+
+        for (var i = 0; i < imgs.length; i++) {
+            var img = document.createElement("img");
+            img.src = imgs[i];
+            if (i == 0) {
+                img.style.display = "block";
+            } else {
+                img.style.display = "none";
+            }
+            html.appendChild(img);
+        }
+
+        document.body.appendChild(html);
+
+        var imgIndex = 0;
+        btn.addEventListener("click", function() {
+            var imgs = document.querySelectorAll("img");
+            if (imgIndex == 5) {
+                imgIndex = 0;
+            }
+            imgs[imgIndex].style.display = "none";
+
+            var nextIndex = imgIndex + 1;
+            if (nextIndex == 5) {
+                nextIndex = 0;
+            }
+            imgs[nextIndex].style.display = "block";
+            imgIndex++;
+        });
+    };
+</script>

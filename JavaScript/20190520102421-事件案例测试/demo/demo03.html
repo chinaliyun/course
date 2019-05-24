@@ -38,6 +38,11 @@
 
         function clickFn() {
             var lis = document.querySelectorAll("li");
+            if (lis.length == 10) {
+                btn.removeEventListener("click", clickFn);
+                return false;
+            }
+
             var li = document.createElement("li");
             li.textContent = getTime();
             ul.appendChild(li);
