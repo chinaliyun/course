@@ -187,4 +187,4 @@
 
 1. `mouseenter/mouseleave`不会向上冒泡，而`mouseover/mouseout`会自动向上冒泡
 2. `mouseenter/mouseleave`只会在鼠标从外部进入元素本身，或着鼠标向外离开元素本身时触发；鼠标进入元素本身或者元素的后代元素时都会触发元素的`mouseover`事件，鼠标离开元素本身或者元素的后代元素时都会触发元素的`mouseout`事件，
-3. 当鼠标在元素的子元素之间移动时，总会先触发`mouseout`事件，再触发`mouseover`事件
+3. 当鼠标在元素的后代元素之间移动时，总会先触发`mouseout`事件，再触发`mouseover`事件

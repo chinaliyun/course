@@ -36,20 +36,18 @@
         }
 
         document.body.appendChild(html);
-
         var imgIndex = 0;
         btn.addEventListener("click", function() {
-            var imgs = document.querySelectorAll("img");
             if (imgIndex == 5) {
                 imgIndex = 0;
             }
-            imgs[imgIndex].style.display = "none";
-
+            var imgEles = document.querySelectorAll("img");
+            imgEles[imgIndex].style.display = "none";
             var nextIndex = imgIndex + 1;
             if (nextIndex == 5) {
                 nextIndex = 0;
             }
-            imgs[nextIndex].style.display = "block";
+            imgEles[nextIndex].style.display = "block";
             imgIndex++;
         });
     };

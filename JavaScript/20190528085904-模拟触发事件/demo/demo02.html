@@ -1,0 +1,30 @@
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        background-color: aquamarine;
+    }
+</style>
+<div></div>
+<script>
+    var div = document.querySelector("div");
+    div.addEventListener("click", function() {
+        console.log("div元素被点击了");
+    });
+    document.body.addEventListener("click", function() {
+        console.log("body元素被点击了");
+    });
+
+    setTimeout(function() {
+        var event = new Event("click");
+        div.dispatchEvent(event);
+    }, 2000);
+
+    setTimeout(function() {
+        var event = new Event("click", {
+            bubbles: true,
+        });
+        div.dispatchEvent(event);
+    }, 4000);
+</script>

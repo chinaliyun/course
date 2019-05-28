@@ -18,10 +18,9 @@
         document.body.appendChild(img);
 
         btn.addEventListener("click", function() {
-            if (imgIndex == imgs.length - 1) {
+            imgIndex++;
+            if (imgIndex == 5) {
                 imgIndex = 0;
-            } else {
-                imgIndex++;
             }
             img.src = imgs[imgIndex];
         });

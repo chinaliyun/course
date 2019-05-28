@@ -1,0 +1,16 @@
+<a href="http://baidu.com">jump to baidu website</a>
+
+<script>
+    var a = document.querySelector("a");
+    a.addEventListener("click", function(event) {
+        console.log("click事件的默认行为是否能被取消：", event.cancelable);
+        // 超链接不会跳转页面了
+        event.preventDefault();
+    });
+
+    window.addEventListener("wheel", function(event) {
+        console.log("wheel事件的默认行为是否能被取消：", event.cancelable);
+        // 强行取消浏览器会抛出错误
+        event.preventDefault();
+    });
+</script>
