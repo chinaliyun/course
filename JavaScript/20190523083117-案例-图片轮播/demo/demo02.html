@@ -1,0 +1,64 @@
+<style>
+    body {
+        margin: 0;
+    }
+    .wrapper {
+        width: 500px;
+        height: 300px;
+        margin: 0 auto;
+        background-color: red;
+        position: relative;
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+    .btn_wrapper,
+    p {
+        text-align: center;
+    }
+</style>
+<div class="wrapper">
+    <img class="show" src="./images/01.jpg" />
+    <img src="./images/02.jpg" />
+    <img src="./images/03.jpg" />
+    <img src="./images/04.jpg" />
+    <img src="./images/05.jpg" />
+</div>
+<p>当前显示第<span>1</span>张图片</p>
+<div class="btn_wrapper">
+    <button type="button" class="prevImg">上一张</button>
+    <button type="button" class="nextImg">下一张</button>
+</div>
+<script>
+    var nextBtn = document.querySelector(".nextImg");
+    var currentIndex = 0,
+        nextIndex;
+    var imgs = document.querySelectorAll("img");
+    nextBtn.addEventListener("click", function() {
+        nextIndex = currentIndex + 1;
+        if (nextIndex > 4) {
+            nextIndex = 0;
+        }
+        imgs[currentIndex].classList.remove("show");
+        imgs[nextIndex].classList.add("show");
+        document.querySelector("span").textContent = nextIndex + 1;
+        currentIndex = nextIndex;
+    });
+    var prevBtn = document.querySelector(".prevImg");
+    prevBtn.addEventListener("click", function() {
+        nextIndex = currentIndex - 1;
+        if (nextIndex < 0) {
+            nextIndex = 4;
+        }
+        imgs[currentIndex].classList.remove("show");
+        imgs[nextIndex].classList.add("show");
+        document.querySelector("span").textContent = nextIndex + 1;
+        currentIndex = nextIndex;
+    });
+</script>
