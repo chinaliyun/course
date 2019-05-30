@@ -1,0 +1,14 @@
+<script>
+    window.onload = function() {
+        // 创建自定义事件
+        var event = new Event("postMessage");
+        document.body.addEventListener("click", function() {
+            console.log("click事件触发的函数执行了");
+            // 触发自定义事件 postMessage
+            document.body.dispatchEvent(event);
+        });
+        document.body.addEventListener("postMessage", function() {
+            console.log("postMessage事件触发的函数执行了");
+        });
+    };
+</script>

@@ -1,0 +1,25 @@
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        background-color: aquamarine;
+    }
+</style>
+<div></div>
+<script>
+    var div = document.querySelector("div");
+    function clickEvent(event) {
+        if (event.isTrusted) {
+            console.log("点击事件是人为触发的");
+        } else {
+            console.log("点击事件不是人为触发的");
+        }
+    }
+
+    div.addEventListener("click", clickEvent);
+
+    setTimeout(function() {
+        div.click();
+    }, 2000);
+</script>

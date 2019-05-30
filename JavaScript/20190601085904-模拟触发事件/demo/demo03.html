@@ -1,0 +1,25 @@
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        background-color: aquamarine;
+    }
+</style>
+<div></div>
+<a href="http://baidu.com">baidu.com</a>
+<script>
+    var div = document.querySelector("a");
+    div.addEventListener("click", function(event) {
+        console.log(event.cancelable);
+        event.preventDefault();
+        console.log("div元素被点击了");
+    });
+    var event = new Event("click", {
+        cancelable: false,
+    });
+    setTimeout(function() {
+        var a = div.dispatchEvent(event);
+        console.log(a);
+    }, 2000);
+</script>

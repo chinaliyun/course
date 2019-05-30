@@ -1,0 +1,15 @@
+<form action="./demo03.html" onsubmit="tijiao2(event)">
+    <input type="text" name="age" />
+    <button onsubmit="tijiao1(event)">提交</button>
+</form>
+<script>
+    function tijiao1(e) {
+        console.log(1);
+        console.log(e.cancelable);
+        e.preventDefault();
+    }
+    function tijiao2(e) {
+        console.log(event);
+        e.preventDefault();
+    }
+</script>

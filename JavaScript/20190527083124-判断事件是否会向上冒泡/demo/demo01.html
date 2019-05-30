@@ -1,0 +1,28 @@
+<style>
+    .outer {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        background-color: brown;
+    }
+    .inner {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        background-color: cornflowerblue;
+    }
+</style>
+<div class="outer">
+    <div class="inner"></div>
+</div>
+<script>
+    var outer = document.querySelector(".outer");
+    var inner = document.querySelector(".inner");
+
+    inner.onclick = function(event) {
+        console.log("inner元素的click事件是否会向上冒泡: ", event.bubbles);
+    };
+    outer.onclick = function(event) {
+        console.log("outer的侦听事件因为click事件会向上冒泡，也被调用了 ");
+    };
+</script>
