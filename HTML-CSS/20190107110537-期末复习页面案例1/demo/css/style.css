@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "icomoon";
+    src: url("../fonts/icomoon.eot?waw760");
+    src: url("../fonts/icomoon.eot?waw760#iefix") format("embedded-opentype"),
+        url("../fonts/icomoon.ttf?waw760") format("truetype"),
+        url("../fonts/icomoon.woff?waw760") format("woff"),
+        url("../fonts/icomoon.svg?waw760#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "icomoon" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-2:before {
+    content: "\e90e";
+}
+.icon-1:before {
+    content: "\e90f";
+}
+.icon-uniE910:before {
+    content: "\e910";
+}
+.icon-diannao:before {
+    content: "\e900";
+}
+.icon-facebook:before {
+    content: "\e901";
+}
+.icon-google:before {
+    content: "\e902";
+}
+.icon-icon_folder:before {
+    content: "\e903";
+}
+.icon-lianjie:before {
+    content: "\e904";
+}
+.icon-shezhi:before {
+    content: "\e905";
+}
+.icon-shijian:before {
+    content: "\e906";
+}
+.icon-shuaxin:before {
+    content: "\e907";
+}
+.icon-sousuo:before {
+    content: "\e908";
+}
+.icon-twitter:before {
+    content: "\e909";
+}
+.icon-wangluo:before {
+    content: "\e90a";
+}
+.icon-weixiao:before {
+    content: "\e90b";
+}
+.icon-wujiaoxing:before {
+    content: "\e90c";
+}
+.icon-yidong:before {
+    content: "\e90d";
+}

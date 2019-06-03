@@ -1,0 +1,154 @@
+## 文字样式
+
+-   font-family 定义文字字体
+-   font-size 定义文字字号
+-   font-weight 定义文字粗细
+    -   normal 正常粗细 =400
+    -   bold/bolder 加粗 =700
+    -   lighter 细体 =100
+    -   100-900
+-   color 定义文字颜色
+-   font-style 定义是否倾斜
+    -   normal 默认，不倾斜
+    -   italic 斜体
+-   text-decoration 定义文字其他样式
+    -   underline 下划线
+    -   overline 上划线
+    -   line-through 删除线
+-   letter-space 字符间距
+-   word-space 单词间距
+-   line-height 定义文字行高
+-   text-align 定义文字左右对其方式
+    -   left 左对齐
+    -   right 右对齐
+    -   center 居中对齐
+    -   justify 左右对齐
+-   text-shadow 定义文字阴影
+-   text-indent 定义首行缩进距离
+-   white-sapce 定义段落是否换行
+    -   wrap， 默认值，自动换行
+    -   no-wrap ，强制不换行
+    -   pre 保留段落中的空白和换行符
+    -   pre-line 合并空白，保留换行符
+    -   pre-wrap 保留空白，正常进行换行
+-   word-wrap 定义长单词是否换行
+    -   none 默认，不换行
+    -   break-word 打断单词，换行
+-   word-break 定义长单词的换行方式
+    -   normal 相当于 keep-all
+    -   keep-all 长单词自动从下一行开始显示，超出一行后自动换行
+    -   break-all 长单词从上一行接着显示， 并自动换行
+-   text-overflow 文字超出部分的显示方式
+    -   visible 默认，照常显示超出部分
+    -   clip 不显示超出部分文字
+    -   ellipsis 超出部分用省略号代替
+    -   string 用指定字符串代替超出部分（只要 firfox 浏览器支持）
+
+## 盒子模型相关的样式
+
+-   width 定义元素宽度
+-   height 定义元素高度
+-   padding 定义元素内边距
+-   border 定义元素边框
+-   margin 定义元素外边框
+-   box-sizing 设置元素的盒子模型
+    -   content-box 设置为标准盒子模型
+    -   border-box 设置为 IE 盒子模型
+-   display 定义元素的显示方式
+    -   none 不显示元素
+    -   block 显示为块级元素
+    -   inline 显示为行内元素
+    -   inline-block 显示为行内块元素
+    -   table-cell 显示为单元格元素，效果类似于表格中的 td 元素屎
+
+## 元素本身的样式
+
+-   float 定义元素的浮动方式
+    -   none 默认值，不浮动
+    -   left 左浮动
+    -   right 右浮动
+-   clear 清楚浮动元素带来的影响
+    -   left 清除上一个元素左浮动带来的影响
+    -   right 清除上一个元素右浮动带来的影响
+    -   both 清除上一个元素浮动带来的影响
+-   position 定义元素的定位方式
+    -   static 默认，不使用定位
+    -   relative 相对定位
+    -   absolute 绝对定位
+    -   fixed 固定定位
+    -   sticky 粘性定位
+-   left
+-   right
+-   top
+-   bottom
+-   z-index 设置元素在 Z 轴上的距离
+-   overflow 设置超出元素宽高区域的内容显示方式
+    -   visible 默认，照常显示
+    -   hidden 隐藏超出部分
+-   overflow-x 设置超出元素宽度区域的显示方式
+-   overflow-y 设置超出元素高度区域的显示方式
+-   vertical-align 设置元素之间上下对齐方式
+    -   top 上对齐
+    -   bottom 下对齐
+    -   middle 居中对齐
+-   border-radius 定义元素的圆角距离
+    -   border-top-left-radius
+    -   border-top-right-radius
+    -   border-bottom-left-radius
+    -   border-bottom-right-radius
+-   box-shadow 定义元素阴影
+-   outline 定义元素外边框
+-   visibility 定义元素是否隐藏
+    -   visible 显示元素
+    -   hidden 隐藏元素
+-   background 定义元素的背景色、背景图和渐变色
+-   background-color 定义元素的背景色
+-   background-image 定义元素的背景图路径
+-   background-repeat 定义背景图片是否重复显示
+    -   repeat 重复
+    -   no-repeat 不重复
+    -   repeat-x 只在 X 轴上重复
+    -   repeat-y 只在 Y 轴上重复
+-   background-size 定义背景图片的尺寸
+    -   cover 填充模式，任意一个方向占满，另一个方向等比例缩放不允许留有空白
+    -   contain 适应模式， 任意一个方向占满，另一个方向等比例缩放两边可以留空白
+    -   auto 根据另一个方向的尺寸自动等比例缩放
+-   background-position 定背景图片的位置
+    -   可以使用 left right top bottom center 来定义
+-   background-origin 定义背景图片的起始位置
+    -   conten-box 从元素内容的左上角开始计算位置
+    -   padding-box 从元素内边距的左上角开始计算位置
+    -   border-box 从元素边框的左上角开始计算位置
+-   background-clip 定义背景图片的显示区域
+    -   content-box 只在元素内容区域显示背景图片
+    -   padding-box 只在元素内容区域和内边距区域显示背景图片
+    -   border-box 只在元素内容、内边距和边框区域显示背景图片
+-   background-attachment 定义背景图片是否跟随元素内容滚动
+    -   scroll 默认值，跟随内容滚动
+    -   fixed 不跟随内容滚动
+
+## 2D 变换和过渡
+
+-   transform 定义 2D 变换方式
+    -   translate() 平移 translateX() translateY()
+    -   scale() 缩放 scaleX() scaleY()
+    -   skew() 倾斜 skewX() skewY()
+    -   rotate() 旋转
+-   transition 设置过渡属性
+-   transition-property 设置使用过渡的属性名
+-   transition-duration 设置过渡的周期
+-   transition-timing-function 设置过渡的速度
+    -   linear 匀速
+    -   ease-in 加速
+    -   ease-out 减速
+    -   eash-in-out 先加速后减速
+-   transition-delay 设置过渡的延迟时间
+
+## 动画
+
+-   @keyframes 定义动画内容
+-   animation 设置元素的动画属性
+-   animation-name 设置动画名称
+-   animation-duration 设置动画周期
+-   animation-timing-funtion 设置动画速度
+-   animation-delay 设置动画延迟时间

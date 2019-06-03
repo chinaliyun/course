@@ -1,0 +1,47 @@
+<style>
+    * {
+        margin: 0;
+    }
+    .b1 {
+        background-color: rgb(99, 181, 253);
+    }
+    .b2 {
+        background-color: rgb(168, 253, 99);
+    }
+    .b3 {
+        background-color: rgb(253, 148, 99);
+    }
+    .b4 {
+        background-color: rgb(253, 99, 227);
+    }
+    .banner {
+        height: 100px;
+    }
+    @media (min-width: 768px) {
+        .banner_wrapper:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .banner {
+            float: left;
+            width: 50%;
+        }
+    }
+    @media (min-width: 1024px) {
+        .banner {
+            height: 150px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .banner {
+            height: 200px;
+        }
+    }
+</style>
+<div class="banner_wrapper">
+    <div class="banner b1"></div>
+    <div class="banner b2"></div>
+    <div class="banner b3"></div>
+    <div class="banner b4"></div>
+</div>

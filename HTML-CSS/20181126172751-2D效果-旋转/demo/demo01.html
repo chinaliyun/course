@@ -1,0 +1,26 @@
+<style>
+    .outer {
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        float: left;
+        margin-right: 10px;
+    }
+    .inner {
+        width: 100px;
+        height: 100px;
+        background-color: rgba(255, 217, 0, 0.699);
+        transform: rotate(0);
+        transition: all 1s linear;
+    }
+    .outer:nth-of-type(2) .inner {
+        transform: rotate(-30deg);
+    }
+    p {
+        clear: both;
+    }
+</style>
+<p>we are family, we are family, we are family, we are family,</p>
+<div class="outer"><div class="inner"></div></div>
+<div class="outer"><div class="inner"></div></div>
+<p>we are family, we are family, we are family, we are family,</p>

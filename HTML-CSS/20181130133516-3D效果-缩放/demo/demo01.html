@@ -1,0 +1,48 @@
+<style>
+    .outer {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 150px 50px;
+        border: 1px solid gray;
+        perspective: 200px;
+        transform-style: preserve-3d;
+    }
+    .inner {
+        width: 100%;
+        height: 100px;
+        animation: rotate 3s linear;
+        animation-iteration-count: infinite;
+    }
+    .outer:nth-child(odd) .inner {
+        background-color: rgba(255, 0, 0, 0.692);
+    }
+    .outer:nth-child(even) .inner {
+        background-color: rgba(0, 128, 0, 0.692);
+    }
+    .outer:nth-child(1) .inner {
+        transform: scaleX(0.8);
+        transform-origin: 0% 50%;
+    }
+    .outer:nth-child(2) .inner {
+        transform: translateX(-20%);
+    }
+    .outer:nth-child(3) .inner {
+        transform: translateY(20%);
+    }
+    .outer:nth-child(4) .inner {
+        transform: translateY(-20%);
+    }
+    .outer:nth-child(5) .inner {
+        transform: translateZ(20px);
+    }
+    .outer:nth-child(6) .inner {
+        transform: translateZ(-20px);
+    }
+</style>
+<div class="outer"><div class="inner"></div></div>
+<!-- <div class="outer"><div class="inner"></div></div>
+<div class="outer"><div class="inner"></div></div>
+<div class="outer"><div class="inner"></div></div>
+<div class="outer"><div class="inner"></div></div>
+<div class="outer"><div class="inner"></div></div> -->

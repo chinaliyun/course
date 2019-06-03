@@ -1,0 +1,96 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .fl {
+        float: left;
+    }
+    .clear:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    ul {
+        list-style: none;
+    }
+    .header_section {
+        height: 60px;
+        line-height: 60px;
+        background-color: aliceblue;
+    }
+    .header_container {
+        width: 1200px;
+        height: 10px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .menu_wrapper {
+        display: none;
+    }
+    .logo_wrapper {
+        position: absolute;
+        top: 0;
+        left: 10px;
+    }
+    .shop_wrapper {
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+    .nav_wrapper {
+        text-align: center;
+    }
+    .nav_wrapper ul {
+        display: inline-block;
+    }
+    .nav_wrapper li {
+        padding: 0 40px;
+    }
+    @media (max-width: 1200px) {
+        .header_container {
+            width: auto;
+        }
+        .nav_wrapper li {
+            padding: 0 30px;
+        }
+    }
+    @media (max-width: 930px) {
+        .nav_wrapper li {
+            padding: 0 20px;
+        }
+    }
+    @media (max-width: 760px) {
+        .nav_wrapper {
+            display: none;
+        }
+        .menu_wrapper {
+            display: block;
+            position: absolute;
+            left: 10px;
+            top: 0;
+        }
+        .logo_wrapper {
+            text-align: center;
+            position: static;
+        }
+    }
+</style>
+<div class="header_section">
+    <div class="header_container">
+        <div class="menu_wrapper">菜单</div>
+        <div class="logo_wrapper">OPPO</div>
+        <div class="nav_wrapper">
+            <ul class="clear">
+                <li class="fl">手机</li>
+                <li class="fl">手机</li>
+                <li class="fl">手机</li>
+                <li class="fl">手机</li>
+                <li class="fl">手机</li>
+                <li class="fl">手机</li>
+                <li class="fl">手机</li>
+            </ul>
+        </div>
+        <div class="shop_wrapper">商城</div>
+    </div>
+</div>

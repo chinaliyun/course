@@ -1,0 +1,54 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .fl {
+        float: left;
+    }
+    .clear:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .banner {
+        width: 100%;
+        height: 200px;
+    }
+    .b1 {
+        background-color: #f18bec;
+    }
+    .b2 {
+        background-color: #88a8e0;
+    }
+    .b3 {
+        background-color: #ccf7a4;
+    }
+    .b4 {
+        background-color: rgb(250, 145, 126);
+    }
+    @media (min-width: 769px) {
+        .banner {
+            width: 50%;
+            height: 280px;
+        }
+    }
+    @media (min-width: 891px) {
+        .banner {
+            height: 310px;
+        }
+    }
+    @media (min-width: 1025px) {
+        .banner {
+            height: 350px;
+        }
+    }
+</style>
+<div class="banner_wrapper">
+    <div class="banner b1 fl"></div>
+    <div class="banner b2 fl"></div>
+</div>
+<div class="banner_wrapper">
+    <div class="banner b3 fl"></div>
+    <div class="banner b4 fl"></div>
+</div>

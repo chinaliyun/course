@@ -1,0 +1,34 @@
+<style>
+    .outer {
+        width: 100px;
+        height: 100px;
+        margin: 50px auto;
+        border: 1px solid gray;
+        background-color: rgba(127, 255, 212, 0.753);
+        perspective: 200px;
+        transform-style: preserve-3d;
+    }
+    .inner {
+        width: 100%;
+        height: 100px;
+    }
+    .outer:nth-child(odd) .inner {
+        background-color: red;
+    }
+    .outer:nth-child(even) .inner {
+        background-color: green;
+    }
+    .outer:nth-child(2) .inner {
+        transform: rotateX(60deg);
+    }
+    .outer:nth-child(3) .inner {
+        transform: rotateY(60deg);
+    }
+    .outer:nth-child(4) .inner {
+        transform: rotateZ(60deg);
+    }
+</style>
+<div class="outer"><div class="inner"></div></div>
+<div class="outer"><div class="inner"></div></div>
+<div class="outer"><div class="inner"></div></div>
+<div class="outer"><div class="inner"></div></div>

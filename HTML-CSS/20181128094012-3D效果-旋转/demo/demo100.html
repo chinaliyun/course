@@ -1,0 +1,83 @@
+<style>
+    body {
+        background-color: rgb(0, 0, 0);
+        transform-style: preserve-3d;
+        perspective: 200px;
+    }
+    .stage {
+        position: fixed;
+        top: 40%;
+        left: 40%;
+        transform-style: preserve-3d;
+        transform: translateZ(10px);
+    }
+    .outer {
+        width: 100px;
+        height: 100px;
+        transform-style: preserve-3d;
+        transform: rotateX(-60deg) rotateY(30deg);
+        animation: rotate 3s linear;
+        animation-iteration-count: infinite;
+    }
+    @keyframes rotate {
+        0% {
+            transform: rotateX(-60deg) rotateY(0deg);
+        }
+        100% {
+            transform: rotateX(-60deg) rotateY(360deg);
+        }
+    }
+    .inner {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        position: absolute;
+        background-position: center center;
+        background-size: 0;
+        /* background-size: cover; */
+        color: transparent;
+    }
+    .left {
+        background-color: rgba(0, 128, 0, 0.596);
+        transform: translateX(-50px) rotateY(-90deg);
+        background-image: url("./images/01.jpg");
+    }
+    .top {
+        background-color: rgba(137, 43, 226, 0.685);
+        transform: translateY(-50px) rotateX(90deg);
+        background-image: url("./images/02.jpg");
+    }
+    .back {
+        background-color: rgba(210, 105, 30, 0.904);
+        transform: translateZ(-50px) rotateY(180deg);
+        background-image: url("./images/03.jpg");
+    }
+    .right {
+        background-color: rgba(4, 0, 255, 0.685);
+        transform: translateX(50px) rotateY(90deg);
+        background-image: url("./images/04.jpg");
+    }
+    .bottom {
+        background-color: rgba(255, 0, 191, 0.685);
+        transform: translateY(50px) rotateX(-90deg) rotateZ(180deg);
+        background-image: url("./images/05.jpg");
+    }
+    .front {
+        background-color: rgba(0, 255, 242, 0.507);
+        transform: translateZ(50px);
+        background-image: url("./images/06.jpg");
+    }
+</style>
+<div class="stage">
+    <div class="outer">
+        <div class="inner left">左</div>
+        <div class="inner top">上</div>
+        <div class="inner back">后</div>
+        <div class="inner right">右</div>
+        <div class="inner bottom">下</div>
+        <div class="inner front">前</div>
+    </div>
+</div>

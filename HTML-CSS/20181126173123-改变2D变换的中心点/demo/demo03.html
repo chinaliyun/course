@@ -1,0 +1,40 @@
+<style>
+    .outer {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 50px 70px;
+        border: 1px solid gray;
+    }
+    .inner {
+        width: 100%;
+        height: 100px;
+        transform: scaleY(0.8);
+    }
+    .outer:nth-child(odd) .inner {
+        background-color: rgba(255, 0, 0, 0.692);
+    }
+    .outer:nth-child(even) .inner {
+        background-color: rgba(0, 128, 0, 0.692);
+    }
+    .outer:nth-child(1) .inner {
+        transform-origin: center center;
+    }
+    .outer:nth-child(2) .inner {
+        transform-origin: center 0%;
+    }
+    .outer:nth-child(3) .inner {
+        transform-origin: center 30%;
+    }
+    .outer:nth-child(4) .inner {
+        transform-origin: center 80%;
+    }
+    .outer:nth-child(5) .inner {
+        transform-origin: center 100%;
+    }
+</style>
+<div class="outer"><div class="inner">center center</div></div>
+<div class="outer"><div class="inner">center 0%</div></div>
+<div class="outer"><div class="inner">center 30%</div></div>
+<div class="outer"><div class="inner">center 80%</div></div>
+<div class="outer"><div class="inner">center 100%</div></div>

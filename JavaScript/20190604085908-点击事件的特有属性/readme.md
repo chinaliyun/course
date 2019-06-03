@@ -13,29 +13,29 @@
 | `clientX`  | 获取点击位置距离可视区域最左侧的距离                     |
 | `clientY`  | 获取点击位置距离可视区域最顶部的距离                     |
 | `pageX`    | 获取点击位置距离文档最左侧的距离                         |
-| `pageY`    | 获取点击位置距离文档最左侧的距离                         |
+| `pageY`    | 获取点击位置距离文档最顶部的距离                         |
 | `screenX`  | 获取点击位置距离整个屏幕最左侧的距离                     |
 | `screenY`  | 获取点击位置距离整个屏幕最顶部的距离                     |
 
 ```html
 <style>
-    body {
-        margin: 0;
-        width: 200%;
-        height: 200%;
-    }
+  body {
+    margin: 0;
+    width: 200%;
+    height: 200%;
+  }
 </style>
 <script>
-    window.onload = function() {
-        document.body.addEventListener("click", function(event) {
-            console.log("点击位置距离可视区域最左侧距离：", event.clientX);
-            console.log("点击位置距离可视区域最顶部距离：", event.clientY);
-            console.log("点击位置距离整个文档最左侧距离：", event.pageX);
-            console.log("点击位置距离整个文档最顶部距离：", event.pageY);
-            console.log("点击位置距离整个屏幕最左侧距离：", event.screenX);
-            console.log("点击位置距离整个屏幕最顶部距离：", event.screenY);
-        });
-    };
+  window.onload = function() {
+    document.body.addEventListener("click", function(event) {
+      console.log("点击位置距离可视区域最左侧距离：", event.clientX);
+      console.log("点击位置距离可视区域最顶部距离：", event.clientY);
+      console.log("点击位置距离整个文档最左侧距离：", event.pageX);
+      console.log("点击位置距离整个文档最顶部距离：", event.pageY);
+      console.log("点击位置距离整个屏幕最左侧距离：", event.screenX);
+      console.log("点击位置距离整个屏幕最顶部距离：", event.screenY);
+    });
+  };
 </script>
 ```
 
