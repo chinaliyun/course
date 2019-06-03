@@ -1,0 +1,15 @@
+<form action="./demo01.html">
+    <label>年龄：<input type="text" name="age" value="20"/></label>
+</form>
+
+<script>
+    var input = document.querySelector("input");
+    input.addEventListener("change", function(event) {
+        // 焦点离开时，元素的value值和焦点进入元素前不同时，会触发该事件
+        console.log("触发了元素的change事件");
+    });
+
+    input.addEventListener("input", function(event) {
+        console.log("触发了元素的input事件");
+    });
+</script>

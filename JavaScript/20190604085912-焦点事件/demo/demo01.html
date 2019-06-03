@@ -1,0 +1,13 @@
+<form action="./demo01.html">
+    <label for=""><input type="text" name="age"/></label>
+</form>
+
+<script>
+    var input = document.querySelector("input");
+    input.addEventListener("focus", function(event) {
+        console.log("焦点进入元素了，触发了元素的focus事件");
+    });
+    input.addEventListener("blur", function(event) {
+        console.log("焦点离开元素了，触发了元素的blur事件");
+    });
+</script>

@@ -1,0 +1,18 @@
+<form action="./demo02.html">
+    <select name="goods">
+        <option value="1">pear</option>
+        <option value="2">apple</option>
+        <option value="3">banana</option>
+    </select>
+</form>
+
+<script>
+    var select = document.querySelector("select");
+    select.addEventListener("change", function(event) {
+        console.log("触发了元素的change事件");
+    });
+
+    select.addEventListener("input", function(event) {
+        console.log("触发了元素的input事件");
+    });
+</script>

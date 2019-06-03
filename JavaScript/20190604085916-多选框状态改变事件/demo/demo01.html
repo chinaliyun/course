@@ -1,0 +1,21 @@
+<form action="./demo03.html">
+    爱好：
+    <label><input type="checkbox" name="age" value="pear" />梨子</label>
+    <label><input type="checkbox" name="age" value="apple" />苹果</label>
+    <label><input type="checkbox" name="age" value="banana" />香蕉</label>
+</form>
+
+<script>
+    var inputs = document.querySelectorAll("input");
+    var len = inputs.length;
+    for (var i = 0; i < len; i++) {
+        inputs[i].addEventListener("change", function(event) {
+            console.log("触发了", event.target, "的change事件");
+            console.log("该多选框的状态是", event.target.checked);
+        });
+        inputs[i].addEventListener("input", function(event) {
+            console.log("触发了", event.target, "的input事件");
+            console.log("该多选框的状态是", event.target.checked);
+        });
+    }
+</script>
