@@ -1,21 +1,26 @@
 <form action="./demo03.html">
+    姓名：
+    <input type="text" name="username" />
+    <br />
+    密码：
+    <input type="password" name="username" />
+    <br />
     爱好：
-    <label><input type="checkbox" name="age" value="pear" />梨子</label>
-    <label><input type="checkbox" name="age" value="apple" />苹果</label>
-    <label><input type="checkbox" name="age" value="banana" />香蕉</label>
+    <label><input type="checkbox" name="goods" value="pear" />梨子</label>
+    <label><input type="checkbox" name="goods" value="apple" />苹果</label>
+    <label><input type="checkbox" name="goods" value="banana" />香蕉</label>
+    <br />
+    性别：
+    <label><input type="radio" name="sex" value="1" />男</label>
+    <label><input type="radio" name="sex" value="2" />女</label>
 </form>
 
 <script>
-    var inputs = document.querySelectorAll("input");
-    var len = inputs.length;
-    for (var i = 0; i < len; i++) {
-        inputs[i].addEventListener("change", function(event) {
-            console.log("触发了", event.target, "的change事件");
-            console.log("该多选框的状态是", event.target.checked);
-        });
-        inputs[i].addEventListener("input", function(event) {
-            console.log("触发了", event.target, "的input事件");
-            console.log("该多选框的状态是", event.target.checked);
-        });
-    }
+    var form = document.querySelector("form");
+    form.oninput = function(event) {
+        console.log(event.type, event.target);
+    };
+    form.onchange = function(event) {
+        console.log(event.type, event.target);
+    };
 </script>
