@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+a {
+    text-decoration: none;
+}
+.logo_wrapper {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.logo_wrapper img {
+    width: 100px;
+}
+.form_wrapper {
+    width: 300px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgb(169, 169, 169);
+    color: #8f8f8f;
+}
+
+.form_wrapper .title_box {
+    text-align: center;
+}
+.form_wrapper .title_box a {
+    display: inline-block;
+    color: inherit;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.form_wrapper .title_box a.active {
+    color: orangered;
+    border-bottom: 2px solid orangered;
+}
+
+.form_wrapper .title_box a:hover {
+    border-bottom: 2px solid orangered;
+}
+
+.form_item_wrapper {
+    margin-top: 50px;
+    background-color: #efefef9a;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+}
+.form_item_wrapper .form_item + .form_item {
+    border-top: 1px solid rgb(208, 208, 208);
+}
+.form_item_wrapper .form_item {
+    position: relative;
+}
+.form_item_wrapper .form_item .error_message {
+    color: orangered;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: none;
+}
+.form_item_wrapper .form_item .error_message.show {
+    display: block;
+}
+.form_item_wrapper img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.form_item_wrapper input {
+    border: none;
+    vertical-align: middle;
+    height: 50px;
+    line-height: 50px;
+    background-color: transparent;
+    font-size: 16px;
+}
+.form_item_wrapper input:focus {
+    outline: none;
+}
+
+.remember_wrapper {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.remember_wrapper a {
+    color: inherit;
+    float: right;
+}
+.login_btn {
+    background-color: #24c753;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 1000px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.login_btn:hover {
+    background-color: #0ca036;
+}
+.tips {
+    color: #c7c7c7;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 30px;
+}
+.tips a {
+    color: #308bc4;
+}
+.share_wrapper {
+    text-align: center;
+    margin-top: 10px;
+}
+.share_wrapper span {
+    vertical-align: middle;
+    font-size: 12px;
+}
+.share_wrapper .xian {
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: #c7c7c7;
+}
+
+.fenxiang_wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fenxiang_wrapper a {
+    margin: 0 10px;
+    color: inherit;
+    display: inline-block;
+    vertical-align: middle;
+}
+.fenxiang_wrapper img {
+    width: 30px;
+}
+.code_item {
+    display: none;
+}
+.code_item.show {
+    display: block;
+}
+.send_code_btn {
+    position: absolute;
+    top: 8px;
+    right: 4px;
+    background-color: #0ca0363e;
+    color: white;
+    font-size: 14px;
+    border-radius: 1000px;
+    padding: 4px 10px;
+}
+
+.send_code_btn.show {
+    background-color: #0ca036;
+    cursor: pointer;
+}
+
+.error_code {
+    color: orangered;
+    font-size: 14px;
+    display: none;
+}
+.error_code.show {
+    display: block;
+}

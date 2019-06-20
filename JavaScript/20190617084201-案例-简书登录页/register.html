@@ -1,7 +1,7 @@
 <html>
     <head>
-        <title>登录 - 简书</title>
-        <link rel="stylesheet" href="./css/login.css" />
+        <title>注册 - 简书</title>
+        <link rel="stylesheet" href="./css/register.css" />
     </head>
     <body>
         <div class="logo_wrapper">
@@ -9,13 +9,23 @@
         </div>
         <div class="form_wrapper">
             <div class="title_box">
-                <a class="active" href="#">登录</a>
+                <a href="./login.html">登录</a>
                 <i>·</i>
-                <a href="./register.html">注册</a>
+                <a class="active" href="#">注册</a>
             </div>
             <div class="form_item_wrapper">
-                <div class="form_item mobile_item">
+                <div class="form_item nickname_item">
                     <img src="./images/person.png" alt="" />
+                    <input
+                        class="nickname_input"
+                        type="text"
+                        placeholder="昵称"
+                        name="nickname"
+                    />
+                    <p class="error_message error_nickname">error_message</p>
+                </div>
+                <div class="form_item mobile_item">
+                    <img src="./images/mobile.png" alt="" />
                     <input
                         class="mobile_input"
                         type="text"
@@ -24,36 +34,45 @@
                     />
                     <p class="error_message error_mobile">error_message</p>
                 </div>
+                <div class="form_item code_item">
+                    <img src="./images/safety.png" alt="" />
+                    <input
+                        class="code_input"
+                        type="text"
+                        placeholder="请输入验证码"
+                        name="code"
+                    />
+                    <div class="send_code_btn">发送验证码</div>
+                </div>
                 <div class="form_item pass_item">
                     <img src="./images/lock.png" alt="" />
                     <input
                         class="pass_input"
-                        type="text"
+                        type="password"
                         placeholder="密码"
                         name="password"
                     />
                     <p class="error_message error_pass">error_message</p>
                 </div>
             </div>
-            <div class="remember_wrapper">
-                <label><input type="checkbox" />记住我</label>
-                <a href="#">登录遇到问题</a>
-            </div>
+            <p class="error_code">ss</p>
             <div class="login_btn">
-                登录
+                注册
             </div>
+            <p class="tips">
+                点击 “注册” 即表示您同意并愿意遵守简书
+                <a href="#">用户协议</a> 和 <a href="#">隐私政策</a> 。
+            </p>
             <div class="share_wrapper">
                 <span class="xian"></span>
                 <span>社交账号登录</span>
                 <span class="xian"></span>
             </div>
             <div class="fenxiang_wrapper">
-                <a href="#"><img src="./images/sina.png" alt=""/></a>
                 <a href="#"><img src="./images/wechat.png" alt=""/></a>
                 <a href="#"><img src="./images/qq.png" alt=""/></a>
-                <a href="#">其他</a>
             </div>
         </div>
     </body>
-    <script src="./scripts/login.js"></script>
+    <script src="./scripts/register.js"></script>
 </html>
