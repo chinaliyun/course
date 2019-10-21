@@ -1,0 +1,142 @@
+<style>
+    body {
+        margin: 0;
+    }
+    .wrapper {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        background-color: beige;
+        overflow: hidden;
+    }
+    .inner {
+        width: 500%;
+        height: 80%;
+        position: relative;
+        left: -100%;
+        top: 0;
+    }
+    .item {
+        float: left;
+        width: 20%;
+        height: 100%;
+        font-size: 50px;
+        color: white;
+        text-align: center;
+    }
+    .item1 {
+        background-color: burlywood;
+    }
+    .item2 {
+        background-color: rgb(138, 208, 240);
+    }
+    .item3 {
+        background-color: rgb(248, 113, 176);
+    }
+    .btn_wrapper {
+        text-align: center;
+    }
+    .btn_wrapper > div {
+        display: inline-block;
+        background-color: darkturquoise;
+        padding: 8px 10px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .btn_wrapper > div:hover {
+        background-color: rgb(0, 134, 136);
+    }
+</style>
+<div class="wrapper">
+    <div class="inner">
+        <div class="item item3">3</div>
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item1">1</div>
+    </div>
+</div>
+<div class="btn_wrapper">
+    <div class="prev_btn">上一张</div>
+    <div class="next_btn">下一张</div>
+</div>
+
+<script>
+    window.onload = function() {
+        var bannerOrder = 1;
+        var bannerRunning = 1;
+        var innerEle = document.querySelector(".inner");
+        innerEle.addEventListener("transitionend", function() {
+            bannerRunning = 1;
+        });
+        var nextBtn = document.querySelector(".next_btn");
+        nextBtn.addEventListener("click", function() {
+            // 把图片滚动的内容取出来，放在函数nextEvent中，
+            // 点击事件里面，先清除定时器，再执行nextEvent函数
+            clearInterval(timer);
+            nextEvent();
+        });
+
+        function nextEvent() {
+            if (bannerRunning == 2) {
+                return false;
+            } else {
+                bannerRunning = 2;
+            }
+            var left = (bannerOrder + 1) * -100 + "%";
+            innerEle.style.transition = "all 0.3s linear";
+            innerEle.style.left = left;
+            if (bannerOrder == 3) {
+                innerEle.addEventListener(
+                    "transitionend",
+                    function() {
+                        innerEle.style.transition = "none";
+                        innerEle.style.left = "-100%";
+                    },
+                    { once: true }
+                );
+            }
+            if (bannerOrder == 3) {
+                bannerOrder = 1;
+            } else {
+                bannerOrder++;
+            }
+        }
+        var prevBtn = document.querySelector(".prev_btn");
+        prevBtn.addEventListener("click", function() {
+            // 把图片滚动的内容取出来，放在函数prevEvent中，
+            // 点击事件里面，先清除定时器，再执行prevEvent函数
+            clearInterval(timer);
+            prevEvent();
+        });
+        function prevEvent() {
+            if (bannerRunning == 2) {
+                return false;
+            } else {
+                bannerRunning = 2;
+            }
+            var left = (bannerOrder - 1) * -100 + "%";
+            innerEle.style.transition = "all 0.3s linear";
+            innerEle.style.left = left;
+            if (bannerOrder == 1) {
+                innerEle.addEventListener(
+                    "transitionend",
+                    function() {
+                        innerEle.style.transition = "none";
+                        innerEle.style.left = "-300%";
+                    },
+                    { once: true }
+                );
+            }
+            if (bannerOrder == 1) {
+                bannerOrder = 3;
+            } else {
+                bannerOrder--;
+            }
+        }
+        var timer = setInterval(function() {
+            // 定时器中，直接执行过渡的函数即可
+            nextEvent();
+        }, 2000);
+    };
+</script>

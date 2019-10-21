@@ -1,0 +1,23 @@
+<style>
+    body {
+        height: 1000px;
+    }
+    div {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+</style>
+<div></div>
+<script>
+    var scrollTop = 0;
+    var div = document.querySelector("div");
+    window.onscroll = function() {
+        if (window.scrollY > scrollTop) {
+            div.textContent = "页面向上滚动";
+        } else {
+            div.textContent = "页面向下滚动";
+        }
+        scrollTop = window.scrollY;
+    };
+</script>

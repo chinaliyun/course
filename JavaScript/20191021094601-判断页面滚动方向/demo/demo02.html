@@ -1,0 +1,29 @@
+<style>
+    body {
+        height: 1000px;
+        margin: 0;
+    }
+    div {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: bisque;
+    }
+</style>
+<img src="http://pic1.win4000.com/wallpaper/2/58006dda3bf0f.jpg" alt="" />
+<div>
+    <p class="p1"></p>
+    <p class="p2"></p>
+</div>
+<script>
+    var p1 = document.querySelector(".p1");
+    var p2 = document.querySelector(".p2");
+    window.addEventListener("scroll", function() {
+        p1.textContent = "刷新后，我会自动更新当前时间为：" + new Date();
+    });
+    window.addEventListener("load", function() {
+        window.addEventListener("scroll", function() {
+            p2.textContent = "页面滚动时，我的内容才会出现";
+        });
+    });
+</script>
