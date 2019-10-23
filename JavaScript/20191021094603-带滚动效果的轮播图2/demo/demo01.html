@@ -1,0 +1,124 @@
+<style>
+    body {
+        margin: 0;
+    }
+    .wrapper {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        background-color: beige;
+    }
+    .inner {
+        width: 500%;
+        height: 80%;
+        position: relative;
+        left: -100%;
+        top: 0;
+    }
+    .item {
+        float: left;
+        width: 20%;
+        height: 100%;
+        font-size: 50px;
+        color: white;
+        text-align: center;
+    }
+    .item1 {
+        background-color: burlywood;
+    }
+    .item2 {
+        background-color: rgb(138, 208, 240);
+    }
+    .item3 {
+        background-color: rgb(248, 113, 176);
+    }
+    .btn_wrapper {
+        text-align: center;
+    }
+    .btn_wrapper > div {
+        display: inline-block;
+        background-color: darkturquoise;
+        padding: 8px 10px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .btn_wrapper > div:hover {
+        background-color: rgb(0, 134, 136);
+    }
+</style>
+<div class="wrapper">
+    <div class="inner">
+        <div class="item item3">3</div>
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+    </div>
+</div>
+<div class="btn_wrapper">
+    <div class="prev_btn">上一张</div>
+    <div class="next_btn">下一张</div>
+</div>
+
+<script>
+    window.onload = function() {
+        var innerEle = document.querySelector(".inner");
+        var nextBtn = document.querySelector(".next_btn");
+        var bannerRunning = 1;
+        nextBtn.addEventListener("click", function() {
+            clearInterval(timer);
+            nextEvent();
+        });
+        function nextEvent() {
+            if (bannerRunning == 2) {
+                return false;
+            } else {
+                bannerRunning = 2;
+            }
+            innerEle.addEventListener(
+                "transitionend",
+                function() {
+                    innerEle.style.transition = "none";
+                    innerEle.style.left = "-100%";
+                    innerEle.appendChild(innerEle.firstElementChild);
+                    bannerRunning = 1;
+                },
+                {
+                    once: true
+                }
+            );
+            innerEle.style.transition = "all 1s linear";
+            innerEle.style.left = "-200%";
+        }
+        var prevBtn = document.querySelector(".prev_btn");
+        prevBtn.addEventListener("click", function() {
+            clearInterval(timer);
+            prevEvent();
+        });
+        function prevEvent() {
+            if (bannerRunning == 2) {
+                return false;
+            } else {
+                bannerRunning = 2;
+            }
+            innerEle.addEventListener(
+                "transitionend",
+                function() {
+                    innerEle.style.transition = "none";
+                    innerEle.style.left = "-100%";
+                    innerEle.insertBefore(
+                        innerEle.lastElementChild,
+                        innerEle.firstElementChild
+                    );
+                    bannerRunning = 1;
+                },
+                {
+                    once: true
+                }
+            );
+            innerEle.style.transition = "all 1s linear";
+            innerEle.style.left = "0%";
+        }
+        var timer = setInterval(function() {
+            nextEvent();
+        }, 2000);
+    };
+</script>

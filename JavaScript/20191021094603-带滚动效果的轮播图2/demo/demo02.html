@@ -1,0 +1,152 @@
+<style>
+    body {
+        text-align: center;
+        background-color: aliceblue;
+    }
+    p {
+        margin: 0;
+    }
+    div {
+        width: 800px;
+        margin: 0 auto;
+    }
+    p {
+        text-align: left;
+        line-height: 1.4em;
+        font-size: 30px;
+        display: none;
+        color: rgb(35, 148, 148);
+        text-shadow: 0 0 4px white;
+    }
+    p.show {
+        display: block;
+        overflow: hidden;
+    }
+    .p4,
+    .p6,
+    .p8,
+    .p9,
+    .p14,
+    .p15,
+    .p16 {
+        padding-left: 50px;
+    }
+    .p5,
+    .p7,
+    .p10,
+    .p11,
+    .p12,
+    .p13 {
+        padding-left: 100px;
+    }
+</style>
+<div>
+    <p class="p1">定义表示过渡是否结束/开始的变量running=1;</p>
+    <p class="p2">获取上一张按钮元素</p>
+    <p class="p3">给上一张按钮添加点击事件</p>
+    <p class="p4">如果上次过渡没有结束，</p>
+    <p class="p5">终止本次函数执行</p>
+    <p class="p6">否则：</p>
+    <p class="p7">该变running=2，表示新的过渡已经开始</p>
+    <p class="p8">获取inner元素</p>
+    <p class="p9">给inner元素添加一次性过渡结束事件</p>
+    <p class="p10">取消inner元素的过渡属性</p>
+    <p class="p11">重置inner元素的left值为0</p>
+    <p class="p12">
+        把inner元素的第一个子元素，剪切插入到inner元素的最后一个子元素后面
+    </p>
+    <p class="p13">该变running的值=1，表示本次过渡已结束</p>
+    <p class="p14">计算left值要改成多少</p>
+    <p class="p15">给inner元素添加过渡属性</p>
+    <p class="p16">该变inner元素的left属性值</p>
+</div>
+<script>
+    var n = 1;
+    var timer = setInterval(() => {
+        console.log(n);
+        if (n == 14) {
+            clearInterval(timer);
+            return false;
+        }
+        go(n++);
+    }, 1500);
+    var p1 = document.querySelector(".p1"),
+        p2 = document.querySelector(".p2"),
+        p3 = document.querySelector(".p3"),
+        p4 = document.querySelector(".p4"),
+        p5 = document.querySelector(".p5"),
+        p6 = document.querySelector(".p6"),
+        p7 = document.querySelector(".p7"),
+        p8 = document.querySelector(".p8"),
+        p9 = document.querySelector(".p9"),
+        p10 = document.querySelector(".p10"),
+        p11 = document.querySelector(".p11"),
+        p12 = document.querySelector(".p12"),
+        p13 = document.querySelector(".p13"),
+        p15 = document.querySelector(".p15"),
+        p16 = document.querySelector(".p16"),
+        p14 = document.querySelector(".p14");
+    function go(n) {
+        if (n == 1) {
+            show(p3);
+            return false;
+        }
+        if (n == 2) {
+            show(p2);
+            return false;
+        }
+        if (n == 3) {
+            show(p16);
+            return false;
+        }
+        if (n == 4) {
+            show([p8, p14]);
+            return false;
+        }
+        if (n == 5) {
+            show(p15);
+            return false;
+        }
+        if (n == 6) {
+            show(p9);
+            return false;
+        }
+        if (n == 7) {
+            show([p11, p12]);
+            return false;
+        }
+        if (n == 8) {
+            show(p10);
+            return false;
+        }
+        if (n == 9) {
+            show(p1);
+            return false;
+        }
+        if (n == 10) {
+            show(p4);
+            return false;
+        }
+        if (n == 11) {
+            show(p5);
+            return false;
+        }
+        if (n == 12) {
+            show(p6);
+            return false;
+        }
+        if (n == 13) {
+            show(p7);
+            return false;
+        }
+    }
+    function show(ele) {
+        if (Array.isArray(ele)) {
+            ele.forEach(function(item) {
+                show(item);
+            });
+        } else {
+            ele.classList.add("show");
+        }
+    }
+</script>
