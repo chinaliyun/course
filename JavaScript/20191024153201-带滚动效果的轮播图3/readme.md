@@ -1,0 +1,132 @@
+# 带滚动效果的轮播图 3
+
+1. [最终效果](#最终效果)
+1. [思路](#思路)
+1. [代码实现](#代码实现)
+
+## 最终效果
+
+![](./images/demo10.gif)
+
+## 思路
+
+![](./images/demo11.gif)
+
+## 代码实现
+
+```html
+<style>
+    .wrapper {
+        height: 300px;
+        width: 30%;
+        margin: 0 auto;
+        background-color: rgb(165, 177, 177);
+        /* overflow: hidden; */
+    }
+    .inner {
+        width: 225%;
+        height: 80%;
+        position: relative;
+        left: -100%;
+        top: 10%;
+    }
+    .img {
+        width: 11.111%;
+        height: 100%;
+        float: left;
+        text-align: center;
+        font-size: 100px;
+        color: white;
+    }
+    .img1 {
+        background-color: rgb(80, 213, 218);
+    }
+    .img2 {
+        background-color: rgb(124, 230, 98);
+    }
+    .img3 {
+        background-color: rgb(241, 94, 173);
+    }
+    .img4 {
+        background-color: rgb(248, 190, 97);
+    }
+</style>
+
+<div class="wrapper">
+    <div class="inner">
+        <div class="img img1">1</div>
+        <div class="img img2">2</div>
+        <div class="img img3">3</div>
+        <div class="img img4">4</div>
+        <div class="img img1">1</div>
+        <div class="img img2">2</div>
+        <div class="img img3">3</div>
+        <div class="img img4">4</div>
+        <div class="img img1">1</div>
+    </div>
+</div>
+```
+
+```html
+<script>
+    window.onload = function() {
+        var innerEle = document.querySelector(".inner");
+        var currentOrder = 1;
+        function prevEvent() {
+            var left;
+            if (currentOrder == 1) {
+                left = "-75%";
+            } else {
+                left = (currentOrder - 2) * -25 + "%";
+            }
+            if (currentOrder == 2) {
+                innerEle.addEventListener(
+                    "transitionend",
+                    function() {
+                        innerEle.style.transition = "none";
+                        innerEle.style.left = "-100%";
+                    },
+                    { once: true }
+                );
+            }
+            innerEle.style.transition = "all 0.3s linear";
+            innerEle.style.left = left;
+            if (currentOrder == 1) {
+                currentOrder = 4;
+            } else {
+                currentOrder--;
+            }
+        }
+        function nextEvent() {
+            var left;
+            if (currentOrder == 1) {
+                left = "-125%";
+            } else {
+                left = currentOrder * -25 + "%";
+            }
+            if (currentOrder == 1) {
+                innerEle.addEventListener(
+                    "transitionend",
+                    function() {
+                        innerEle.style.transition = "none";
+                        innerEle.style.left = "-25%";
+                    },
+                    { once: true }
+                );
+            }
+            innerEle.style.transition = "all 0.3s linear";
+            innerEle.style.left = left;
+            if (currentOrder == 4) {
+                currentOrder = 1;
+            } else {
+                currentOrder++;
+            }
+        }
+
+        var timer = setInterval(function() {
+            // prevEvent();
+            nextEvent();
+        }, 1000);
+    };
+</script>
+```

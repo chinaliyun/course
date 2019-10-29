@@ -1,0 +1,25 @@
+<style>
+    body {
+        padding: 1000px 0;
+        margin: 0;
+    }
+    div {
+        font-size: 300px;
+        background-color: coral;
+        text-align: center;
+    }
+</style>
+<div>150</div>
+<script>
+    window.onscroll = function() {
+        var div = document.querySelector("div");
+        if (
+            div.getBoundingClientRect().top < window.innerHeight &&
+            div.getBoundingClientRect().top > -div.offsetHeight
+        ) {
+            console.log("元素在可视区域之内");
+        } else {
+            console.log("元素在可视区域之外");
+        }
+    };
+</script>

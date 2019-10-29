@@ -1,0 +1,27 @@
+<style>
+    body {
+        margin: 0;
+    }
+    div {
+        font-size: 300px;
+        background-color: coral;
+        text-align: center;
+        color: white;
+    }
+</style>
+<div>150</div>
+<script>
+    window.onload = function() {
+        var div = document.querySelector("div");
+        var n = 0;
+        var m = 199;
+        var timer = setInterval(function() {
+            n += 4;
+            if (n > m) {
+                n = m;
+                clearInterval(timer);
+            }
+            div.textContent = n;
+        }, 50);
+    };
+</script>
