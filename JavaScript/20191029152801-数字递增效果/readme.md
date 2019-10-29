@@ -2,7 +2,7 @@
 
 效果图下所示：
 
-![](./images/demo01.gif)
+![]('./images/demo01.gif')
 
 基础代码
 
